@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{Component} from 'react';
 import './App.css';
 import './bootstrap.min.css';
 import './style.css';
@@ -16,12 +16,57 @@ import imgUrl from './radha1.jpg';
 
 // const imgUrl = "http://iskconfoodrelief.com/wp-content/uploads/2020/04/Distribution-Team-1.jpg";
 
-function App() {
+class App extends Component {
+
+  constructor(props){
+    super(props)
+    this.state={
+      give_flag : 0,
+      array_num : 0,
+      give_once_links : [
+      "1.com",
+      "2.com",
+      "3.com",
+      "4.com",
+      "5.com",
+      "6.com",
+      "7.com",
+      "8.com",
+      "9.com",
+      "10.com",
+      "11.com",
+      ],
+      give_monthly_links : [
+      "13.com",
+      "23.com",
+      "33.com",
+      "43.com",
+      "53.com",
+      "63.com",
+      "73.com",
+      "83.com",
+      "93.com",
+      "10.com",
+      "11.com",
+      ],
+    }
+
+  }
+
+  proceedHandler = ()=>{
+   if(this.state.give_flag==0){
+    window.location.href=this.state.give_once_links[this.state.array_num]
+   }else{
+    window.location.href=this.state.give_monthly_links[this.state.array_num]
+   } 
+  }
+
+  render(){
   return (
-    
+
     <div className="App">
-    
-    
+
+
     <div class="header fixed-top">
     <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
@@ -44,7 +89,7 @@ function App() {
     </div>
     </div>
     </div>
-    
+
     <section class="container-fluid donate-proceed cause_details" id="cause_details">
     <div class="our-achievements" id="our-achievements-inner">
     <div class="container">
@@ -79,17 +124,29 @@ function App() {
     <input type="hidden" id="payment_mode" value="onetime"/>
     <ul class="nav nav-pills nav-justified" role="tablist">
     <li class="nav-item">
-    <a class="nav-link active" data-toggle="tab" href="../template_809/#tab-1" id="onetime">Give Once</a>
+
+
+    <a class="nav-link active" data-toggle="tab" 
+    onClick={()=>{this.state.give_flag = 0}}
+     id="onetime">Give Once</a>
+    
     </li>
     <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="../template_809/#tab-2" id="recurring">Give Monthly</a>
+    <a class="nav-link" data-toggle="tab"
+    onClick={()=>{this.state.give_flag = 1}}
+
+    id="recurring">Give Monthly</a>
     </li>
     </ul>
 
-    
+
     <div class="tab-content">
     <div id="tab-1" class="tab-pane give_once" style={{display: "block"}}>
-    <ul class="list-group list-group-horizontal">
+
+
+    <ul class="list-group list-group-horizontal" 
+    onClick={()=>{this.state.array_num = 0}}
+    >
     <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>800</span></li>
     <li class="list-group-item">Support Meals for 10 children</li>
     <li class="list-group-item">
@@ -99,7 +156,12 @@ function App() {
     </div>
     </li>
     </ul>
-    <ul class="list-group list-group-horizontal">
+
+
+    <ul class="list-group list-group-horizontal"
+    onClick={()=>{this.state.array_num = 1}}
+
+    >
     <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>1000</span></li>
     <li class="list-group-item">Support livelihood for 1 person with disability</li>
     <li class="list-group-item">
@@ -109,7 +171,12 @@ function App() {
     </div>
     </li>
     </ul>
-    <ul class="list-group list-group-horizontal">
+
+
+
+    <ul class="list-group list-group-horizontal"
+    onClick={()=>{this.state.array_num = 2}}
+    >
     <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>1500</span></li>
     <li class="list-group-item">Support meals for 20 children</li>
     <li class="list-group-item">
@@ -120,7 +187,11 @@ function App() {
     </li>
     </ul>
 
-    <ul class="list-group list-group-horizontal">
+
+
+    <ul class="list-group list-group-horizontal"
+    onClick={()=>{this.state.array_num = 3}}
+    >
     <li class="list-group-item"><i class="fa fa-rupee-sign" aria-hidden="true"></i> <span>2000</span></li>
     <li class="list-group-item">Support livelihood for 2 people with disability</li>
     <li class="list-group-item">
@@ -130,7 +201,13 @@ function App() {
     </div>
     </li>
     </ul>
-    <ul class="list-group list-group-horizontal">
+
+
+
+
+    <ul class="list-group list-group-horizontal"
+    onClick={()=>{this.state.array_num = 4}}
+    >
     <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>2500</span></li>
     <li class="list-group-item">Support  classroom training for 1 visually impaired</li>
     <li class="list-group-item">
@@ -140,7 +217,13 @@ function App() {
     </div>
     </li>
     </ul>
-    <ul class="list-group list-group-horizontal">
+
+
+
+
+    <ul class="list-group list-group-horizontal"
+    onClick={()=>{this.state.array_num = 5}}
+    >
     <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>3500</span></li>
     <li class="list-group-item">Support 3 sight restoring surgeries </li>
     <li class="list-group-item">
@@ -150,7 +233,13 @@ function App() {
     </div>
     </li>
     </ul>
-    <ul class="list-group list-group-horizontal">
+
+
+
+
+    <ul class="list-group list-group-horizontal"
+    onClick={()=>{this.state.array_num = 6}}
+    >
     <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>5000</span></li>
     <li class="list-group-item">Support classroom training for a 2 visually impaired children</li>
     <li class="list-group-item">
@@ -160,7 +249,13 @@ function App() {
     </div>
     </li>
     </ul>
-    <ul class="list-group list-group-horizontal">
+
+
+
+
+    <ul class="list-group list-group-horizontal"
+    onClick={()=>{this.state.array_num = 7}}
+    >
     <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>6500</span></li>
     <li class="list-group-item">Support 5 sight restoring surgeries</li>
     <li class="list-group-item">
@@ -171,7 +266,12 @@ function App() {
     </li>
     </ul>
 
-    <ul class="list-group list-group-horizontal">
+
+
+
+    <ul class="list-group list-group-horizontal"
+    onClick={()=>{this.state.array_num = 8}}
+    >
     <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i>
     <span></span><input type="text" id="custom_amount_ot_value" name=""/> </li>
     <li class="list-group-item">How much are you going to give today?</li>
@@ -182,105 +282,15 @@ function App() {
     </div>
     </li>
     </ul>
+
+
+
     </div>
 
-    <div id="tab-2" class="tab-pane give_monthly" style={{display: "none"}}>
-    <ul class="list-group list-group-horizontal">
-    <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>800</span></li>
-    <li class="list-group-item">Support meals for 10 people a day</li>
-    <li class="list-group-item">
-    <div class="custom-control custom-radio">
-    <input type="radio" id="monthlyRadio1" name="purpose_of_donation" class="custom-control-input" value="800"/>
-    <label class="custom-control-label" for="monthlyRadio1"></label>
-    </div>
-    </li>
-    </ul>
-    <ul class="list-group list-group-horizontal">
-    <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>1000</span></li>
-    <li class="list-group-item">Support meals for 20 person </li>
-    <li class="list-group-item">
-    <div class="custom-control custom-radio">
-    <input type="radio" id="monthlyRadio2" name="purpose_of_donation" class="custom-control-input" value="1000"/>
-    <label class="custom-control-label" for="monthlyRadio2"></label>
-    </div>
-    </li>
-    </ul>
-    <ul class="list-group list-group-horizontal">
-    <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>1500</span></li>
-    <li class="list-group-item">Support 2 sight restoring Surgeries</li>
-    <li class="list-group-item">
-    <div class="custom-control custom-radio">
-    <input type="radio" id="monthlyRadio3" name="purpose_of_donation" class="custom-control-input" value="1500"/>
-    <label class="custom-control-label" for="monthlyRadio3"></label>
-    </div>
-    </li>
-    </ul>
-
-    <ul class="list-group list-group-horizontal">
-    <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>2000</span></li>
-    <li class="list-group-item">Support livelihood for 2 people with disability</li>
-    <li class="list-group-item">
-    <div class="custom-control custom-radio">
-    <input type="radio" id="monthlyRadio4" name="purpose_of_donation" class="custom-control-input" value="2000"/>
-    <label class="custom-control-label" for="monthlyRadio4"></label>
-    </div>
-    </li>
-    </ul>
-    <ul class="list-group list-group-horizontal">
-    <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>2500</span></li>
-    <li class="list-group-item">Support  classroom training for 1 visually impaired</li>
-    <li class="list-group-item">
-    <div class="custom-control custom-radio">
-    <input type="radio" id="monthlyRadio5" name="purpose_of_donation" class="custom-control-input" value="2500"/>
-    <label class="custom-control-label" for="monthlyRadio5"></label>
-    </div>
-    </li>
-    </ul>
-    <ul class="list-group list-group-horizontal">
-    <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>3500</span></li>
-    <li class="list-group-item">Support 3 sight restoring surgeries</li>
-    <li class="list-group-item">
-    <div class="custom-control custom-radio">
-    <input type="radio" id="monthlyRadio6" name="purpose_of_donation" class="custom-control-input" value="3500"/>
-    <label class="custom-control-label" for="monthlyRadio6"></label>
-    </div>
-    </li>
-    </ul>
-    <ul class="list-group list-group-horizontal">
-    <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>5000</span></li>
-    <li class="list-group-item">Support classroom training for a 2 visually impaired children</li>
-    <li class="list-group-item">
-    <div class="custom-control custom-radio">
-    <input type="radio" id="monthlyRadio7" name="purpose_of_donation" class="custom-control-input" value="5000"/>
-    <label class="custom-control-label" for="monthlyRadio7"></label>
-    </div>
-    </li>
-    </ul>
-    <ul class="list-group list-group-horizontal">
-    <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>6500</span></li>
-    <li class="list-group-item">Support 5 sight restoring surgeries</li>
-    <li class="list-group-item">
-    <div class="custom-control custom-radio">
-    <input type="radio" id="monthlyRadio8" name="purpose_of_donation" class="custom-control-input" value="6500"/>
-    <label class="custom-control-label" for="monthlyRadio8"></label>
-    </div>
-    </li>
-    </ul>
-
-    <ul class="list-group list-group-horizontal">
-    <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i>
-    <span></span><input type="text" name="" id="custom_amount_m_value"/></li>
-    <li class="list-group-item">How much are you going to give today?</li>
-    <li class="list-group-item">
-    <div class="custom-control custom-radio">
-    <input type="radio" id="custom_m_amt" name="purpose_of_donation" class="custom-control-input" value="custom"/>
-    <label class="custom-control-label" for="custom_m_amt"></label>
-    </div>
-    </li>
-    </ul>										
-    </div>
     <div class="package-proceed">
-    <button id="next_page" value="Proceed" class="btn btn-warning btn-lg">Proceed</button>
+    <button 
+    onClick={this.proceedHandler}
+    id="next_page" value="Proceed" class="btn btn-warning btn-lg">Proceed</button>
     </div>
     </div>
     </div>
@@ -323,7 +333,7 @@ function App() {
     <div class="our-value-it">
     <h2>Our Values</h2>
     </div>
-    
+
     <div class="section-title-1-divider"></div>
     </div>
     <div class="our-value-items">
@@ -350,12 +360,12 @@ function App() {
     <div class="modal-dialog modal-xl">
     <div class="modal-content">
 
-    
+
     <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal">×</button>
     </div>
 
-    
+
     <div class="modal-body">
     <div class="modal-story-body">
     <div class="row">
@@ -401,12 +411,12 @@ function App() {
     <div class="modal-dialog modal-xl">
     <div class="modal-content">
 
-    
+
     <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal">×</button>
     </div>
 
-    
+
     <div class="modal-body">
     <div class="modal-story-body">
     <div class="row">
@@ -450,12 +460,12 @@ function App() {
     <div class="modal-dialog modal-xl">
     <div class="modal-content">
 
-    
+
     <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal">×</button>
     </div>
 
-    
+
     <div class="modal-body">
     <div class="modal-story-body">
     <div class="row">
@@ -631,7 +641,7 @@ function App() {
 
 </div>
 
-);
+);}
 }
 
 export default App;
