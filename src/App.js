@@ -11,17 +11,23 @@ import Home from "./Home.js"
 export default class App extends Component{
 	render(){
 		return(
-<Router>
-        <Switch>
-          <Route path="/donate">
-            <Donation/>
-          </Route>
-          <Route path="/">
-          <Home/>
-          </Route>
-        </Switch>
-   
-    </Router>
+			<div>
+	            <Router>
+			        <Switch>
+			        	<Route path="/donate">
+			            	<Donation value="3456"/>
+			            </Route>
+
+			            <Route path="/">
+			          		<Home/>
+			            </Route>	
+
+			          
+			          
+			        </Switch>
+			   
+			    </Router>
+			</div>    
 		)
 	}
 }

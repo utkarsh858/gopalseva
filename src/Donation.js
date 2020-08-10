@@ -7,9 +7,15 @@ import './bootstrap.min.css';
 
 
 
+function DynamicSpan(props){
+    return (
+        <span id="amt_info_lbl" class="text-color-2">
+            {props.value}
+        </span>
+    );
+}
 
-
-function Donation() {
+function Donation(props) {
     return (
 
 
@@ -17,7 +23,7 @@ function Donation() {
             <div class="donation_form">
                 <div class="container">
                     <div class="donation_form_heading">
-                        <h3>Total Donation amount: INR <span id="amt_info_lbl" class="text-color-2">6500.00</span></h3>
+                        <h3>Total Donation amount: INR <DynamicSpan value={props.value}/></h3>
                     </div>
 
                     <form class="needs-validation" role="form" id="cartForm" method="post" action="/">
@@ -39,37 +45,37 @@ function Donation() {
                                     <div class="col-md-5">
                                         <div class="form-group">
                                             <label>Full Name <sup>*</sup></label>
-                                            <input type="text" value="" id="FirstName_id2" name="FirstName" class="form-control" autocomplete="on"/>
+                                            <input type="text"  id="FirstName_id2" name="FirstName" class="form-control" autocomplete="on"/>
 									</div>
                                         </div>
                                         <div class="col-md-5">
                                             <div class="form-group">
                                                 <label>Email <sup>*</sup></label>
-                                                <input type="text" value="" id="EmailAddress_id3" name="EmailAddress" class="form-control emailcontrol" autocomplete="off"/>
+                                                <input type="text" id="EmailAddress_id3" name="EmailAddress" class="form-control emailcontrol" autocomplete="off"/>
 									</div>
                                             </div>
                                             <div class="col-md-8">
                                                 <div class="form-group">
                                                     <label>Address <sup>*</sup></label>
-                                                    <input type="text" value="" id="StreetAddress1_id4" name="StreetAddress1" class="form-control" autocomplete="off"/>
+                                                    <input type="text"  id="StreetAddress1_id4" name="StreetAddress1" class="form-control" autocomplete="off"/>
 									</div>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <div class="form-group">
                                                         <label>Pin/Postal Code <sup>*</sup></label>
-                                                        <input type="text" value="" id="PostalCode_id5" name="PostalCode" class="form-control pincode" autocomplete="off"/>
+                                                        <input type="text" id="PostalCode_id5" name="PostalCode" class="form-control pincode" autocomplete="off"/>
 									</div>
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="form-group">
                                                             <label>City <sup>*</sup></label>
-                                                            <input type="text" value="" id="City_id6" name="City" class="form-control ctyctrl" autocomplete="off"/>
+                                                            <input type="text"  id="City_id6" name="City" class="form-control ctyctrl" autocomplete="off"/>
 									</div>
                                                         </div>
                                                         <div class="col-md-4">
                                                             <div class="form-group">
                                                                 <label>State <sup>*</sup></label>
-                                                                <input type="text" value="" id="State_id7" name="State" class="form-control stctrl" autocomplete="off"/>
+                                                                <input type="text"  id="State_id7" name="State" class="form-control stctrl" autocomplete="off"/>
 									</div>
                                                             </div>
                                                             <div class="col-md-4">
