@@ -14,6 +14,12 @@ import './style.php';
 import imgUrl from './radha1.jpg';
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
+
+// this file contains all the code for the stories and carousel, that we need
+// here in this file we will refernce that code as per our requirements
+import StoryModal from './Story.js' ;
+
+
 // const imgUrl = "http://iskconfoodrelief.com/wp-content/uploads/2020/04/Distribution-Team-1.jpg";
 
 
@@ -72,6 +78,12 @@ scrollTo = (target) =>{
   }
 
   render(){
+
+    
+
+
+
+
   return (
 
    
@@ -344,34 +356,35 @@ scrollTo = (target) =>{
     </div>
 
     <div class="our-value">
-    <div class="container">
-    <div class="section-title-1">
-    <div class="our-value-it">
-    <h2>Our Values</h2>
+        <div class="container">
+        <div class="section-title-1">
+            <div class="our-value-it">
+                <h2>Our Values</h2>
+            </div>
+
+            <div class="section-title-1-divider"></div>
+        </div>
+        <div class="our-value-items">
+        <div class="row">
+        <div class="col-md-4 our-value-item">
+        <h3>Protecting Stomarch with hunger</h3>
+        <p>Blindness is an important cause and the effect of poverty. We work with poor and marginalised communities in developing countries. At Sightsavers, we believe that people should not go blind unnecessarily. We prevent, treat and cure avoidable blindness and promote eye health.</p>
+        </div>
+        <div class="col-md-4 our-value-item">
+        <h3>Equal Food</h3>
+        <p>People with empty stomach should be able to develop their potential to the full. We work with disabled people and others to promote equal rights and opportunities. We strengthen organisations and commnities to develop practical and enduring solutions.</p>
+        </div>
+        <div class="col-md-4 our-value-item">
+        <h3>Collaboration</h3>
+        <p>We achieve much more when we collaborate. We forge alliances and partnerships to ensure a positive and long term impact on people's lives. Our supporters are a key part of the solution. We work together to accomplish our goals.</p>
+        </div>
+        </div>
+        </div>
+        </div>
     </div>
 
-    <div class="section-title-1-divider"></div>
-    </div>
-    <div class="our-value-items">
-    <div class="row">
-    <div class="col-md-4 our-value-item">
-    <h3>Protecting Stomarch with hunger</h3>
-    <p>Blindness is an important cause and the effect of poverty. We work with poor and marginalised communities in developing countries. At Sightsavers, we believe that people should not go blind unnecessarily. We prevent, treat and cure avoidable blindness and promote eye health.</p>
-    </div>
-    <div class="col-md-4 our-value-item">
-    <h3>Equal Food</h3>
-    <p>People with empty stomach should be able to develop their potential to the full. We work with disabled people and others to promote equal rights and opportunities. We strengthen organisations and commnities to develop practical and enduring solutions.</p>
-    </div>
-    <div class="col-md-4 our-value-item">
-    <h3>Collaboration</h3>
-    <p>We achieve much more when we collaborate. We forge alliances and partnerships to ensure a positive and long term impact on people's lives. Our supporters are a key part of the solution. We work together to accomplish our goals.</p>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-
-
+    {
+    /*
     <div class="modal story_modal" id="debki-story">
     <div class="modal-dialog modal-xl">
     <div class="modal-content">
@@ -422,6 +435,12 @@ scrollTo = (target) =>{
     </div>
     </div>
     </div>
+    */
+    }   
+
+
+
+    <StoryModal id="debki-story" imgsrc="debki.jpg" content={<><h3>Debki's story</h3><p>28-year-old Debki hails from the Bahadurgarh District of Haryana. Debki has orthopedic disability and stays with her parents and three siblings in the Dumka district of Jharkhand.</p><p>Earlier, Debki's father was the sole earning member of the house. He was a daily wage employee and the earnings were not enough for the entire family to sustain themselves. However, after the intervention of Sightsavers in association with Chetna Vikas, Debki received a one-year training in Computer from Vocational Training Institute in Dumka.</p><p>Today, Debki runs a Photo Studio/Printing Centre in her district. She has been a member of Utthan Nishakt Swayam Sahayata Samuha, a Self-Help Group supported by Sightsavers. Besides that, Debki is also pursuing her post-graduation from IGNOU (Indira Gandhi National Open University). "I am really glad to be able to financially support my family. Hopefully, I will take teaching as a profession in the long-run."</p></>}/> 
 
     <div class="modal story_modal" id="shobha-story">
     <div class="modal-dialog modal-xl">
