@@ -9,11 +9,13 @@ import './responsive.min.css';
 
 import './style_givelify_orig.css';
 import './style.php';
+import next_page from './donation.js';
 
 import imgUrl from './radha1.jpg';
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 // const imgUrl = "http://iskconfoodrelief.com/wp-content/uploads/2020/04/Distribution-Team-1.jpg";
+
 
 class App extends Component {
 
@@ -69,9 +71,13 @@ scrollTo = (target) =>{
   render(){
   return (
 
+   
+      
+
     <div className="App">
 
 
+      
 
     <div class="header fixed-top">
     <nav class="navbar navbar-expand-lg navbar-light">
