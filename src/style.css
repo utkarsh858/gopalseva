@@ -46,7 +46,7 @@ body {
 .donate-btn .btn {
 	font-size: 16px;
 	font-weight: bold;
-	padding: 13px 44px;
+	padding: 14px 40px;
 	border-radius: 8px;
 }
 
@@ -212,10 +212,10 @@ body {
 }
 
 .about-sec {
-    padding: 50px 0;
+    padding: 0px 0;
 }
 .about-sec-info {
-	margin-bottom: 50px;
+	margin-bottom: 0px;
 }
 .about-sec-info h3 {
     font-weight: bold;
@@ -226,8 +226,15 @@ body {
 
 
 .our-value {
-	padding: 50px 0;
+	padding: 0px 0;
 	background: #e7ebf4;
+}
+.our-value-it h2{
+	font-weight: bolder;
+	font-size: 30px;
+	font-family: serif;
+	font-style: oblique;
+	/* background-color: #9f085a; */
 }
 .our-value-item h3 {
     font-size: 24px;
