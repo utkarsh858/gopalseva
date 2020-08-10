@@ -9,7 +9,7 @@ import './bootstrap.min.css';
 
 
 
-function donation() {
+function Donation() {
     return (
 
 
@@ -177,4 +177,4 @@ function donation() {
     );
     }
 
-export default donation;
+export default Donation;
