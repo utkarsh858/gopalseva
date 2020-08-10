@@ -2,15 +2,14 @@ import React from 'react';
 import './App.css';
 import './bootstrap.min.css';
 import './style.css';
-// import './slick.min.js';
-// import './bootstrap.min.js';
+
 import './jetpack.css';
 import './style.min_iskcon.css';
 import './responsive.min.css';
-// import './ind.css';
+
 import './style_givelify_orig.css';
 import './style.php';
-import './all.css';
+
 import imgUrl from './radha1.jpg';
 
 
@@ -31,7 +30,7 @@ function App() {
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
               <div class="donate-btn">
-                <button onClick={() => { this.scrollTo('our-achievements-inner') }} class="btn btn-primary">Donate</button>
+                <button class="btn btn-primary">Donate</button>
               </div>
             </div>
           </div>
