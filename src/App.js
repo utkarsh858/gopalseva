@@ -5,7 +5,7 @@ import {
   Route
 } from "react-router-dom";
 
-import Donation from "./Donation.js"
+import donation from "./donation.js"
 import Home from "./Home.js"
 
 export default class App extends Component{
