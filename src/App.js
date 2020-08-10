@@ -2,17 +2,16 @@ import React,{Component} from 'react';
 import './App.css';
 import './bootstrap.min.css';
 import './style.css';
-// import './slick.min.js';
-// import './bootstrap.min.js';
+
 import './jetpack.css';
 import './style.min_iskcon.css';
 import './responsive.min.css';
-// import './ind.css';
+
 import './style_givelify_orig.css';
 import './style.php';
-// import './all.css';
-import imgUrl from './radha1.jpg';
 
+import imgUrl from './radha1.jpg';
+import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 // const imgUrl = "http://iskconfoodrelief.com/wp-content/uploads/2020/04/Distribution-Team-1.jpg";
 
@@ -52,7 +51,13 @@ class App extends Component {
     }
 
   }
-
+scrollTo = (target) =>{
+      scroller.scrollTo(target, {
+      duration: 800,
+      delay: 0,
+      smooth: 'easeInOutQuart'
+    })
+}
   proceedHandler = ()=>{
    if(this.state.give_flag==0){
     window.location.href=this.state.give_once_links[this.state.array_num]
@@ -65,6 +70,7 @@ class App extends Component {
   return (
 
     <div className="App">
+
 
 
     <div class="header fixed-top">
@@ -302,6 +308,7 @@ class App extends Component {
     </div>
     </section>
 
+
       {/* <section class="container" id="about_details">
         <div class="about-sec">
       <div class="container"> */}
@@ -395,7 +402,7 @@ class App extends Component {
     </ul>
 
     <div class="donate-btn ml-auto">
-    <a href="../template_809/#" class="btn btn-primary">Donate</a>
+    <a href="../template_809/#" data-dismiss="modal" class="btn btn-primary" onClick={()=>{this.scrollTo('our-achievements-inner')}}>Donate</a>
     </div>
     </div>
     </div>
@@ -445,7 +452,7 @@ class App extends Component {
     </ul>
 
     <div class="donate-btn ml-auto">
-    <a href="../template_809/#" class="btn btn-primary">Donate</a>
+    <a href="../template_809/#" data-dismiss="modal" class="btn btn-primary" onClick={()=>{this.scrollTo('our-achievements-inner')}}>Donate</a>
     </div>
     </div>
     </div>
@@ -493,7 +500,7 @@ class App extends Component {
     </ul>
 
     <div class="donate-btn ml-auto">
-    <a href="../template_809/#" class="btn btn-primary">Donate</a>
+    <a href="../template_809/#" data-dismiss="modal" class="btn btn-primary" onClick={()=>{this.scrollTo('our-achievements-inner')}}>Donate</a>
     </div>
     </div>
     </div>
