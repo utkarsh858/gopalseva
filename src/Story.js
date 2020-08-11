@@ -21,13 +21,13 @@ import React,{Component} from 'react';
 
 	render(){
 
-		let idvalue = this.props.id;
+		
 
 		return (
 
 			
 
-			<div class="modal story_modal" id={idvalue}  >
+			<div class="modal story_modal" id={this.props.id}  >
 		    	<div class="modal-dialog modal-xl">
 		    		<div class="modal-content">
 
