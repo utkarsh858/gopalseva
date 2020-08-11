@@ -11,6 +11,8 @@ import './css/style_givelify_orig.css';
 import './style.php';
 // import next_page from './donation.js';
 
+import Carousel from 'react-bootstrap/Carousel';
+
 import imgUrl from './img/radha1.jpg';
 import debkiimg from  './img/sitarama.jpg';
 import utsav1 from "./img/utsav_vigrah_1.jpeg";
@@ -337,13 +339,11 @@ scrollTo = (target) =>{
     </section>
 
 
-      {/* <section class="container" id="about_details">
-        <div class="about-sec">
-      <div class="container"> */}
-      <section class="container-fluid donate-proceed cause_details" id="cause_details">
-      <div class="our-achievements" id="our-achievements-inner">
-      <div class="container">
-    {/* <div class="our-achievements-inner"> */}
+      
+    <section class="container-fluid donate-proceed cause_details" id="cause_details">
+    <div class="our-achievements" id="our-achievements-inner">
+    <div class="container">
+    
     <div class="about-sec-inner">
     <div class="about-sec-info">
     <h3>About GopalSeva</h3>
@@ -415,6 +415,55 @@ scrollTo = (target) =>{
         </div>
 
         <div class="people-support-items">
+
+        
+          
+
+        <Carousel>
+        <Carousel.Item>
+                <div class="col-md-4 people-support-item">
+                    <div class="people-support-item-inner">
+                        <img src="/debki.jpg" alt="Hari Hari"/>
+                        <h5>Stories / Social inclusion</h5>
+                        <h3>Debki's story</h3>
+                        <p>28-year-old Debki hails from the Dumka District of Jharkhand. Debki has orthopedic disability and stays with her parents and three siblings in the Dumka district of Jharkhand.</p>
+                        <div class="btn-row">
+                            <a href="../template_809/#" data-toggle="modal" data-target="#debki-story">Read story</a>
+                        </div>
+                    </div>
+                </div>
+        </Carousel.Item>
+        <Carousel.Item>
+                <div class="col-md-4 people-support-item">
+                    <div class="people-support-item-inner">
+                        <img src="mataji.jpg" alt="Krishna"/>
+                        <h5>Stories/ Eye health</h5>
+                        <h3>Shobha's story</h3>
+                        <p>65-year-old Shobha is a daily wage labourer and lives with her son in Alipurduar, West Bengal.</p>
+                        <div class="btn-row">
+                            <a href="../template_809/#" data-toggle="modal" data-target="#shobha-story">
+                                Read story
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        </Carousel.Item>
+        <Carousel.Item>
+                <div class="col-md-4 people-support-item">
+                    <div class="people-support-item-inner">
+                        <img src="./img/sitarama.jpg" alt="Gauranga"/>
+                        <h5>Stories/Inclusive Education</h5>
+                        <h3>Aliya's story</h3>
+                        <p>With the help of Low Vision Devices six year old Aliya was finally able to read and regularly attend school in Hazaribagh, Jharkhand.</p>
+                        <div class="btn-row">
+                            <a href="../template_809/#" data-toggle="modal" data-target="#alia-story">
+                                Read story
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        </Carousel.Item>
+        </Carousel>
 
             <div class="row">
 
