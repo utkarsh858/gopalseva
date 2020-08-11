@@ -1,17 +1,17 @@
 import React,{Component} from 'react';
-import './App.css';
-import './bootstrap.min.css';
-import './style.css';
+import './css/App.css';
+import './css/bootstrap.min.css';
+import './css/style.css';
 
-import './jetpack.css';
-import './style.min_iskcon.css';
-import './responsive.min.css';
+import './css/jetpack.css';
+import './css/style.min_iskcon.css';
+import './css/responsive.min.css';
 
-import './style_givelify_orig.css';
+import './css/style_givelify_orig.css';
 import './style.php';
 // import next_page from './donation.js';
 
-import imgUrl from './radha1.jpg';
+import imgUrl from './img/radha1.jpg';
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 
@@ -400,7 +400,7 @@ scrollTo = (target) =>{
     <div class="row">
     <div class="col-md-5">
     <div class="modal-story-body-img">
-    <img src="debki.jpg" alt="Hari Hari"></img>
+    <img src="./img/debki.jpg" alt="Hari Hari"></img>
     </div>
     </div>
     <div class="col-md-7">
@@ -440,7 +440,7 @@ scrollTo = (target) =>{
 
 
 
-    <StoryModal id="debki-story" imgsrc="debki.jpg" content={<><h3>Debki's story</h3><p>28-year-old Debki hails from the Bahadurgarh District of Haryana. Debki has orthopedic disability and stays with her parents and three siblings in the Dumka district of Jharkhand.</p><p>Earlier, Debki's father was the sole earning member of the house. He was a daily wage employee and the earnings were not enough for the entire family to sustain themselves. However, after the intervention of Sightsavers in association with Chetna Vikas, Debki received a one-year training in Computer from Vocational Training Institute in Dumka.</p><p>Today, Debki runs a Photo Studio/Printing Centre in her district. She has been a member of Utthan Nishakt Swayam Sahayata Samuha, a Self-Help Group supported by Sightsavers. Besides that, Debki is also pursuing her post-graduation from IGNOU (Indira Gandhi National Open University). "I am really glad to be able to financially support my family. Hopefully, I will take teaching as a profession in the long-run."</p></>}/> 
+    <StoryModal id="debki-story" imgsrc="./img/debki.jpg" content={<><h3>Debki's story</h3><p>28-year-old Debki hails from the Bahadurgarh District of Haryana. Debki has orthopedic disability and stays with her parents and three siblings in the Dumka district of Jharkhand.</p><p>Earlier, Debki's father was the sole earning member of the house. He was a daily wage employee and the earnings were not enough for the entire family to sustain themselves. However, after the intervention of Sightsavers in association with Chetna Vikas, Debki received a one-year training in Computer from Vocational Training Institute in Dumka.</p><p>Today, Debki runs a Photo Studio/Printing Centre in her district. She has been a member of Utthan Nishakt Swayam Sahayata Samuha, a Self-Help Group supported by Sightsavers. Besides that, Debki is also pursuing her post-graduation from IGNOU (Indira Gandhi National Open University). "I am really glad to be able to financially support my family. Hopefully, I will take teaching as a profession in the long-run."</p></>}/> 
 
     <div class="modal story_modal" id="shobha-story">
     <div class="modal-dialog modal-xl">
@@ -457,7 +457,7 @@ scrollTo = (target) =>{
     <div class="row">
     <div class="col-md-5">
     <div class="modal-story-body-img">
-    <img src="debki.jpg" alt=""></img>
+    <img src="./img/debki.jpg" alt=""></img>
     </div>
     </div>
     <div class="col-md-7">
@@ -506,7 +506,7 @@ scrollTo = (target) =>{
     <div class="row">
     <div class="col-md-5">
     <div class="modal-story-body-img">
-    <img src="Food_for_life.jpg" alt=""/>
+    <img src="./Food_for_life.jpg" alt=""/>
     </div>
     </div>
     <div class="col-md-7 d-flex">
@@ -574,7 +574,7 @@ scrollTo = (target) =>{
 </div>
 <div class="col-md-4 people-support-item">
 <div class="people-support-item-inner">
-<img src="debki.jpg" alt="Gauranga"/>
+<img src="./img/debki.jpg" alt="Gauranga"/>
 <h5>Stories/Inclusive Education</h5>
 <h3>Aliya's story</h3>
 <p>With the help of Low Vision Devices six year old Aliya was finally able to read and regularly attend school in Hazaribagh, Jharkhand.</p>
