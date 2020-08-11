@@ -1,16 +1,44 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Hare Krishna! 
 
-## Available Scripts
+##This project is intended to please all the vaishnava devotees of Lord, by creating a portal for faciliation of  smooth donation facilities for generous donors in service of Sri Sri Radha Madan Gopal Ji.
 
-In the project directory, you can run:
+## To Work & Contribute
 
-### `npm start`
+
+### Step 1
+`npm install`
+
+
+### Step 2
+`npm start`
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
+
+
+
+### We are always open for anykind of feedback, your servants
+
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+
+
+
+
+
+## Below Are additional commands in case You are stuck Somewhere.
 
 ### `npm test`
 
