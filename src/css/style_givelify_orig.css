@@ -97,7 +97,7 @@ ul.ex-menu{padding-left:0px;}
 .carousel-inner .text-holder{padding:10px 10px 10px 15px;}
 .scribeFadeIn .wookmark-placeholder{background:none;border:none;}
 .scribeFadeIn .cq-grid-carousel p.cq-gridcarousel-caption{background:none;}
-.scribeFadeIn .cq-grid-carousel p.cq-gridcarousel-caption:after{background:url("debki.jpg") repeat scroll left top #323232;bottom:0;content:"";left:0;opacity:0.85;position:absolute;right:0;top:0;z-index:-1;}
+.scribeFadeIn .cq-grid-carousel p.cq-gridcarousel-caption:after{background:url("../img/sitarama.jpg") repeat scroll left top #323232;bottom:0;content:"";left:0;opacity:0.85;position:absolute;right:0;top:0;z-index:-1;}
 .scribeFadeIn .cq-grid-carousel li img{margin-bottom:-1px;}
 .event_button{color:white;display:block;background:#3980c2;font-family:Arial;margin:5px;line-height:20px;padding:10px;text-align:center;font-size:25px;font-weight:bold;text-transform:uppercase;}
 .copyright{position:absolute;bottom:5px;}
@@ -389,7 +389,7 @@ figure a.close-caption.hidden{display:none;}
 .aq_span3{width:25%;}
 .blog-date{border-left:30px #fff solid;}
 .sidebar .col-md-3{margin-left:25px;}
-.loader{background-color:#111111;background-image:url("debki.jpg");background-position:center center;background-repeat:no-repeat;background-size:128px 128px;bottom:0;left:0;position:fixed;right:0;top:0;z-index:9999;}
+.loader{background-color:#111111;background-image:url("../img/sitarama.jpg");background-position:center center;background-repeat:no-repeat;background-size:128px 128px;bottom:0;left:0;position:fixed;right:0;top:0;z-index:9999;}
 .sc-parallax .sc-header-sub{background:none;height:auto;padding-top:60px;-webkit-padding-before:100px;}
 .sc-parallax .aq-block-pg_stats_block{background:none;}
 .aq-template-wrapper .aq-block-pg_team_block.aq_span4{width:33.33%;}
@@ -476,8 +476,8 @@ footer.footer-content{position:relative!important;}
 .sc-wrapper h2{top:20%;width:50%;position:absolute;font-weight:300;font-size:3.6em;text-align:right;padding:0 180px 0 50px;}
 .ipad .sc-wrapper h2 {padding:0 280px 0 0px;}
 .sc-wrapper h4{top:45%;width:50%;position:absolute;font-weight:300;font-size:2.4em;text-align:right;padding:0 180px 0 50px;color:#c0c0c0;}
-.sc-device{background:url("debki.jpg") no-repeat;width:288px;height:611px;margin:0 auto;position:relative;-webkit-transition:all 0.3s ease;-moz-transition:all 0.3s ease;transition:all 0.3s ease;-webkit-transform-style:preserve-3d;-moz-transform-style:preserve-3d;transform-style:preserve-3d;}
-.sc-ipad.sc-device {background:url("debki.jpg") no-repeat;width:488px;}
+.sc-device{background:url("../img/sitarama.jpg") no-repeat;width:288px;height:611px;margin:0 auto;position:relative;-webkit-transition:all 0.3s ease;-moz-transition:all 0.3s ease;transition:all 0.3s ease;-webkit-transform-style:preserve-3d;-moz-transform-style:preserve-3d;transform-style:preserve-3d;}
+.sc-ipad.sc-device {background:url("../img/sitarama.jpg") no-repeat;width:488px;}
 .sc-ipad.sc-device a {margin:52px 0 0 48px;height:502px;width:377px;}
 .sc-device a{height:440px;width:249px;display:inline-block;position:relative;overflow:hidden;margin:85px 0 0 20px;}
 .sc-device a img{display:block;position:absolute;}
