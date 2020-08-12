@@ -51,7 +51,7 @@ class Donation extends Component {
         <div class="col-md-8">
         <div class="form-group">
         <label>Address <sup>*</sup></label>
-        <input type="text" value="" id="StreetAddress1_id4" name="StreetAddress1" class="form-control" autocomplete="off"/>
+        <input type="text" value="" id="StreetAddress1_id4" name="StreetAddress1" class="form-control" autocomplete="on"/>
         </div>
         </div>
         <div class="col-md-4">
