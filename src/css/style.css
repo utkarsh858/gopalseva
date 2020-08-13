@@ -84,7 +84,7 @@ body {
 .our-achievements-inner h2 {
     font-size: 44px;
     font-weight: bold;
-    margin: 0 0 30px;
+    margin: 10px 0 30px 20px;
 }
 .our-achievement-item {
     background: #403a60;
@@ -92,7 +92,7 @@ body {
     padding: 30px;
     border-radius: 10px;
     text-align: center;
-    margin: 30px 0;
+    margin: 30px 0px 0px 20px;
 }
 .our-achievement-item h4 {
     color: #ffbb22;
@@ -129,8 +129,10 @@ body {
     color: #a7a7a7;
     font-size: 22px;
     font-weight: bold;
+    height: 100%;
 }
 .package-wrap .nav-pills .nav-link.active, .package-wrap .nav-pills .show>.nav-link {
+    height: 100%;
     color: #000;
     background-color: #ffbb22;
 }
@@ -215,6 +217,7 @@ body {
     padding: 0px 0;
 }
 .about-sec-info {
+	margin-left: 20px;
 	margin-bottom: 0px;
 }
 .about-sec-info h3 {
@@ -226,8 +229,12 @@ body {
 
 
 .our-value {
-	padding: 0px 0;
+	/*padding: 10px 20px 10px 20px;*/
 	background: #e7ebf4;
+}
+.our-value container{
+
+	/*padding-bottom: 40px;*/
 }
 .our-value-it h2{
 	font-weight: bolder;
@@ -241,6 +248,13 @@ body {
     margin: 0 0 20px;
     font-weight: bold;
 }
+.our-value-items{
+	margin-left: 20px;
+	/*margin-bottom: 20px;	*/
+}
+/*.our-value-item{
+	padding-left:-40px !important;
+}*/
 .people-support-item-inner h5 {
     position: relative;
     font-size: 18px;
@@ -332,6 +346,8 @@ a {
 .thank-you-inner img {
     max-width: 280px;
 }
+
+
 
 @media screen and (min-width: 1500px) {
 	.container {
