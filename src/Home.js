@@ -14,7 +14,8 @@ import './css/style_givelify_orig.css';
 import './style.php';
 // import next_page from './donation.js';
 
-import Carousel from 'react-bootstrap/Carousel';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
 import imgUrl from './img/radha1.jpg';
 import debkiimg from  './img/sitarama.jpg';
@@ -89,12 +90,32 @@ scrollTo = (target) =>{
   }
 
   render(){
+
+  	const responsive = {
+	  superLargeDesktop: {
+	    // the naming can be any, depends on you.
+	    breakpoint: { max: 4000, min: 3000 },
+	    items: 5
+	  },
+	  desktop: {
+	    breakpoint: { max: 3000, min: 1024 },
+	    items: 3
+	  },
+	  tablet: {
+	    breakpoint: { max: 1024, min: 464 },
+	    items: 2
+	  },
+	  mobile: {
+	    breakpoint: { max: 464, min: 0 },
+	    items: 1
+	  }
+	};
   return (
 
-    <div className="Home">
+    <div className="Home" >
     <div class="header fixed-top">
         <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container">
+            <div class="container-fluid">
                 <a class="navbar-brand" href="/"><img src="https://drive.google.com/file/d/1zrpkz0mi9xlHMKEGb6FU4HXpmQPfgxrg/view?usp=sharing" alt=""/></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -117,7 +138,7 @@ scrollTo = (target) =>{
         </div>
     </div>
 
-    <section class="container-fluid donate-proceed cause_details" id="cause_details">
+    <section class="container-fluid donate-proceed cause_details" id="cause_details" >
     <div class="our-achievements" id="our-achievements-inner">
     <div class="container">
     <div class="our-achievements-inner">
@@ -354,7 +375,7 @@ scrollTo = (target) =>{
     </div>
     </div>
 
-    <div class="our-value">
+    <div class="our-value container-fluid">
         <div class="container">
         <div class="section-title-1">
             <div class="our-value-it">
@@ -403,7 +424,7 @@ scrollTo = (target) =>{
     <div class="container">
 
         <div class="our-achievements-inner">
-            <h2>People we have supported</h2>
+            <h2 class="center-text">People we have supported</h2>
         </div>
 
         <div class="people-support-items">
@@ -411,27 +432,38 @@ scrollTo = (target) =>{
         
           
 
-        <Carousel>
-        <Carousel.Item>
-                <div class="col-md-4 people-support-item">
+        
+        {/* To understant the code of this carosel please vistit the below link : https://www.npmjs.com/package/react-multi-carousel*/}
+        <Carousel
+		  showDots={true}
+		  responsive={responsive}
+		  ssr={true} // means to render carousel on server-side.
+		  infinite={true}
+		  autoPlay={this.props.deviceType !== "mobile" ? true : false}
+		  autoPlaySpeed={2500}
+		>
+		    <div>
+		  		<div class="people-support-item">
                     <div class="people-support-item-inner">
-                        <img src="/debki.jpg" alt="Hari Hari"/>
+                        <img src="/debki.jpg" alt="Hari Hari IMG 1"/>
                         <h5>Stories / Social inclusion</h5>
-                        <h3>Debki's story</h3>
-                        <p>28-year-old Debki hails from the Dumka District of Jharkhand. Debki has orthopedic disability and stays with her parents and three siblings in the Dumka district of Jharkhand.</p>
+                        <h3>First Story</h3>
+                        <p>Hare krishna Please accept my humble obeisances</p>
                         <div class="btn-row">
                             <a href="../template_809/#" data-toggle="modal" data-target="#debki-story">Read story</a>
                         </div>
                     </div>
                 </div>
-        </Carousel.Item>
-        <Carousel.Item>
-                <div class="col-md-4 people-support-item">
+		    </div>
+
+
+		    <div>
+		    	<div class=" people-support-item">
                     <div class="people-support-item-inner">
-                        <img src="mataji.jpg" alt="Krishna"/>
+                        <img src="mataji.jpg" alt="Krishna IMG 2"/>
                         <h5>Stories/ Eye health</h5>
-                        <h3>Shobha's story</h3>
-                        <p>65-year-old Shobha is a daily wage labourer and lives with her son in Alipurduar, West Bengal.</p>
+                        <h3>Second Story</h3>
+                        <p>Hare krishna Please accept my humble obeisances</p>
                         <div class="btn-row">
                             <a href="../template_809/#" data-toggle="modal" data-target="#shobha-story">
                                 Read story
@@ -439,14 +471,14 @@ scrollTo = (target) =>{
                         </div>
                     </div>
                 </div>
-        </Carousel.Item>
-        <Carousel.Item>
-                <div class="col-md-4 people-support-item">
+		    </div>
+		    <div>
+		    	<div class=" people-support-item">
                     <div class="people-support-item-inner">
-                        <img src="./img/sitarama.jpg" alt="Gauranga"/>
+                        <img src="./img/sitarama.jpg" alt="Gauranga IMG 3"/>
                         <h5>Stories/Inclusive Education</h5>
-                        <h3>Aliya's story</h3>
-                        <p>With the help of Low Vision Devices six year old Aliya was finally able to read and regularly attend school in Hazaribagh, Jharkhand.</p>
+                        <h3>Third Story</h3>
+                        <p>Hare krishna Please accept my humble obeisances</p>
                         <div class="btn-row">
                             <a href="../template_809/#" data-toggle="modal" data-target="#alia-story">
                                 Read story
@@ -454,43 +486,14 @@ scrollTo = (target) =>{
                         </div>
                     </div>
                 </div>
-        </Carousel.Item>
-        </Carousel>
-
-            <div class="row">
-
-                <div class="col-md-4 people-support-item">
+		    </div>
+		    <div>
+		    	<div class="people-support-item">
                     <div class="people-support-item-inner">
-                        <img src="/debki.jpg" alt="Hari Hari"/>
-                        <h5>Stories / Social inclusion</h5>
-                        <h3>Debki's story</h3>
-                        <p>28-year-old Debki hails from the Dumka District of Jharkhand. Debki has orthopedic disability and stays with her parents and three siblings in the Dumka district of Jharkhand.</p>
-                        <div class="btn-row">
-                            <a href="../template_809/#" data-toggle="modal" data-target="#debki-story">Read story</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 people-support-item">
-                    <div class="people-support-item-inner">
-                        <img src="mataji.jpg" alt="Krishna"/>
-                        <h5>Stories/ Eye health</h5>
-                        <h3>Shobha's story</h3>
-                        <p>65-year-old Shobha is a daily wage labourer and lives with her son in Alipurduar, West Bengal.</p>
-                        <div class="btn-row">
-                            <a href="../template_809/#" data-toggle="modal" data-target="#shobha-story">
-                                Read story
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 people-support-item">
-                    <div class="people-support-item-inner">
-                        <img src="./img/sitarama.jpg" alt="Gauranga"/>
+                        <img src="./img/sitarama.jpg" alt="NityaNanda IMG 4"/>
                         <h5>Stories/Inclusive Education</h5>
-                        <h3>Aliya's story</h3>
-                        <p>With the help of Low Vision Devices six year old Aliya was finally able to read and regularly attend school in Hazaribagh, Jharkhand.</p>
+                        <h3>Fourth Story</h3>
+                        <p>Hare krishna Please accept my humble obeisances</p>
                         <div class="btn-row">
                             <a href="../template_809/#" data-toggle="modal" data-target="#alia-story">
                                 Read story
@@ -498,11 +501,11 @@ scrollTo = (target) =>{
                         </div>
                     </div>
                 </div>
+		    </div>
+		  
+		</Carousel>;
 
-            </div>
-            {
-                /* Row finihses here  */
-            }
+            
         </div>
 
 
@@ -564,74 +567,82 @@ scrollTo = (target) =>{
 
 
 
-
 {
     /* Footer below */
 }
 
-<footer id="fill" style={{height: 576}}>
-<div class="container"><div id="footer" class="footer-content" style={{position: "fixed", left: 0, top: 120}}>
+          <section style={{ height: 576 }}>
 
-{/* <section id="container"> */}
-<section class="l-section wpb_row height_large color_secondary with_img with_overlay with_shape parallax_fixed" id="contact"><div class="l-section-img loaded" style={{ backgroundImage: "url(" + imgUrl + ")"}} data-img-width="1280" data-img-height="576"></div><div class="l-section-overlay" style={{ background: "rgba(0,0,0,0.65)" }}></div><div class="l-section-shape type_custom pos_bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none" width="100%" height="100%" fill="currentColor">
+              <div><div>
 
-</svg></div><div class="l-section-h i-cf"><div class="g-cols vc_row type_default valign_top"><div class="vc_col-sm-12 wpb_column vc_column_container animate_afb animate_start"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="wpb_text_column"><div class="wpb_wrapper"><p>For non-Indian passport holders: Due to financial rules of the government, non-Indian passport holders can donate only through the FCRA accounts. Please use the contact form below if you need any assistace in this connection.
+                  
+                  <section class="l-section wpb_row height_large color_secondary with_img with_overlay with_shape parallax_fixed" id="contact"><div class="l-section-img loaded" style={{ backgroundImage: "url(" + imgUrl + ")" }} data-img-width="1280" data-img-height="600"></div><div class="l-section-overlay" style={{ background: "rgba(0,0,0,0.65)"}}></div>
+                      <div class="l-section-shape type_custom pos_bottom">
+                          
+                      </div>
+                      <div class="l-section-h i-cf"><div class="g-cols vc_row type_default valign_top"><div class="vc_col-sm-12 wpb_column vc_column_container animate_afb animate_start"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="wpb_text_column"><div class="wpb_wrapper"><p>For non-Indian passport holders: Due to financial rules of the government, non-Indian passport holders can donate only through the FCRA accounts. Please use the contact form below if you need any assistace in this connection.
 
 </p><h2 style={{ textAlign: "center" }} class="highlight highlight_primary">CONTACT <span class="highlight highlight_primary">US</span></h2>
-</div></div><div class="w-separator size_medium"></div><div class="g-cols wpb_row  type_default valign_top vc_inner"><div class="vc_col-sm-6 wpb_column vc_column_container animate_afb animate_start"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="wpb_text_column"><div class="wpb_wrapper"><h3>Registered Head Office: ISKCON, Hare Krishna Land, Juhu, Mumbai.</h3>
-</div></div><div class="w-separator size_large"></div><div class="w-iconbox iconpos_left style_circle color_primary align_left no_text"><div class="w-iconbox-icon" style={{ fontSize: "120%" }}><i class="fa fa-phone"></i></div><div class="w-iconbox-meta"><h3 class="w-iconbox-title">+91 9654 789 832</h3></div></div><div class="w-separator size_small"></div><div class="w-iconbox iconpos_left style_circle color_primary align_left no_text"><div class="w-iconbox-icon" style={{ fontSize: "120%" }}><i class="far fa-envelope"></i></div><div class="w-iconbox-meta"><h3 class="w-iconbox-title">yudhistir@iskcon.org</h3></div></div></div></div></div><div class="vc_col-sm-6 wpb_column vc_column_container animate_afb animate_start"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="w-form  layout_ver for_cform us_form_1">
-<form class="w-form-h" autocomplete="off" action="http://iskconfoodrelief.com/" method="post">
+                      </div></div><div class="w-separator size_medium"></div><div class="g-cols wpb_row  type_default valign_top vc_inner"><div class="vc_col-sm-6 wpb_column vc_column_container animate_afb animate_start"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="wpb_text_column"><div class="wpb_wrapper"><h3>Registered Head Office: ISKCON, Hare Krishna Land, Juhu, Mumbai.</h3>
+                      </div></div><div class="w-separator size_large"></div><div class="w-iconbox iconpos_left style_circle color_primary align_left no_text"><div class="w-iconbox-icon" style={{ fontSize: "120%" }}><i class="fa fa-phone"></i></div><div class="w-iconbox-meta"><h3 class="w-iconbox-title">+91 9654 789 832</h3></div></div><div class="w-separator size_small"></div><div class="w-iconbox iconpos_left style_circle color_primary align_left no_text"><div class="w-iconbox-icon" style={{ fontSize: "120%" }}><i class="far fa-envelope"></i></div><div class="w-iconbox-meta"><h3 class="w-iconbox-title">yudhistir@iskcon.org</h3></div></div></div></div></div><div class="vc_col-sm-6 wpb_column vc_column_container animate_afb animate_start"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="w-form  layout_ver for_cform us_form_1">
+                          <div>
+                          <form action="http://iskconfoodrelief.com/" method="post" >
+                                          <div class="form-row">
+                                              <div class="col-md-8">
+                                                  <label for="validationCustom01">Name</label>
+                                                  <input style={{ backgroundColor: "whitesmoke" }} type="text" class="form-control" name="name" placeholder="Name"/>
+                                                     
+                                                  <div class="valid-feedback">
+                                                      Looks good!
+      </div>
+                                              </div>
 
-<div class="w-form-row for_text with_icon cols_2">
-<div class="w-form-row-field">
-<i class="far fa-user"></i>		<input aria-label="Name" type="text" name="us_form_1_text_1" value="" placeholder="Name" />
-</div>
-<div class="w-form-row-state">Fill out this field</div>
-</div>
-<div class="w-form-row for_text required with_icon cols_2">
-<div class="w-form-row-field">
-<i class="fas fa-at"></i>		<input aria-label="Email" type="text" name="us_form_1_text_2" value="" placeholder="Email *" data-required="true" aria-required="true" />
-</div>
-<div class="w-form-row-state">Fill out this field</div>
-</div>
-<div class="w-form-row for_textarea required with_icon">
-<div class="w-form-row-field">
-<i class="fa fa-pencil"></i>		<textarea aria-label="Message" name="us_form_1_textarea_1" placeholder="Message *" data-required="true" aria-required="true"></textarea>
-</div>
-<div class="w-form-row-state">Fill out this field</div>
-</div>
-<div class="w-form-row for_captcha required">
-<div class="w-form-row-label">
-<span> <span>24 + 11 = ?</span></span>
-</div>
-<div class="w-form-row-field">
-<input type="hidden" name="us_form_1_captcha_1_hash" value="a90322307c32cc0eae0bc5aa02df8d9c" />
-<input aria-label="us_form_1_captcha_1" type="text" name="us_form_1_captcha_1" placeholder="" data-required="true" aria-required="true" />
-</div>
-<div>Enter the equation result to proceed</div>
-</div>
-<input type="hidden" name="action" value="us_ajax_cform" /><input type="hidden" name="post_id" value="5" /><input type="hidden" name="form_index" value="1" /><div class="w-form-row for_submit align_left">
-<div class="donate-btn">
-<button class="btn btn-primary"  aria-label="Send Message" type="submit">
-{/* <span class="g-preloader type_1"></span> */}
-<span >Send Message</span>
-</button>
-</div>
-</div>	</form>
-<div class="w-form-message"></div>
+                                              <div class="col-md-8">
+                                                  <label for="validationCustomUsername">Email</label>
+                                                  <div class="input-group">
+                                                      <div class="input-group-prepend">
+                                                          <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                                      </div>
 
-</div></div></div></div></div><div class="w-separator size_huge"></div></div></div></div></div></div></section>
+                                                      <input style={{ backgroundColor: "whitesmoke" }} type="email" class="form-control" name="email" placeholder="Email" aria-describedby="inputGroupPrepend" />
+                                                       
 
+                                                     
+                                                  </div>
+                                              </div>
+
+                                              <div class="col-md-8">
+                                                  <label for="validationCustomMessage">Message</label>
+
+                                                      <textarea style={{ backgroundColor: "whitesmoke" }} type="text" class="form-control" name="us_form_1_textarea_1" placeholder="Message"/>
+                                                        
+                                              </div>
+                                          </div>
+
+                            
+                             
+                              
+                            
+                                  <div class="donate-btn">
+                                      <button class="btn btn-primary" aria-label="Send Message" type="submit">
+
+                                          <span >Send Message</span>
+                                      </button>
+                                  </div>
+                              	</form>
+                                  </div>
+                          
+
+                      </div></div></div></div></div></div></div></div></div></div>
+                  </section>
 
 
-{/* </section> */}
-<div class="foot-sidebar sc_foot3">
 
-</div>
-</div>
-</div>
-</footer>
 
+
+              </div>
+              </div>
+          </section>
 
 
 
