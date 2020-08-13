@@ -11,6 +11,9 @@ body {
 	padding-top: 100px;
 }
 
+.center-text{
+	text-align: center;
+}
 .btn {
 	border: none;
 	padding: 7px 25px;
