@@ -1,4 +1,7 @@
 import React,{Component} from 'react';
+ import  {Link as Direct} from 'react-router-dom';
+
+import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import './css/App.css';
 import './css/bootstrap.min.css';
 import './css/style.css';
@@ -19,7 +22,6 @@ import utsav1 from "./img/utsav_vigrah_1.jpeg";
 import utsav2 from "./img/utsav_vigrah_2.jpeg";
 
 
-import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 
 // this file contains all the code for the stories and carousel, that we need
@@ -38,17 +40,19 @@ class Home extends Component {
       give_flag : 0,
       array_num : 0,
       give_once_links : [
-      "1.com",
-      "2.com",
-      "3.com",
-      "4.com",
-      "5.com",
-      "6.com",
-      "7.com",
-      "8.com",
-      "9.com",
-      "10.com",
-      "11.com",
+"https://www.google.com",
+"https://www.google.com",
+"https://www.google.com",
+"https://www.google.com",
+"https://www.google.com",
+"https://www.google.com",
+"https://www.google.com",
+"https://www.google.com",
+"https://www.google.com",
+"https://www.google.com",
+"https://www.google.com",
+"https://www.google.com",
+"https://www.google.com",
       ],
       give_monthly_links : [
       "13.com",
@@ -81,26 +85,13 @@ scrollTo = (target) =>{
     // window.location.href=this.state.give_monthly_links[this.state.array_num]
    window.localStorage.setItem('link',this.state.give_monthly_links[this.state.array_num])
    } 
-   window.location.href="/donate"
+   // window.location.href="/donate"
   }
 
   render(){
-
-    
-
-
-
-
   return (
 
-   
-      
-
     <div className="Home">
-
-
-      
-
     <div class="header fixed-top">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
@@ -324,9 +315,10 @@ scrollTo = (target) =>{
     </div>
 
     <div class="package-proceed">
-    <button 
+    <Direct to="/donate"><button 
     onClick={this.proceedHandler}
     id="next_page" value="Proceed" class="btn btn-warning btn-lg">Proceed</button>
+    </Direct>
     </div>
     </div>
     </div>

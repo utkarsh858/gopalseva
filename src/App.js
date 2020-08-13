@@ -15,15 +15,12 @@ export default class App extends Component{
 	            <Router>
 			        <Switch>
 			        	<Route path="/donate">
-			            	<Donation value="3456"/>
+			            	<Donation />
 			            </Route>
 
 			            <Route path="/">
 			          		<Home/>
-			            </Route>	
-
-			          
-			          
+			            </Route>
 			        </Switch>
 			   
 			    </Router>
