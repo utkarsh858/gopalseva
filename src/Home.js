@@ -110,6 +110,8 @@ scrollTo = (target) =>{
 	    items: 1
 	  }
 	};
+
+	
   return (
 
     <div className="Home" >
@@ -427,7 +429,7 @@ scrollTo = (target) =>{
             <h2 class="center-text">People we have supported</h2>
         </div>
 
-        <div class="people-support-items">
+        <div class="people-support-items " style={{ paddingBottom: '30px',paddingRight: '60px',paddingLeft: '60px', position: 'relative' }}>
 
         
           
@@ -435,12 +437,15 @@ scrollTo = (target) =>{
         
         {/* To understant the code of this carosel please vistit the below link : https://www.npmjs.com/package/react-multi-carousel*/}
         <Carousel
-		  showDots={true}
+          arrows
+		  showDots={true} renderDotsOutside={true}
 		  responsive={responsive}
 		  ssr={true} // means to render carousel on server-side.
 		  infinite={true}
 		  autoPlay={this.props.deviceType !== "mobile" ? true : false}
 		  autoPlaySpeed={2500}
+		  
+		  
 		>
 		    <div>
 		  		<div class="people-support-item">
@@ -503,7 +508,7 @@ scrollTo = (target) =>{
                 </div>
 		    </div>
 		  
-		</Carousel>;
+		</Carousel>
 
             
         </div>

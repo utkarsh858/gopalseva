@@ -10,6 +10,10 @@ body {
 	color: #000000;
 	padding-top: 100px;
 }
+/*.react-multiple-carousel__arrow--left{left:-100px}
+
+.react-multiple-carousel__arrow--right{right:-100px}*/
+
 
 .center-text{
 	text-align: center;
