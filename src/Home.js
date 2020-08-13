@@ -567,23 +567,19 @@ scrollTo = (target) =>{
 {
     /* Footer below */
 }
-
-          <section style={{ height: 576 }}>
-
-              <div><div>
+          <footer style={{height: 754}}>
+              <div ><div style={{position: "fixed",left: 0, top: 100}}>
 
                   
-                  <section class="l-section wpb_row height_large color_secondary with_img with_overlay with_shape parallax_fixed" id="contact"><div class="l-section-img loaded" style={{ backgroundImage: "url(" + imgUrl + ")" }} data-img-width="1280" data-img-height="600"></div><div class="l-section-overlay" style={{ background: "rgba(0,0,0,0.65)"}}></div>
-                      <div class="l-section-shape type_custom pos_bottom">
-                          
-                      </div>
-                      <div class="l-section-h i-cf"><div class="g-cols vc_row type_default valign_top"><div class="vc_col-sm-12 wpb_column vc_column_container animate_afb animate_start"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="wpb_text_column"><div class="wpb_wrapper"><p>For non-Indian passport holders: Due to financial rules of the government, non-Indian passport holders can donate only through the FCRA accounts. Please use the contact form below if you need any assistace in this connection.
+                  <section class="l-section wpb_row height_large color_secondary with_img with_overlay with_shape parallax_fixed" id="contact"><div class="l-section-img loaded" style={{ backgroundImage: "url(" + imgUrl + ")" }} data-img-width="1280" data-img-height="754"></div><div class="l-section-overlay" style={{ background: "rgba(0,0,0,0.65)"}}></div>
+                      
+                      <div ><div ><div class="animate_afb animate_start"><div><div><div ><div><p>For non-Indian passport holders: Due to financial rules of the government, non-Indian passport holders can donate only through the FCRA accounts. Please use the contact form below if you need any assistace in this connection.
 
-</p><h2 style={{ textAlign: "center" }} class="highlight highlight_primary">CONTACT <span class="highlight highlight_primary">US</span></h2>
+</p><h2 style={{ textAlign: "center" }} class="highlight highlight_primary">CONTACT US </h2>
                       </div></div><div class="w-separator size_medium"></div><div class="g-cols wpb_row  type_default valign_top vc_inner"><div class="vc_col-sm-6 wpb_column vc_column_container animate_afb animate_start"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="wpb_text_column"><div class="wpb_wrapper"><h3>Registered Head Office: ISKCON, Hare Krishna Land, Juhu, Mumbai.</h3>
                       </div></div><div class="w-separator size_large"></div><div class="w-iconbox iconpos_left style_circle color_primary align_left no_text"><div class="w-iconbox-icon" style={{ fontSize: "120%" }}><i class="fa fa-phone"></i></div><div class="w-iconbox-meta"><h3 class="w-iconbox-title">+91 9654 789 832</h3></div></div><div class="w-separator size_small"></div><div class="w-iconbox iconpos_left style_circle color_primary align_left no_text"><div class="w-iconbox-icon" style={{ fontSize: "120%" }}><i class="far fa-envelope"></i></div><div class="w-iconbox-meta"><h3 class="w-iconbox-title">yudhistir@iskcon.org</h3></div></div></div></div></div><div class="vc_col-sm-6 wpb_column vc_column_container animate_afb animate_start"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="w-form  layout_ver for_cform us_form_1">
                           <div>
-                          <form action="http://iskconfoodrelief.com/" method="post" >
+                          <form style={{zIndex: 666}} action="http://iskconfoodrelief.com/" method="post"  >
                                           <div class="form-row">
                                               <div class="col-md-8">
                                                   <label for="validationCustom01">Name</label>
@@ -639,7 +635,7 @@ scrollTo = (target) =>{
 
               </div>
               </div>
-          </section>
+          </footer>
 
 
 

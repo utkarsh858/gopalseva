@@ -11,6 +11,11 @@ body {
 	padding-top: 100px;
 }
 
+.inpt {
+	border-width: 1 orange;
+	background-color: whitesmoke;
+}
+
 .btn {
 	border: none;
 	padding: 7px 25px;
