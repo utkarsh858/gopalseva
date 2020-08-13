@@ -14,7 +14,8 @@ import './css/style_givelify_orig.css';
 import './style.php';
 // import next_page from './donation.js';
 
-import Carousel from 'react-bootstrap/Carousel';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
 import imgUrl from './img/radha1.jpg';
 import debkiimg from  './img/sitarama.jpg';
@@ -89,6 +90,28 @@ scrollTo = (target) =>{
   }
 
   render(){
+
+  	const responsive = {
+	  superLargeDesktop: {
+	    // the naming can be any, depends on you.
+	    breakpoint: { max: 4000, min: 3000 },
+	    items: 5
+	  },
+	  desktop: {
+	    breakpoint: { max: 3000, min: 1024 },
+	    items: 3
+	  },
+	  tablet: {
+	    breakpoint: { max: 1024, min: 464 },
+	    items: 2
+	  },
+	  mobile: {
+	    breakpoint: { max: 464, min: 0 },
+	    items: 1
+	  }
+	};
+
+	
   return (
 
     <div className="Home" >
@@ -403,35 +426,49 @@ scrollTo = (target) =>{
     <div class="container">
 
         <div class="our-achievements-inner">
-            <h2>People we have supported</h2>
+            <h2 class="center-text">People we have supported</h2>
         </div>
 
-        <div class="people-support-items">
+        <div class="people-support-items " style={{ paddingBottom: '30px',paddingRight: '60px',paddingLeft: '60px', position: 'relative' }}>
 
         
           
 
-        <Carousel>
-        <Carousel.Item>
-                <div class="col-md-4 people-support-item">
+        
+        {/* To understant the code of this carosel please vistit the below link : https://www.npmjs.com/package/react-multi-carousel*/}
+        <Carousel
+          arrows
+		  showDots={true} renderDotsOutside={true}
+		  responsive={responsive}
+		  ssr={true} // means to render carousel on server-side.
+		  infinite={true}
+		  autoPlay={this.props.deviceType !== "mobile" ? true : false}
+		  autoPlaySpeed={2500}
+		  
+		  
+		>
+		    <div>
+		  		<div class="people-support-item">
                     <div class="people-support-item-inner">
-                        <img src="/debki.jpg" alt="Hari Hari"/>
+                        <img src="/debki.jpg" alt="Hari Hari IMG 1"/>
                         <h5>Stories / Social inclusion</h5>
-                        <h3>Debki's story</h3>
-                        <p>28-year-old Debki hails from the Dumka District of Jharkhand. Debki has orthopedic disability and stays with her parents and three siblings in the Dumka district of Jharkhand.</p>
+                        <h3>First Story</h3>
+                        <p>Hare krishna Please accept my humble obeisances</p>
                         <div class="btn-row">
                             <a href="../template_809/#" data-toggle="modal" data-target="#debki-story">Read story</a>
                         </div>
                     </div>
                 </div>
-        </Carousel.Item>
-        <Carousel.Item>
-                <div class="col-md-4 people-support-item">
+		    </div>
+
+
+		    <div>
+		    	<div class=" people-support-item">
                     <div class="people-support-item-inner">
-                        <img src="mataji.jpg" alt="Krishna"/>
+                        <img src="mataji.jpg" alt="Krishna IMG 2"/>
                         <h5>Stories/ Eye health</h5>
-                        <h3>Shobha's story</h3>
-                        <p>65-year-old Shobha is a daily wage labourer and lives with her son in Alipurduar, West Bengal.</p>
+                        <h3>Second Story</h3>
+                        <p>Hare krishna Please accept my humble obeisances</p>
                         <div class="btn-row">
                             <a href="../template_809/#" data-toggle="modal" data-target="#shobha-story">
                                 Read story
@@ -439,14 +476,14 @@ scrollTo = (target) =>{
                         </div>
                     </div>
                 </div>
-        </Carousel.Item>
-        <Carousel.Item>
-                <div class="col-md-4 people-support-item">
+		    </div>
+		    <div>
+		    	<div class=" people-support-item">
                     <div class="people-support-item-inner">
-                        <img src="./img/sitarama.jpg" alt="Gauranga"/>
+                        <img src="./img/sitarama.jpg" alt="Gauranga IMG 3"/>
                         <h5>Stories/Inclusive Education</h5>
-                        <h3>Aliya's story</h3>
-                        <p>With the help of Low Vision Devices six year old Aliya was finally able to read and regularly attend school in Hazaribagh, Jharkhand.</p>
+                        <h3>Third Story</h3>
+                        <p>Hare krishna Please accept my humble obeisances</p>
                         <div class="btn-row">
                             <a href="../template_809/#" data-toggle="modal" data-target="#alia-story">
                                 Read story
@@ -454,43 +491,14 @@ scrollTo = (target) =>{
                         </div>
                     </div>
                 </div>
-        </Carousel.Item>
-        </Carousel>
-
-            <div class="row">
-
-                <div class="col-md-4 people-support-item">
+		    </div>
+		    <div>
+		    	<div class="people-support-item">
                     <div class="people-support-item-inner">
-                        <img src="/debki.jpg" alt="Hari Hari"/>
-                        <h5>Stories / Social inclusion</h5>
-                        <h3>Debki's story</h3>
-                        <p>28-year-old Debki hails from the Dumka District of Jharkhand. Debki has orthopedic disability and stays with her parents and three siblings in the Dumka district of Jharkhand.</p>
-                        <div class="btn-row">
-                            <a href="../template_809/#" data-toggle="modal" data-target="#debki-story">Read story</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 people-support-item">
-                    <div class="people-support-item-inner">
-                        <img src="mataji.jpg" alt="Krishna"/>
-                        <h5>Stories/ Eye health</h5>
-                        <h3>Shobha's story</h3>
-                        <p>65-year-old Shobha is a daily wage labourer and lives with her son in Alipurduar, West Bengal.</p>
-                        <div class="btn-row">
-                            <a href="../template_809/#" data-toggle="modal" data-target="#shobha-story">
-                                Read story
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 people-support-item">
-                    <div class="people-support-item-inner">
-                        <img src="./img/sitarama.jpg" alt="Gauranga"/>
+                        <img src="./img/sitarama.jpg" alt="NityaNanda IMG 4"/>
                         <h5>Stories/Inclusive Education</h5>
-                        <h3>Aliya's story</h3>
-                        <p>With the help of Low Vision Devices six year old Aliya was finally able to read and regularly attend school in Hazaribagh, Jharkhand.</p>
+                        <h3>Fourth Story</h3>
+                        <p>Hare krishna Please accept my humble obeisances</p>
                         <div class="btn-row">
                             <a href="../template_809/#" data-toggle="modal" data-target="#alia-story">
                                 Read story
@@ -498,11 +506,11 @@ scrollTo = (target) =>{
                         </div>
                     </div>
                 </div>
+		    </div>
+		  
+		</Carousel>
 
-            </div>
-            {
-                /* Row finihses here  */
-            }
+            
         </div>
 
 
