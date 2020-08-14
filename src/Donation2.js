@@ -88,10 +88,10 @@ var yyyy = today.getFullYear();
                 <div class="form-row">
                         <div class="col-md-4 mb-3">
                                 <label for="validationCustom01">Name</label>
-                                        <input style={{ backgroundColor: "whitesmoke" }} type="text" class="form-control" name="name" placeholder="Name"
+                                                    <input style={{ borderWidth: 1, borderColor: "orange", backgroundColor: "whitesmoke" }} type="text" class="form-control" name="name" placeholder="Name"
                                                             required onChange={(event) => {
                                                                     this.setState({ name: event.target.value });
-                                                            }} /><br />
+                                                            }} />
                                                 <div class="valid-feedback">
                                                         Looks good!
       </div>
@@ -104,9 +104,9 @@ var yyyy = today.getFullYear();
                                                                     <span class="input-group-text" id="inputGroupPrepend">@</span>
                                                             </div>
 
-                                                            <input style={{ backgroundColor: "whitesmoke" }} type="email" class="form-control" name="email" placeholder="Email" aria-describedby="inputGroupPrepend" required onChange={(event) => {
+                                                            <input style={{ borderWidth: 1, borderColor: "orange", backgroundColor: "whitesmoke" }} type="email" class="form-control" name="email" placeholder="Email" aria-describedby="inputGroupPrepend" required onChange={(event) => {
                                                                     this.setState({ email: event.target.value });
-                                                            }} /><br />
+                                                            }} />
 
                                                             <div class="invalid-feedback">
                                                                     Please choose an email.
@@ -123,9 +123,9 @@ var yyyy = today.getFullYear();
                                     <div class="form-row">
                                             <div class="form-group col-md-8">
                                                     <label for="inputAddress">Address</label>
-                                                    <input style={{ backgroundColor: "whitesmoke" }} type="text" class="form-control" placeholder="1234 Main St" name="address" onChange={(event) => {
+                                                    <input style={{ borderWidth: 1, borderColor: "orange", backgroundColor: "whitesmoke" }} type="text" class="form-control" placeholder="1234 Main St" name="address" onChange={(event) => {
                                                             this.setState({ address: event.target.value });
-                                                    }} /><br />
+                                                    }} />
                                             </div>
                                             
 
@@ -135,18 +135,18 @@ var yyyy = today.getFullYear();
                                     <div class="form-row">
                                             <div class="form-group col-md-4">
                                                     <label for="validationCustom03">City</label>
-                                                    <input style={{ backgroundColor: "whitesmoke" }} type="text" class="form-control" placeholder="City" required name="city" onChange={(event) => {
+                                                    <input style={{ borderWidth: 1, borderColor: "orange", backgroundColor: "whitesmoke" }} type="text" class="form-control" placeholder="City" required name="city" onChange={(event) => {
                                                             this.setState({ city: event.target.value });
-                                                    }} /><br />
+                                                    }} />
                                                     <div class="invalid-feedback">
                                                             Please provide a valid city.
       </div>
                                             </div>
                                             <div class="col-md-4 mb-4">
                                                     <label for="validationCustom04">State</label>
-                                                    <input style={{ backgroundColor: "whitesmoke" }} type="text" class="form-control" placeholder="State" required name="state" onChange={(event) => {
+                                                    <input style={{ borderWidth: 1, borderColor: "orange", backgroundColor: "whitesmoke" }} type="text" class="form-control" placeholder="State" required name="state" onChange={(event) => {
                                                             this.setState({ state: event.target.value });
-                                                    }} /><br />
+                                                    }} />
                                                     <div class="invalid-feedback">
                                                             Please provide a valid state.
       </div>
@@ -160,9 +160,9 @@ var yyyy = today.getFullYear();
 
                                             <div class="col-md-4 mb-4">
                                                     <label for="validationCustom05">Country</label>
-                                                    <input style={{ backgroundColor: "whitesmoke" }} type="text" class="form-control" placeholder="Country" required name="country" onChange={(event) => {
+                                                    <input style={{ borderWidth: 1, borderColor: "orange", backgroundColor: "whitesmoke" }} type="text" class="form-control" placeholder="Country" required name="country" onChange={(event) => {
                                                             this.setState({ country: event.target.value });
-                                                    }} /><br />
+                                                    }} />
                                                     <div class="invalid-feedback">
                                                             Please provide a valid Country.
       </div>
@@ -170,9 +170,9 @@ var yyyy = today.getFullYear();
 
                                     <div class="col-md-4 mb-4">
                                             <label for="validationCustom05">PIN</label>
-                                            <input style={{ backgroundColor: "whitesmoke" }} type="text" class="form-control" placeholder="PIN" required name="pin" onChange={(event) => {
+                                                    <input style={{ borderWidth: 1, borderColor: "orange", backgroundColor: "whitesmoke" }} type="text" class="form-control" placeholder="PIN" required name="pin" onChange={(event) => {
                                                     this.setState({ pin: event.target.value });
-                                            }} /><br />
+                                            }} />
                                             <div class="invalid-feedback">
                                                     Please provide a valid pin.
       </div>
@@ -184,9 +184,9 @@ var yyyy = today.getFullYear();
                                     <div class="form-row">
                                             <div class="form-group col-md-4">
                                                     <label for="validationCustom06">PAN</label>
-                                                    <input style={{ backgroundColor: "whitesmoke" }} type="text" class="form-control" placeholder="PAN" required name="pan" onChange={(event) => {
+                                                    <input style={{ borderWidth: 1, borderColor: "orange", backgroundColor: "whitesmoke" }} type="text" class="form-control" placeholder="PAN" required name="pan" onChange={(event) => {
                                                             this.setState({ pan: event.target.value });
-                                                    }} /><br />
+                                                    }} />
                                                     <div class="invalid-feedback">
                                                             Please provide a valid Pan.
                                 </div>
@@ -194,15 +194,15 @@ var yyyy = today.getFullYear();
 
                                             <div class="form-group col-md-4">
                                                     <label for="validationCustom07">Mobile</label>
-                                                    <input style={{ backgroundColor: "whitesmoke" }} type="text" class="form-control" placeholder="Mobile" required name="mobile" onChange={(event) => {
+                                                    <input style={{ borderWidth: 1, borderColor: "orange",backgroundColor: "whitesmoke" }} type="text" class="form-control" placeholder="Mobile" required name="mobile" onChange={(event) => {
                                                             this.setState({ mobile: event.target.value });
-                                                    }} /><br />
+                                                    }} />
                                                     <div class="invalid-feedback">
                                                             Please provide a valid Mobile Number.
                                 </div>
                                             </div>
                                     </div>
-
+                                    
         {/* address:
         <input type="text" name="address" onChange = {(event) => {
                 this.setState({address: event.target.value});
@@ -231,10 +231,22 @@ var yyyy = today.getFullYear();
         <input type="text" name="mobile" onChange = {(event) => {
                 this.setState({mobile: event.target.value});
                 }} /><br/> */}
-        <input type="text" name="link" value={link} />
+                <div class = "row">
+
+               
+                <div class="col-md-6">
+                                            <input type="text" name="link" value={link} />
+                                            
+                </div>
+                <div class="col-md-2">
+                                            <span > <input class="btn btn-primary btn-lr" type="submit" onClick={() => { window.location.href = link }} value="Proceed" /></span>
+
+
+                </div>
+                                    </div>
         <input type="text" name="date" value={date} />
         <input type="text" name="time" value={time} />
-                <input class="btn btn-primary btn-md align-right" type="submit" onClick={()=>{window.location.href=link}} value="Proceed" />
+                
         </form>
 
         </div>
