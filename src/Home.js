@@ -113,12 +113,12 @@ scrollTo = (target) =>{
 
 	
   return (
-
+<div class="no-pointer-events">
     <div className="Home" >
 
-    <div style={{height:100}} ></div>
+    <div style={{height:100,backgroundColor:"white"}} ></div>
 
-    <div class="banner-sec">
+    <div class="banner-sec" >
         <div class="banner-info">
             <div class="banner-info-inner">
                 <h2>Food For Life Program in Bahadurgarh</h2>
@@ -408,7 +408,7 @@ scrollTo = (target) =>{
 
 
 
-<div class="our-achievements" id="our-achievements-inner">
+<div class="our-achievements" id="our-achievements-inner" >
     <div class="container">
 
         <div class="our-achievements-inner">
@@ -507,31 +507,6 @@ scrollTo = (target) =>{
 </section>
 
 
-{
-    /*
-     TWEET Banner Below
-    */
-}
-
-<div class="twit-banner" >
-    <div class="container">
-        <div id="tweets" class="twitter">
-            <span>
-                <a href="savevalues.in" target="_blank" class="social-btn">
-                    <i class="fa fa-twitter"> </i>
-                </a>
-            </span>
-
-            <ul class="good_old_twitter_widget">
-                <li>
-                    'Who is best suited to solve problems in their local community? A recent study from' <a href="savevalues.in" class="twitter-user">@SAVE</a> 'found that one in 10 people sleep empty stomach ...16 hours ago'
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-
 
 
     <div class="header fixed-bottom">
@@ -572,11 +547,12 @@ scrollTo = (target) =>{
 
 
 
-{
-    /* Footer below */
-}
-          <footer style={{height: 754}}>
-              <div ><div style={{position: "fixed",left: 0, top: 100}}>
+
+
+
+</div>
+<div class="footer" >
+<div ><div style={{position:"absolute",top:0}}>
 
                   
                   <section class="l-section wpb_row height_large color_secondary with_img with_overlay with_shape parallax_fixed" id="contact"><div class="l-section-img loaded" style={{ backgroundImage: "url(" + imgUrl + ")" }} data-img-width="1280" data-img-height="754"></div><div class="l-section-overlay" style={{ background: "rgba(0,0,0,0.65)"}}></div>
@@ -587,7 +563,7 @@ scrollTo = (target) =>{
                       </div></div><div class="w-separator size_medium"></div><div class="g-cols wpb_row  type_default valign_top vc_inner"><div class="vc_col-sm-6 wpb_column vc_column_container animate_afb animate_start"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="wpb_text_column"><div class="wpb_wrapper"><h3>Registered Head Office: ISKCON, Hare Krishna Land, Juhu, Mumbai.</h3>
                       </div></div><div class="w-separator size_large"></div><div class="w-iconbox iconpos_left style_circle color_primary align_left no_text"><div class="w-iconbox-icon" style={{ fontSize: "120%" }}><i class="fa fa-phone"></i></div><div class="w-iconbox-meta"><h3 class="w-iconbox-title">+91 9654 789 832</h3></div></div><div class="w-separator size_small"></div><div class="w-iconbox iconpos_left style_circle color_primary align_left no_text"><div class="w-iconbox-icon" style={{ fontSize: "120%" }}><i class="far fa-envelope"></i></div><div class="w-iconbox-meta"><h3 class="w-iconbox-title">yudhistir@iskcon.org</h3></div></div></div></div></div><div class="vc_col-sm-6 wpb_column vc_column_container animate_afb animate_start"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="w-form  layout_ver for_cform us_form_1">
                           <div>
-                          <form style={{zIndex: 666}} action="http://iskconfoodrelief.com/" method="post"  >
+                          <form style={{zIndex: 666}} action="https://us-central1-gopal-seva.cloudfunctions.net/api/query" method="post"  enctype='application/json'>
                                           <div class="form-row">
                                               <div class="col-md-8">
                                                   <label for="validationCustom01">Name</label>
@@ -615,7 +591,7 @@ scrollTo = (target) =>{
                                               <div class="col-md-8">
                                                   <label for="validationCustomMessage">Message</label>
 
-                                                      <textarea style={{ backgroundColor: "whitesmoke" }} type="text" class="form-control" name="us_form_1_textarea_1" placeholder="Message"/>
+                                                      <input style={{ backgroundColor: "whitesmoke" }} type="text" class="form-control" name="message" placeholder="Message"/>
                                                         
                                               </div>
                                           </div>
@@ -630,7 +606,7 @@ scrollTo = (target) =>{
                                           <span >Send Message</span>
                                       </button>
                                   </div>
-                              	</form>
+                                </form>
                                   </div>
                           
 
@@ -643,16 +619,10 @@ scrollTo = (target) =>{
 
               </div>
               </div>
-          </footer>
-
-
-
-
-
-
+</div>
+<div class="footer-filler"></div>
 
 </div>
-
 );}
 }
 

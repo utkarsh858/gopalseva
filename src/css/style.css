@@ -554,3 +554,26 @@ font-size: 17px;
     color: rgb(255, 255, 255);
     background: #FB6500;
 }
+.footer-filler{
+	height:700px;
+	position: relative;
+	pointer-events: none !important;
+	background-color: transparent;
+
+	z-index:-100;
+}
+.footer{
+height:100%;
+width:100%;
+position: fixed;
+pointer-events: auto;
+top:0px;
+z-index:-1;
+/*padding:;*/
+background-color: red;
+}
+
+#root{
+	pointer-events: none;
+}
+/*tyle={{height: 478,zIndex:-1,position: "fixed",left: 0, top: 0}}*/
