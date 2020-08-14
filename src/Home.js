@@ -115,22 +115,8 @@ scrollTo = (target) =>{
   return (
 
     <div className="Home" >
-    <div class="header fixed-top">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="/"><img src="https://drive.google.com/file/d/1zrpkz0mi9xlHMKEGb6FU4HXpmQPfgxrg/view?usp=sharing" alt=""/></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-                <div class="donate-btn">
-                <button onClick={() => { this.scrollTo('our-achievements-inner') }} class="btn btn-primary">Donate</button>
-                </div>
-                </div>
-            </div>
-        </nav>
-    </div>
 
+    <div style={{height:100}} ></div>
 
     <div class="banner-sec">
         <div class="banner-info">
@@ -548,7 +534,21 @@ scrollTo = (target) =>{
 
 
 
-
+    <div class="header fixed-bottom">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/"><img src="https://drive.google.com/file/d/1zrpkz0mi9xlHMKEGb6FU4HXpmQPfgxrg/view?usp=sharing" alt=""/></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <div class="donate-btn">
+                <button onClick={() => { this.scrollTo('our-achievements-inner') }} class="btn btn-primary">Donate</button>
+                </div>
+                </div>
+            </div>
+        </nav>
+    </div>
 
 
 
