@@ -42,6 +42,7 @@
     background: #fff;
     box-shadow: 0 0 10px #ddd;
     z-index:100;
+    pointer-events: auto;
 }
 .fixed-bottom{
   position: sticky;

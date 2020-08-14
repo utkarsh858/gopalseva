@@ -7,6 +7,7 @@ import {
 
 import Donation from "./Donation2.js"
 import Home from "./Home.js"
+import Footer from "./Footer.js"
 
 export default class App extends Component{
 	render(){
@@ -20,6 +21,7 @@ export default class App extends Component{
 
 			            <Route path="/">
 			          		<Home/>
+			 				<Footer/>
 			            </Route>
 			        </Switch>
 			   
