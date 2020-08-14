@@ -46,7 +46,9 @@
 }
 .fixed-bottom{
   position: sticky;
-  bottom:calc(100% - 80px);
+  top : 0px;
+  /*bottom:calc(100% - 84px);*/
+  /*z-index:  -1;*/
   /*top:70px;*/
   /*bottom:100%;*/
 }
