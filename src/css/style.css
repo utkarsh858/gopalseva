@@ -557,7 +557,7 @@ font-size: 17px;
 .footer-filler{
 	height:700px;
 	position: relative;
-	pointer-events: none !important;
+	
 	background-color: transparent;
 
 	z-index:-100;
@@ -573,7 +573,13 @@ z-index:-1;
 background-color: red;
 }
 
+.home{
+	pointer-events: auto;
+}
+.no-pointer-events{
+	pointer-events: auto;
+}
 #root{
-	pointer-events: none;
+	pointer-events: auto;
 }
 /*tyle={{height: 478,zIndex:-1,position: "fixed",left: 0, top: 0}}*/
