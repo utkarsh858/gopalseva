@@ -2,20 +2,26 @@ import React,{Component} from 'react';
  import  {Link as Direct} from 'react-router-dom';
 
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
-import './css/App.css';
-import './css/bootstrap.min.css';
-import './css/style.css';
 
+import './css/bootstrap.min.css';
 import './css/jetpack.css';
 import './css/style.min_iskcon.css';
 import './css/responsive.min.css';
-
 import './css/style_givelify_orig.css';
 import './style.php';
-// import next_page from './donation.js';
 
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+
+
+/*this must be last imported CSS else there will be problems in during runtime*/
+import './css/style.css';
+import './css/App.css';
+
+
+// import next_page from './donation.js';
+
+
 
 // import ButtonAppBar from './NavBarHK.js';
 
@@ -82,7 +88,8 @@ scrollTo = (target) =>{
       scroller.scrollTo(target, {
       duration: 800,
       delay: 0,
-      smooth: 'easeInOutQuart'
+      smooth: 'easeInOutQuart',
+      offset : -50,
     })
 }
   proceedHandler = ()=>{
@@ -131,11 +138,11 @@ scrollTo = (target) =>{
     <div className="home" >
 
 
-{/*As of now we don't possess any additional items to be added as menu so I am removing the menu option, your servant*/}
+    {/*As of now we don't possess any additional items to be added as menu so I am removing the menu option, your servant*/}
     {
     <div class="header fixed-bottom">
         <nav class="navbar navbar-light">
-            <div class="container-fluid">
+            <div class="container">
                 <a class="navbar-brand" href="/"><img src={logo} width="150px" height="80px" alt="Gopal Seva Logo"/></a>
 
             {/*
@@ -147,16 +154,19 @@ scrollTo = (target) =>{
                 <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
             */}
                 <div class="justify-content-end" >    
-                <div class="donate-btn">
-                <button onClick={() => { this.scrollTo('form_i') }} class="btn btn-primary">Donate</button>
+                    <div class="donate-btn">
+                        <button onClick={() => { this.scrollTo('form_i') }} class="btn btn-primary">
+                            Donate
+                        </button>
+                    </div>
                 </div>
-                </div>
+
             </div>
         </nav>
     </div>
     }
 
-    <div style={{height:100,backgroundColor:"white"}} ></div>
+    
 
     <div class="banner-sec" >
         <div class="banner-info">
@@ -166,221 +176,231 @@ scrollTo = (target) =>{
         </div>
     </div>
 
-    <section class="container-fluid donate-proceed cause_details" id="cause_details" >
-    <div class="our-achievements" id="our-achievements-inner">
-    <div class="container">
-    <div class="our-achievements-inner">
-    <div class="row">
-    <div class="col-md-5">
-    <h2>Our Achievements</h2>
-    <div class="our-achievement-items">
-    <div class="our-achievement-item">
-    <div class="our-achievement-item-info">
-    <h4>55 million</h4>
-    <p>Meals distributed world wide since 1966</p>
-    </div>
-    </div>
-    <div class="our-achievement-item">
-    <div class="our-achievement-item-info">
-    <h4>36.4 million</h4>
-    <p>Meals provided only in India</p>
-    </div>
-    </div>
-    <div class="our-achievement-item">
-    <div class="our-achievement-item-info">
-    <h4>5 Million</h4>
-    <p>Meals in Bahadurgarh</p>
-    </div>
-    </div>
-    </div>
-    </div>
 
 
-    <div class="col-md-7" id="form_i" >
-    <div class="package-wrap">
-    <div class="package-inner">
-    <input type="hidden" id="payment_mode" value="onetime"/>
-    <ul class="nav nav-pills nav-justified" role="tablist">
-    <li class="nav-item">
+    <section class="container-mk " id="cause_details" >
+        <div class="our-achievements" id="our-achievements-inner">
+            
+            <div class="container-mk2">
 
 
-    <a class="nav-link active" data-toggle="tab" 
-    onClick={()=>{this.state.give_flag = 0}}
-     id="onetime">Give Once</a>
+            <div class="our-achievements-inner">
+                <div class="row">
+                    <div class="col-md-5 ">
+                        <h2>Our Achievements</h2>
+                        
+                        <div class="our-achievement-items">
+                            <div class="our-achievement-item">
+                                <div class="our-achievement-item-info">
+                                    <h4>55 million</h4>
+                                    <p>Meals distributed world wide since 1966</p>
+                                </div>
+                            </div>
+                            <div class="our-achievement-item">
+                                <div class="our-achievement-item-info">
+                                    <h4>36.4 million</h4>
+                                    <p>Meals provided only in India</p>
+                                </div>
+                            </div>
+                            <div class="our-achievement-item">
+                                <div class="our-achievement-item-info">
+                                    <h4>5 Million</h4>
+                                    <p>Meals in Bahadurgarh</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-7" id="form_i" >
+                        <div class="package-wrap">
+                            <div class="package-inner">
+                            
+                                <input type="hidden" id="payment_mode" value="onetime"/>
+                                
+                                <ul class="nav nav-pills nav-justified" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" 
+                                        onClick={()=>{this.state.give_flag = 0}}
+                                         id="onetime">
+                                            Give Once
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab"
+                                        onClick={()=>{this.state.give_flag = 1}}
+                                        id="recurring">
+                                            Give Monthly
+                                        </a>
+                                    </li>
+                                </ul>
+
+
+                                <div class="tab-content">
+                                    <div id="tab-1" class="tab-pane give_once" style={{display: "block"}}>
+
+
+                                        <ul class="list-group list-group-horizontal" 
+                                        onClick={()=>{this.state.array_num = 0 ;this.state.amount="800";this.state.isCustom="false"}}
+                                        >
+                                        <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>800</span></li>
+                                        <li class="list-group-item">Support Meals for 10 children</li>
+                                        <li class="list-group-item">
+                                        <div class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio1" name="purpose_of_donation" class="custom-control-input" value="800"/>
+                                        <label class="custom-control-label" for="customRadio1"></label>
+                                        </div>
+                                        </li>
+                                        </ul>
+
+
+                                        <ul class="list-group list-group-horizontal"
+                                        onClick={()=>{this.state.array_num = 1 ;this.state.amount="1000";this.state.isCustom="false"}}
+                                        >
+                                        <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>1000</span></li>
+                                        <li class="list-group-item">Support livelihood for 1 person with disability</li>
+                                        <li class="list-group-item">
+                                        <div class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio2" name="purpose_of_donation" class="custom-control-input" value="1000"/>
+                                        <label class="custom-control-label" for="customRadio2"></label>
+                                        </div>
+                                        </li>
+                                        </ul>
+
+
+
+                                        <ul class="list-group list-group-horizontal"
+                                        onClick={()=>{this.state.array_num = 2 ;this.state.amount="1500";this.state.isCustom="false"}}
+                                        >
+                                        <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>1500</span></li>
+                                        <li class="list-group-item">Support meals for 20 children</li>
+                                        <li class="list-group-item">
+                                        <div class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio3" name="purpose_of_donation" class="custom-control-input" value="1500"/>
+                                        <label class="custom-control-label" for="customRadio3"></label>
+                                        </div>
+                                        </li>
+                                        </ul>
+
+
+
+                                        <ul class="list-group list-group-horizontal"
+                                        onClick={()=>{this.state.array_num = 3 ;this.state.amount="2000";this.state.isCustom="false"}}
+                                        >
+                                        <li class="list-group-item"><i class="fa fa-rupee-sign" aria-hidden="true"></i> <span>2000</span></li>
+                                        <li class="list-group-item">Support livelihood for 2 people with disability</li>
+                                        <li class="list-group-item">
+                                        <div class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio4" name="purpose_of_donation" class="custom-control-input" value="2000"/>
+                                        <label class="custom-control-label" for="customRadio4"></label>
+                                        </div>
+                                        </li>
+                                        </ul>
+
+
+
+
+                                        <ul class="list-group list-group-horizontal"
+                                        onClick={()=>{this.state.array_num = 4 ;this.state.amount="2500";this.state.isCustom="false"}}
+                                        >
+                                        <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>2500</span></li>
+                                        <li class="list-group-item">Support  classroom training for 1 visually impaired</li>
+                                        <li class="list-group-item">
+                                        <div class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio5" name="purpose_of_donation" class="custom-control-input" value="2500"/>
+                                        <label class="custom-control-label" for="customRadio5"></label>
+                                        </div>
+                                        </li>
+                                        </ul>
+
+
+
+
+                                        <ul class="list-group list-group-horizontal"
+                                        onClick={()=>{this.state.array_num = 5 ;this.state.amount="3500";this.state.isCustom="false"}}
+                                        >
+                                        <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>3500</span></li>
+                                        <li class="list-group-item">Support 3 sight restoring surgeries </li>
+                                        <li class="list-group-item">
+                                        <div class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio6" name="purpose_of_donation" class="custom-control-input" value="3500"/>
+                                        <label class="custom-control-label" for="customRadio6"></label>
+                                        </div>
+                                        </li>
+                                        </ul>
+
+
+
+
+                                        <ul class="list-group list-group-horizontal"
+                                        onClick={()=>{this.state.array_num = 6 ;this.state.amount="5000";this.state.isCustom="false"}}
+                                        >
+                                        <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>5000</span></li>
+                                        <li class="list-group-item">Support classroom training for a 2 visually impaired children</li>
+                                        <li class="list-group-item">
+                                        <div class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio7" name="purpose_of_donation" class="custom-control-input" value="5000"/>
+                                        <label class="custom-control-label" for="customRadio7"></label>
+                                        </div>
+                                        </li>
+                                        </ul>
+
+
+
+
+                                        <ul class="list-group list-group-horizontal"
+                                        onClick={()=>{this.state.array_num = 7 ;this.state.amount="6500";this.state.isCustom="false"}}
+                                        >
+                                        <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>6500</span></li>
+                                        <li class="list-group-item">Support 5 sight restoring surgeries</li>
+                                        <li class="list-group-item">
+                                        <div class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio8" name="purpose_of_donation" class="custom-control-input" value="6500"/>
+                                        <label class="custom-control-label" for="customRadio8"></label>
+                                        </div>
+                                        </li>
+                                        </ul>
+
+
+
+
+                                        <ul class="list-group list-group-horizontal"
+                                        onClick={()=>{this.state.array_num = 8;this.state.isCustom="true"}}
+                                        >
+                                        <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i>
+                                        <span></span>
+                                        <input type="text" id="custom_amount_ot_value" name="" onChange={(e)=>{this.state.amount=e.target.value}}/> 
+                                        </li>
+                                        <li class="list-group-item">How much are you going to give today?</li>
+                                        <li class="list-group-item">
+                                        <div class="custom-control custom-radio">
+                                        <input type="radio" id="custom_amount_onetime" name="purpose_of_donation" class="custom-control-input" value="custom"/>
+                                        <label class="custom-control-label" for="custom_amount_onetime"></label>
+                                        </div>
+                                        </li>
+                                        </ul>
+
+                                    </div>
+
+                                    <div class="package-proceed">
+                                        <Direct to="/donate"><button 
+                                        onClick={this.proceedHandler}
+                                        id="next_page" value="Proceed" class="btn btn-warning btn-lg">Proceed</button>
+                                        </Direct>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
     
-    </li>
-    <li class="nav-item">
-    <a class="nav-link" data-toggle="tab"
-    onClick={()=>{this.state.give_flag = 1}}
-
-    id="recurring">Give Monthly</a>
-    </li>
-    </ul>
-
-
-    <div class="tab-content">
-    <div id="tab-1" class="tab-pane give_once" style={{display: "block"}}>
-
-
-    <ul class="list-group list-group-horizontal" 
-    onClick={()=>{this.state.array_num = 0 ;this.state.amount="800";this.state.isCustom="false"}}
-    >
-    <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>800</span></li>
-    <li class="list-group-item">Support Meals for 10 children</li>
-    <li class="list-group-item">
-    <div class="custom-control custom-radio">
-    <input type="radio" id="customRadio1" name="purpose_of_donation" class="custom-control-input" value="800"/>
-    <label class="custom-control-label" for="customRadio1"></label>
-    </div>
-    </li>
-    </ul>
-
-
-    <ul class="list-group list-group-horizontal"
-    onClick={()=>{this.state.array_num = 1 ;this.state.amount="1000";this.state.isCustom="false"}}
-
-    >
-    <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>1000</span></li>
-    <li class="list-group-item">Support livelihood for 1 person with disability</li>
-    <li class="list-group-item">
-    <div class="custom-control custom-radio">
-    <input type="radio" id="customRadio2" name="purpose_of_donation" class="custom-control-input" value="1000"/>
-    <label class="custom-control-label" for="customRadio2"></label>
-    </div>
-    </li>
-    </ul>
-
-
-
-    <ul class="list-group list-group-horizontal"
-    onClick={()=>{this.state.array_num = 2 ;this.state.amount="1500";this.state.isCustom="false"}}
-    >
-    <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>1500</span></li>
-    <li class="list-group-item">Support meals for 20 children</li>
-    <li class="list-group-item">
-    <div class="custom-control custom-radio">
-    <input type="radio" id="customRadio3" name="purpose_of_donation" class="custom-control-input" value="1500"/>
-    <label class="custom-control-label" for="customRadio3"></label>
-    </div>
-    </li>
-    </ul>
-
-
-
-    <ul class="list-group list-group-horizontal"
-    onClick={()=>{this.state.array_num = 3 ;this.state.amount="2000";this.state.isCustom="false"}}
-    >
-    <li class="list-group-item"><i class="fa fa-rupee-sign" aria-hidden="true"></i> <span>2000</span></li>
-    <li class="list-group-item">Support livelihood for 2 people with disability</li>
-    <li class="list-group-item">
-    <div class="custom-control custom-radio">
-    <input type="radio" id="customRadio4" name="purpose_of_donation" class="custom-control-input" value="2000"/>
-    <label class="custom-control-label" for="customRadio4"></label>
-    </div>
-    </li>
-    </ul>
-
-
-
-
-    <ul class="list-group list-group-horizontal"
-    onClick={()=>{this.state.array_num = 4 ;this.state.amount="2500";this.state.isCustom="false"}}
-    >
-    <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>2500</span></li>
-    <li class="list-group-item">Support  classroom training for 1 visually impaired</li>
-    <li class="list-group-item">
-    <div class="custom-control custom-radio">
-    <input type="radio" id="customRadio5" name="purpose_of_donation" class="custom-control-input" value="2500"/>
-    <label class="custom-control-label" for="customRadio5"></label>
-    </div>
-    </li>
-    </ul>
-
-
-
-
-    <ul class="list-group list-group-horizontal"
-    onClick={()=>{this.state.array_num = 5 ;this.state.amount="3500";this.state.isCustom="false"}}
-    >
-    <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>3500</span></li>
-    <li class="list-group-item">Support 3 sight restoring surgeries </li>
-    <li class="list-group-item">
-    <div class="custom-control custom-radio">
-    <input type="radio" id="customRadio6" name="purpose_of_donation" class="custom-control-input" value="3500"/>
-    <label class="custom-control-label" for="customRadio6"></label>
-    </div>
-    </li>
-    </ul>
-
-
-
-
-    <ul class="list-group list-group-horizontal"
-    onClick={()=>{this.state.array_num = 6 ;this.state.amount="5000";this.state.isCustom="false"}}
-    >
-    <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>5000</span></li>
-    <li class="list-group-item">Support classroom training for a 2 visually impaired children</li>
-    <li class="list-group-item">
-    <div class="custom-control custom-radio">
-    <input type="radio" id="customRadio7" name="purpose_of_donation" class="custom-control-input" value="5000"/>
-    <label class="custom-control-label" for="customRadio7"></label>
-    </div>
-    </li>
-    </ul>
-
-
-
-
-    <ul class="list-group list-group-horizontal"
-    onClick={()=>{this.state.array_num = 7 ;this.state.amount="6500";this.state.isCustom="false"}}
-    >
-    <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>6500</span></li>
-    <li class="list-group-item">Support 5 sight restoring surgeries</li>
-    <li class="list-group-item">
-    <div class="custom-control custom-radio">
-    <input type="radio" id="customRadio8" name="purpose_of_donation" class="custom-control-input" value="6500"/>
-    <label class="custom-control-label" for="customRadio8"></label>
-    </div>
-    </li>
-    </ul>
-
-
-
-
-    <ul class="list-group list-group-horizontal"
-    onClick={()=>{this.state.array_num = 8;this.state.isCustom="true"}}
-    >
-    <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i>
-    <span></span>
-    <input type="text" id="custom_amount_ot_value" name="" onChange={(e)=>{this.state.amount=e.target.value}}/> 
-    </li>
-    <li class="list-group-item">How much are you going to give today?</li>
-    <li class="list-group-item">
-    <div class="custom-control custom-radio">
-    <input type="radio" id="custom_amount_onetime" name="purpose_of_donation" class="custom-control-input" value="custom"/>
-    <label class="custom-control-label" for="custom_amount_onetime"></label>
-    </div>
-    </li>
-    </ul>
-
-
-
-    </div>
-
-    <div class="package-proceed">
-    <Direct to="/donate"><button 
-    onClick={this.proceedHandler}
-    id="next_page" value="Proceed" class="btn btn-warning btn-lg">Proceed</button>
-    </Direct>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
     </section>
 
 

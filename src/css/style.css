@@ -21,6 +21,34 @@ body {
 =======
 .react-multiple-carousel__arrow--right{right:-100px}*/
 
+/*.pd3{
+	padding-right: 30px;
+  padding-left: 30px;
+}*/
+
+.container-mk {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-mk2 {
+  padding-right: 60px;
+  padding-left: 60px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+.center-mk{
+	text-align: center;
+}
+
+.extrapad-mk{
+	padding: 50px 50px 50px 50px; 
+}
+
 
 .modal-frame{
   	height: 390px;
