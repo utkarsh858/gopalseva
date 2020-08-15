@@ -27,17 +27,50 @@ body {
 }*/
 
 .container-mk {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
 }
 
 .container-mk2 {
-  padding-right: 60px;
-  padding-left: 60px;
+  padding-right: 0px;
+  padding-left: 0px;
   margin-right: auto;
   margin-left: auto;
+  /*background-color : yellow;*/
+}
+
+@media screen and (min-width: 250px) {
+	.container-mk {
+	    padding-right: 15px;
+	    padding-left: 15px;
+	  	margin-right: 0px;
+  		margin-left: 0px;
+	}
+	.container-mk2 {
+	    padding-right: 20px;
+	    padding-left: 20px;
+	  	margin-right: auto;
+	  	margin-left: auto;
+	  	/*background-color : blue;*/
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.container-mk {
+	    padding-right: 15px;
+	    padding-left: 15px;
+	  	margin-right: auto;
+	  	margin-left: auto;
+	}
+	.container-mk2 {
+	    padding-right: 60px;
+	    padding-left: 60px;
+	  	margin-right: auto;
+	  	margin-left: auto;
+	  	/*background-color : orange;*/
+	}
 }
 
 
@@ -46,7 +79,9 @@ body {
 }
 
 .extrapad-mk{
-	padding: 50px 50px 50px 50px; 
+	margin-left: 20px;
+	margin-right: 20px;
+
 }
 
 
@@ -88,6 +123,7 @@ background-color: black;
 	pointer-events: all;
 	z-index:0;
 	background-color: white;
+	width:  100%;
 }
 .no-pointer-events{
 	/*pointer-events: auto;*/

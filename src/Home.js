@@ -186,7 +186,7 @@ scrollTo = (target) =>{
 
             <div class="our-achievements-inner">
                 <div class="row">
-                    <div class="col-md-5 ">
+                    <div class="col-md-5">
                         <h2>Our Achievements</h2>
                         
                         <div class="our-achievement-items">
