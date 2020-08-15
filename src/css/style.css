@@ -73,6 +73,8 @@ body {
 	font-weight: bold;
 	padding: 14px 40px;
 	border-radius: 8px;
+	border-color: #fb6500;
+	background-color: #fb6500;
 }
 
 .banner-sec {
@@ -597,7 +599,7 @@ pointer-events: auto;
 bottom: 0px;
 z-index:-1;
 /*padding:;*/
-background-color: red;
+background-color: black;
 }
 .container{
 	pointer-events: auto;
