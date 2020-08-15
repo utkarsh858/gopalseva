@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 // import './App.css';
 import './css/style.css';
 import './css/bootstrap.min.css';
-
+import prabhupada from "./img/prabhupada.png";
 // var customLink = "/custom-donate"
 
 class donation extends Component{
@@ -30,7 +30,7 @@ var date=mm + '/' + dd + '/' + yyyy;
         <h3>Total Donation amount: INR {amount}</h3>
         </div>
 
-        <form class="needs-validation" role="form" id="cartForm" method="post" action="https://us-central1-gopal-seva.cloudfunctions.net/api/data" enctype='application/json'>
+        <form class="needs-validation donate-form" role="form" id="cartForm" method="post" action="https://us-central1-gopal-seva.cloudfunctions.net/api/data" enctype='application/json'>
 
 
             <input type="hidden" name="amount" value={amount} />
@@ -117,15 +117,19 @@ var date=mm + '/' + dd + '/' + yyyy;
 
 
         </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="payment-button">
+        <div class="form-group">
+        <button class="btn pay-button give_once" type="submit" name="paytm" id="paytm_btn"><strong>Proceed</strong><br/><small>(Powered by Paytm)</small></button>
+                            
+        </div>
+        </div>
+                </div>
+        </div>
         </div>
         <div class="col-md-5">
-        <div class="payment-button">
-        <div class="form-group">
-        <label>Please choose your payment method</label>
-        <button class="btn pay-button give_once" type="submit" name="paytm" id="paytm_btn"><strong>Proceed</strong><br/><small>(Powered by Paytm)</small></button>
-							
-        </div>
-        </div>
+        <img src={prabhupada} class="donate-img"/>
         </div>
         </div>
         </form>
