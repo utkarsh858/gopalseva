@@ -243,9 +243,10 @@ background-color: black;
 	background: #e7ebf4;
 }
 .our-achievements-inner h2 {
-    font-size: 44px;
+    font-size: 38px;
     font-weight: bold;
     margin: 0 0 30px;
+    text-align: center;
 }
 .our-achievement-item {
     background: #403a60;
@@ -253,7 +254,8 @@ background-color: black;
     padding: 30px;
     border-radius: 10px;
     text-align: center;
-    margin: 30px 0;
+    margin: 30px auto;
+    max-width: 400px;
 }
 .our-achievement-item h4 {
     color: #ffbb22;
@@ -279,6 +281,8 @@ background-color: black;
 	padding: 50px;
 	border-radius: 10px;
 	height: calc(100% - 30px);
+	max-width: 600px;
+	margin : auto;
 }
 
 @media screen and (min-width: 800px){
@@ -288,23 +292,45 @@ background-color: black;
 }
 .package-wrap .nav {
 
-    border: 1px solid #ddd;
-    border-radius: 10px;
+    
+    
     overflow: hidden;
-    height : 48px;
+    /*height : 48px;*/
+    margin : 0 auto;
+    margin-bottom: 50px;
 }
+/*@media screen and (max-width: 362.5px){
+	.package-wrap .nav {
+		height: 100px;
+	}
+}
+@media screen and (max-width: 420px & min-width: 362.50px){
+	.package-wrap .nav {
+		height: 79px;
+	}
+}
+@media screen and (max-width: 500px & min-width: 420px){
+	.package-wrap .nav {
+		height: 85px;
+	}
+}*/
+
 .package-wrap .nav-pills{
 	padding-top: 0px;
+	
+	/*height : auto;*/
 }
 .package-wrap .nav-pills .nav-link {
 
     border-radius: 10px;
+    border: 1px solid #ddd;
     color: #a7a7a7;
     font-size: 20px;
     font-weight: bold;
 }
 .package-wrap .nav-pills .nav-link.active, .package-wrap .nav-pills .show>.nav-link {
     color: #000;
+    border: 1px solid #ddd;
     background-color: #ffbb22;
 }
 .package-wrap .list-group-horizontal .list-group-item {

@@ -179,6 +179,8 @@ scrollTo = (target) =>{
 
 
     <section class="container-mk " id="cause_details" >
+
+
         <div class="our-achievements" id="our-achievements-inner">
             
             <div class="container-mk2">
@@ -218,15 +220,16 @@ scrollTo = (target) =>{
                             
                                 <input type="hidden" id="payment_mode" value="onetime"/>
                                 
-                                <ul class="nav nav-pills nav-justified" role="tablist">
-                                    <li class="nav-item">
+
+                                <ul class="nav nav-pills nav-justified " role="tablist">
+                                    <li class="nav-item ">
                                         <a class="nav-link active" data-toggle="tab" 
                                         onClick={()=>{this.state.give_flag = 0}}
                                          id="onetime">
                                             Give Once
                                         </a>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item ">
                                         <a class="nav-link" data-toggle="tab"
                                         onClick={()=>{this.state.give_flag = 1}}
                                         id="recurring">
@@ -405,7 +408,7 @@ scrollTo = (target) =>{
 
 
       
-    <section class="container-fluid donate-proceed cause_details" id="about_details">
+    <section class="container-fluid" id="about_details">
         <div class="about-sec">
             <div class="container">
     
@@ -429,8 +432,13 @@ scrollTo = (target) =>{
     </div>
     </div>
 
-    <div class="our-value ">
-        <div class="container">
+    </section>
+
+    <section class="container-mk">
+
+
+    <div class="our-value">
+        <div class="container-mk2">
         <div class="section-title-1">
             <h2 >Our Values</h2>
             <div class="section-title-1-divider"></div>
