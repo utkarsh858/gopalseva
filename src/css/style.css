@@ -280,15 +280,27 @@ background-color: black;
 	border-radius: 10px;
 	height: calc(100% - 30px);
 }
+
+@media screen and (min-width: 800px){
+	.package-wrap {
+		margin-left : 30px;
+	}
+}
 .package-wrap .nav {
+
     border: 1px solid #ddd;
-    border-radius: 7px;
+    border-radius: 10px;
     overflow: hidden;
+    height : 48px;
+}
+.package-wrap .nav-pills{
+	padding-top: 0px;
 }
 .package-wrap .nav-pills .nav-link {
-    border-radius: 0;
+
+    border-radius: 10px;
     color: #a7a7a7;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
 }
 .package-wrap .nav-pills .nav-link.active, .package-wrap .nav-pills .show>.nav-link {
@@ -335,6 +347,10 @@ background-color: black;
 .package-inner .custom-control {
     padding: 0;
 }
+.package-inner .tab-content ul {
+    margin: 40px 0;
+}
+
 .package-wrap .list-group-horizontal .list-group-item:first-child input {
     width: 52px;
     border: none;
@@ -358,9 +374,7 @@ background-color: black;
 .package-wrap .list-group-horizontal .list-group-item:first-child.active {
 	background: #9f085a;
 }
-.package-inner .tab-content ul {
-    margin: 40px 0;
-}
+
 
 .package-proceed {
     text-align: right;

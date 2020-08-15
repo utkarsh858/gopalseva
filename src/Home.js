@@ -213,8 +213,8 @@ scrollTo = (target) =>{
 
 
                     <div class="col-md-7" id="form_i" >
-                        <div class="package-wrap">
-                            <div class="package-inner">
+                        <div class="package-wrap package-inner">
+                            
                             
                                 <input type="hidden" id="payment_mode" value="onetime"/>
                                 
@@ -393,7 +393,7 @@ scrollTo = (target) =>{
 
                             </div>
 
-                        </div>
+                        
                     </div>
                 </div>
             </div>
