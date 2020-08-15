@@ -5,6 +5,24 @@ import './css/bootstrap.min.css';
 import prabhupada from "./img/prabhupada.png";
 // var customLink = "/custom-donate"
 
+(function () {
+    'use strict';
+    window.addEventListener('load', function () {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function (form) {
+            form.addEventListener('submit', function (event) {
+                if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            }, false);
+        });
+    }, false);
+})();
+
 class donation extends Component{
     render(){
         var link=window.localStorage.getItem('link');
@@ -30,7 +48,7 @@ class donation extends Component{
         {title}
         </div>
 
-        <form class="needs-validation donate-form" role="form" id="cartForm" method="post" action="https://us-central1-gopal-seva.cloudfunctions.net/api/data" enctype='application/json'>
+                    <form class="needs-validation donate-form" role="form" id="cartForm" method="post" action="https://us-central1-gopal-seva.cloudfunctions.net/api/data" enctype='application/json' novalidate>
 
 
             <input type="hidden" name="amount" value={amount} />
@@ -46,7 +64,7 @@ class donation extends Component{
         <div class="col-md-2">
         <div class="form-group">
         <label>Title <sup>*</sup></label>
-        <select id="TitleControl" name="Title" class="form-control">
+                                            <select style={{ borderWidth: 1, borderColor: "orange" }} id="TitleControl" name="Title" class="form-control">
         <option value="Mr.">Mr.</option>
         <option value="Mrs.">Mrs.</option>
         <option value="Miss">Miss</option>
@@ -58,56 +76,56 @@ class donation extends Component{
         <div class="col-md-5">
         <div class="form-group">
         <label>Full Name <sup>*</sup></label>
-        <input type="text"  id="FirstName_id2" name="name" class="form-control" autocomplete="on"/>
+                                            <input style={{ borderWidth: 1, borderColor: "orange" }} type="text" id="FirstName_id2" name="name" class="form-control" placeholder="Name" autocomplete="on" required/>
         </div>
         </div>
         <div class="col-md-5">
         <div class="form-group">
         <label>Email <sup>*</sup></label>
-        <input type="text"  id="EmailAddress_id3" name="email" class="form-control emailcontrol" autocomplete="off"/>
+                                            <input style={{ borderWidth: 1, borderColor: "orange"}} type="text" id="EmailAddress_id3" name="email" class="form-control emailcontrol" placeholder="me@gmail.com" autocomplete="off" required/>
         </div>
         </div>
         <div class="col-md-8">
         <div class="form-group">
         <label>Address <sup>*</sup></label>
-        <input type="text"  id="StreetAddress1_id4" name="address" class="form-control" autocomplete="off"/>
+                                            <input style={{ borderWidth: 1, borderColor: "orange" }} type="text" id="StreetAddress1_id4" name="address" class="form-control" autocomplete="off" placeholder="Address" required/>
         </div>
         </div>
         <div class="col-md-4">
         <div class="form-group">
         <label>Pin/Postal Code <sup>*</sup></label>
-        <input type="text"  id="PostalCode_id5" name="pin" class="form-control pincode" autocomplete="off"/>
+                                            <input type="text" style={{ borderWidth: 1, borderColor: "orange" }} id="PostalCode_id5" name="pin" class="form-control pincode" autocomplete="off" placeholder="111111" required/>
         </div>
         </div>
         <div class="col-md-4">
         <div class="form-group">
         <label>City <sup>*</sup></label>
-        <input type="text"  id="City_id6" name="city" class="form-control ctyctrl" autocomplete="off"/>
+                                            <input style={{ borderWidth: 1, borderColor: "orange" }} type="text" id="City_id6" name="city" class="form-control ctyctrl" autocomplete="off" placeholder="City" required/>
         </div>
         </div>
         <div class="col-md-4">
         <div class="form-group">
         <label>State <sup>*</sup></label>
-        <input type="text"  id="State_id7" name="state" class="form-control stctrl" autocomplete="off"/>
+                                            <input style={{ borderWidth: 1, borderColor: "orange"}} type="text" id="State_id7" name="state" class="form-control stctrl" placeholder="State" autocomplete="off" required/>
         </div>
         </div>
         <div class="col-md-4">
         <div class="form-group">
         <label>Country</label>
-        <input type="text" value="INDIA" id="Country_id8" name="country" class="form-control cntryctrl" autocomplete="off"/>
+                                            <input style={{ borderWidth: 1, borderColor: "orange" }} type="text" value="INDIA" id="Country_id8" name="country" class="form-control cntryctrl" autocomplete="off" required/>
         </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4">
         <div class="form-group">
-        <label>PAN <sup>*</sup></label>
-        <input type="text"  id="PANNumber_id9" name="pan" class="form-control pancontrol" autocomplete="off"/>
+        <label for="validationCustom01">PAN <sup>*</sup></label>
+                                            <input style={{ borderWidth: 1, borderColor: "orange" }} type="text" id="PANNumber_id9" name="pan" class="form-control pancontrol" placeholder="BAJPC4350M" autocomplete="off" required/>
         </div>
         </div>
 
         <div class="col-md-4">
         <div class="form-group">
         <label>Mobile <sup>*</sup></label>
-        <input type="text"  id="Mobile_id10" name="mobile" class="form-control mblcontrol" autocomplete="off"/>
+                                            <input style={{ borderWidth: 1, borderColor: "orange" }} type="text" id="Mobile_id10" name="mobile" class="form-control mblcontrol" placeholder="9999999999" autocomplete="off" required/>
         </div>
         </div>
 

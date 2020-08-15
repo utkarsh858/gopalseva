@@ -8,6 +8,7 @@ import api from "./api"
 const request = require('request');
 const superagent = require('superagent');
 
+
 class Donation extends Component {
     constructor(props){
         super(props)
@@ -92,9 +93,7 @@ return (
     required onChange={(event) => {
         this.setState({ name: event.target.value });
     }} />
-    <div class="valid-feedback">
-    Looks good!
-    </div>
+    
     </div>
 
     <div class="col-md-4 mb-3">
