@@ -8,48 +8,52 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import { createMuiTheme } from '@material-ui/core/styles';
 
+import imgUrl from './img/logo_nav.jpeg';
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
-  title: {
-    flexGrow: 1,
-  },
-  color : {
-    background : '#ffffff',
-  },
-  positionSticky : {
-    bottom : 100% - 80 ,
-  }
-}));
 
-const whitebg = {
 
-    background : '#ffffff',
-};
-
-const theme = createMuiTheme({
-  palette: {
-    primary: {
-      light: '#fffff',
-      main: '#3f50b5',
-      dark: '#002884',
-      contrastText: '#000',
-    },
-    secondary: {
-      light: '#ff7961',
-      main: '#f44336',
-      dark: '#ba000d',
-      contrastText: '#000',
-    },
-  },
-});
 
 export default function ButtonAppBar() {
+  
+    const useStyles = makeStyles((theme) => ({
+      root: {
+        flexGrow: 1,
+      },
+      menuButton: {
+        marginRight: theme.spacing(2),
+      },
+      title: {
+        flexGrow: 1,
+      },
+      color : {
+        background : '#ffffff',
+      },
+      positionSticky : {
+        bottom : 100% - 80 ,
+      }
+    }));
+
+    const whitebg = {
+
+        background : '#ffffff',
+    };
+
+    const theme = createMuiTheme({
+      palette: {
+        primary: {
+          light: '#fffff',
+          main: '#3f50b5',
+          dark: '#002884',
+          contrastText: '#000',
+        },
+        secondary: {
+          light: '#ff7961',
+          main: '#f44336',
+          dark: '#ba000d',
+          contrastText: '#000',
+        },
+      },
+    });
   const classes = useStyles();
 
   return (

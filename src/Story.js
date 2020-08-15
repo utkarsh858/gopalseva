@@ -59,7 +59,7 @@ import React,{Component} from 'react';
 											    </ul>
 
 											    <div class="donate-btn ml-auto">
-											    	<a href="../template_809/#" data-dismiss="modal" class="btn btn-primary" onClick={()=>{this.props.scrollHandler('our-achievements-inner')}}>Donate</a>
+											    	<a href="../template_809/#" data-dismiss="modal" class="btn btn-primary" onClick={()=>{this.props.scrollHandler('form_i')}}>Donate</a>
 											    </div>   
 										    </div>
 									    </div>
