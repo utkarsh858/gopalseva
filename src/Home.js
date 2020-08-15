@@ -20,6 +20,9 @@ import 'react-multi-carousel/lib/styles.css';
 // import ButtonAppBar from './NavBarHK.js';
 
 import imgUrl from './img/radha1.jpg';
+import logo from './img/logo_nav.jpeg';
+
+
 import debkiimg from  './img/sitarama.jpg';
 import utsav1 from "./img/utsav_vigrah_1.jpeg";
 import utsav2 from "./img/utsav_vigrah_2.jpeg";
@@ -123,17 +126,25 @@ scrollTo = (target) =>{
 
     <div className="Home" >
 
+
+{/*As of now we don't possess any additional items to be added as menu so I am removing the menu option, your servant*/}
     {
     <div class="header fixed-bottom">
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/"><img src="https://drive.google.com/file/d/1zrpkz0mi9xlHMKEGb6FU4HXpmQPfgxrg/view?usp=sharing" alt=""/></a>
+                <a class="navbar-brand" href="/"><img src={logo} width="150px" height="80px" alt="Gopal Seva Logo"/></a>
+
+            {/*
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
                 </button>
+            */}
+            {/*
                 <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+            */}
+                <div class="justify-content-end" >    
                 <div class="donate-btn">
-                <button onClick={() => { this.scrollTo('our-achievements-inner') }} class="btn btn-primary">Donate</button>
+                <button onClick={() => { this.scrollTo('form_i') }} class="btn btn-primary">Donate</button>
                 </div>
                 </div>
             </div>
@@ -179,7 +190,9 @@ scrollTo = (target) =>{
     </div>
     </div>
     </div>
-    <div class="col-md-7" id="form_i">
+
+
+    <div class="col-md-7" id="form_i" >
     <div class="package-wrap">
     <div class="package-inner">
     <input type="hidden" id="payment_mode" value="onetime"/>
