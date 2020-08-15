@@ -128,7 +128,7 @@ scrollTo = (target) =>{
 	
   return (
 
-    <div className="Home" >
+    <div className="home" >
 
 
 {/*As of now we don't possess any additional items to be added as menu so I am removing the menu option, your servant*/}

@@ -10,15 +10,15 @@ class donation extends Component{
         var link=window.localStorage.getItem('link');
         var amount=window.localStorage.getItem('amount');
         var isCustom=window.localStorage.getItem('isCustom');
-    var today = new Date();
-    var dd = String(today.getDate()).padStart(2, '0');
-var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-var yyyy = today.getFullYear();
+        var today = new Date();
+        var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+        var yyyy = today.getFullYear();
 
-var time=today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-var date=mm + '/' + dd + '/' + yyyy;
-    if(isCustom!=="true")
-    var title = (<h3>Total Donation amount: INR {amount}</h3>)
+        var time=today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+        var date=mm + '/' + dd + '/' + yyyy;
+        if(isCustom!=="true")
+        var title = (<h3>Total Donation amount: INR {amount}</h3>)
     // if(isCustom==="true") link=window.location.origin+customLink;
     return (
 
@@ -36,7 +36,7 @@ var date=mm + '/' + dd + '/' + yyyy;
             <input type="hidden" name="amount" value={amount} />
 
             
-             <input type="hidden" name="time" value={time} />
+            <input type="hidden" name="time" value={time} />
             <input type="hidden"  name="date" value={date} />
             <input type="hidden" name="link" value={link} />
 

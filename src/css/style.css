@@ -58,7 +58,8 @@ background-color: black;
 }
 .home{
 	pointer-events: all;
-	z-index:1;
+	z-index:0;
+	background-color: white;
 }
 .no-pointer-events{
 	/*pointer-events: auto;*/
