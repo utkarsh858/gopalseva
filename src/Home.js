@@ -105,19 +105,23 @@ scrollTo = (target) =>{
 	  superLargeDesktop: {
 	    // the naming can be any, depends on you.
 	    breakpoint: { max: 4000, min: 3000 },
-	    items: 5
+	    items: 5,
+        partialVisibilityGutter: 40
 	  },
 	  desktop: {
 	    breakpoint: { max: 3000, min: 1024 },
-	    items: 3
+	    items: 3,
+        partialVisibilityGutter: 10
 	  },
 	  tablet: {
 	    breakpoint: { max: 1024, min: 464 },
-	    items: 2
+	    items: 2,
+        partialVisibilityGutter: 30
 	  },
 	  mobile: {
 	    breakpoint: { max: 464, min: 0 },
-	    items: 1
+	    items: 1,
+        partialVisibilityGutter: 30
 	  }
 	};
 
@@ -381,9 +385,9 @@ scrollTo = (target) =>{
 
 
       
-    <section class="container-fluid donate-proceed cause_details" id="cause_details">
-    <div class="our-achievements" id="our-achievements-inner">
-    <div class="container">
+    <section class="container-fluid donate-proceed cause_details" id="about_details">
+        <div class="about-sec">
+            <div class="container">
     
     <div class="about-sec-inner">
     <div class="about-sec-info">
@@ -464,7 +468,9 @@ scrollTo = (target) =>{
         
         {/* To understant the code of this carosel please vistit the below link : https://www.npmjs.com/package/react-multi-carousel*/}
         <Carousel
-          arrows
+          arrows = {true}
+          swipeable={true}
+          draggable={true}
 		  showDots={true} renderDotsOutside={true}
 		  responsive={responsive}
 		  ssr={true} // means to render carousel on server-side.
