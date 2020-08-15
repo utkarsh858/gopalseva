@@ -577,7 +577,7 @@ pointer-events: auto;
 bottom: 0px;
 z-index:-1;
 /*padding:;*/
-background-color: red;
+background-color: black;
 }
 .container{
 	pointer-events: auto;
