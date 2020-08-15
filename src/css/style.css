@@ -567,7 +567,8 @@ height:100%;
 width:100%;
 position: fixed;
 pointer-events: auto;
-top:0px;
+/*top:0px;*/
+bottom: 0px;
 z-index:-1;
 /*padding:;*/
 background-color: red;
@@ -587,4 +588,7 @@ background-color: red;
 	pointer-events: none;
 	/*pointer-events: auto;*/
 }
-/*tyle={{height: 478,zIndex:-1,position: "fixed",left: 0, top: 0}}*/
+.iframe{
+	width:100%;
+	height:100%;
+}
