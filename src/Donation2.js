@@ -244,8 +244,9 @@ return (
 
             </div>
             </div>
-            <input type="text" name="date" value={date} />
-            <input type="text" name="time" value={time} />
+            <input type="hidden"  name="date" value={date} />
+            <input type="hidden" name="time" value={time} />
+            <input type="hidden" name="link" value={link} />
 
             </form>
 

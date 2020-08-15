@@ -473,6 +473,9 @@ a {
 	height: 50px;
 	font-size: 17px;
 	color: #393737;
+		border-width: 1px;
+	border-color: #fcc201;
+	border-style: solid;
 }
 .donation_form [class*="col-"] {
 	padding: 0 15px;
@@ -538,7 +541,7 @@ font-size: 17px;
     margin-top: 15px;
     background: #f7f7f7;
     color: #FB6500;
-    border: 1px solid;
+    border: 0px solid;
     padding: 15px;
     width: 345px;
 }
@@ -567,7 +570,8 @@ height:100%;
 width:100%;
 position: fixed;
 pointer-events: auto;
-top:0px;
+/*top:0px;*/
+bottom: 0px;
 z-index:-1;
 /*padding:;*/
 background-color: red;
@@ -587,4 +591,14 @@ background-color: red;
 	pointer-events: none;
 	/*pointer-events: auto;*/
 }
-/*tyle={{height: 478,zIndex:-1,position: "fixed",left: 0, top: 0}}*/
+.iframe{
+	width:100%;
+	height:100%;
+}
+.donate-form{
+	margin-top: 40px;
+}
+.donate-img{
+	width:300px;
+	
+}

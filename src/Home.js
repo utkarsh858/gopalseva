@@ -45,6 +45,8 @@ class Home extends Component {
     this.state={
       give_flag : 0,
       array_num : 0,
+      amount:"",
+      isCustom:"false",
       give_once_links : [
 "https://www.google.com",
 "https://www.google.com",
@@ -54,7 +56,7 @@ class Home extends Component {
 "https://www.google.com",
 "https://www.google.com",
 "https://www.google.com",
-"https://www.google.com",
+"https://www.payumoney.com/react/app/merchant/#/pay/merchant/E3C27F8A2FC2FCF18EC20F91BC1A6CC7?param=7115583",
 "https://www.google.com",
 "https://www.google.com",
 "https://www.google.com",
@@ -91,6 +93,9 @@ scrollTo = (target) =>{
     // window.location.href=this.state.give_monthly_links[this.state.array_num]
    window.localStorage.setItem('link',this.state.give_monthly_links[this.state.array_num])
    } 
+
+   window.localStorage.setItem('amount',this.state.amount)
+   window.localStorage.setItem('isCustom',this.state.isCustom)
    // window.location.href="/donate"
   }
 
@@ -214,7 +219,7 @@ scrollTo = (target) =>{
 
 
     <ul class="list-group list-group-horizontal" 
-    onClick={()=>{this.state.array_num = 0}}
+    onClick={()=>{this.state.array_num = 0 ;this.state.amount="800";this.state.isCustom="false"}}
     >
     <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>800</span></li>
     <li class="list-group-item">Support Meals for 10 children</li>
@@ -228,7 +233,7 @@ scrollTo = (target) =>{
 
 
     <ul class="list-group list-group-horizontal"
-    onClick={()=>{this.state.array_num = 1}}
+    onClick={()=>{this.state.array_num = 1 ;this.state.amount="1000";this.state.isCustom="false"}}
 
     >
     <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>1000</span></li>
@@ -244,7 +249,7 @@ scrollTo = (target) =>{
 
 
     <ul class="list-group list-group-horizontal"
-    onClick={()=>{this.state.array_num = 2}}
+    onClick={()=>{this.state.array_num = 2 ;this.state.amount="1500";this.state.isCustom="false"}}
     >
     <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>1500</span></li>
     <li class="list-group-item">Support meals for 20 children</li>
@@ -259,7 +264,7 @@ scrollTo = (target) =>{
 
 
     <ul class="list-group list-group-horizontal"
-    onClick={()=>{this.state.array_num = 3}}
+    onClick={()=>{this.state.array_num = 3 ;this.state.amount="2000";this.state.isCustom="false"}}
     >
     <li class="list-group-item"><i class="fa fa-rupee-sign" aria-hidden="true"></i> <span>2000</span></li>
     <li class="list-group-item">Support livelihood for 2 people with disability</li>
@@ -275,7 +280,7 @@ scrollTo = (target) =>{
 
 
     <ul class="list-group list-group-horizontal"
-    onClick={()=>{this.state.array_num = 4}}
+    onClick={()=>{this.state.array_num = 4 ;this.state.amount="2500";this.state.isCustom="false"}}
     >
     <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>2500</span></li>
     <li class="list-group-item">Support  classroom training for 1 visually impaired</li>
@@ -291,7 +296,7 @@ scrollTo = (target) =>{
 
 
     <ul class="list-group list-group-horizontal"
-    onClick={()=>{this.state.array_num = 5}}
+    onClick={()=>{this.state.array_num = 5 ;this.state.amount="3500";this.state.isCustom="false"}}
     >
     <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>3500</span></li>
     <li class="list-group-item">Support 3 sight restoring surgeries </li>
@@ -307,7 +312,7 @@ scrollTo = (target) =>{
 
 
     <ul class="list-group list-group-horizontal"
-    onClick={()=>{this.state.array_num = 6}}
+    onClick={()=>{this.state.array_num = 6 ;this.state.amount="5000";this.state.isCustom="false"}}
     >
     <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>5000</span></li>
     <li class="list-group-item">Support classroom training for a 2 visually impaired children</li>
@@ -323,7 +328,7 @@ scrollTo = (target) =>{
 
 
     <ul class="list-group list-group-horizontal"
-    onClick={()=>{this.state.array_num = 7}}
+    onClick={()=>{this.state.array_num = 7 ;this.state.amount="6500";this.state.isCustom="false"}}
     >
     <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>6500</span></li>
     <li class="list-group-item">Support 5 sight restoring surgeries</li>
@@ -339,10 +344,12 @@ scrollTo = (target) =>{
 
 
     <ul class="list-group list-group-horizontal"
-    onClick={()=>{this.state.array_num = 8}}
+    onClick={()=>{this.state.array_num = 8;this.state.isCustom="true"}}
     >
     <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i>
-    <span></span><input type="text" id="custom_amount_ot_value" name=""/> </li>
+    <span></span>
+    <input type="text" id="custom_amount_ot_value" name="" onChange={(e)=>{this.state.amount=e.target.value}}/> 
+    </li>
     <li class="list-group-item">How much are you going to give today?</li>
     <li class="list-group-item">
     <div class="custom-control custom-radio">
@@ -388,9 +395,11 @@ scrollTo = (target) =>{
     <p>GopalSeva' work in India has enabled thousands of people to lead lives of independence and dignity. We have been working with local partners to strengthen organisations and communities, and have supported the treatment of millions of people with eye disorders. We have educated, counseled, trained and rehabilitated people who are visually impaired or blind, and helped extend the reach of eye services to the least served areas of India.</p>
     </div>
     <div class="about-video">
+    <center>
     <a href="../template_809/#">
     <iframe width="80%" height="500" src="https://www.youtube.com/embed/nGS9ibpp2_o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
     </a>
+    </center>
     </div>
     </div>
     </div>
