@@ -382,9 +382,11 @@ scrollTo = (target) =>{
     <p>GopalSeva' work in India has enabled thousands of people to lead lives of independence and dignity. We have been working with local partners to strengthen organisations and communities, and have supported the treatment of millions of people with eye disorders. We have educated, counseled, trained and rehabilitated people who are visually impaired or blind, and helped extend the reach of eye services to the least served areas of India.</p>
     </div>
     <div class="about-video">
+    <center>
     <a href="../template_809/#">
     <iframe width="80%" height="500" src="https://www.youtube.com/embed/nGS9ibpp2_o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
     </a>
+    </center>
     </div>
     </div>
     </div>
