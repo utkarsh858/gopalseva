@@ -206,7 +206,7 @@ scrollTo = (target) =>{
 
 
     <ul class="list-group list-group-horizontal" 
-    onClick={()=>{this.state.array_num = 0 ;this.state.amount="800"}}
+    onClick={()=>{this.state.array_num = 0 ;this.state.amount="800";this.state.isCustom="false"}}
     >
     <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>800</span></li>
     <li class="list-group-item">Support Meals for 10 children</li>
@@ -220,7 +220,7 @@ scrollTo = (target) =>{
 
 
     <ul class="list-group list-group-horizontal"
-    onClick={()=>{this.state.array_num = 1 ;this.state.amount="1000"}}
+    onClick={()=>{this.state.array_num = 1 ;this.state.amount="1000";this.state.isCustom="false"}}
 
     >
     <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>1000</span></li>
@@ -236,7 +236,7 @@ scrollTo = (target) =>{
 
 
     <ul class="list-group list-group-horizontal"
-    onClick={()=>{this.state.array_num = 2 ;this.state.amount="1500"}}
+    onClick={()=>{this.state.array_num = 2 ;this.state.amount="1500";this.state.isCustom="false"}}
     >
     <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>1500</span></li>
     <li class="list-group-item">Support meals for 20 children</li>
@@ -251,7 +251,7 @@ scrollTo = (target) =>{
 
 
     <ul class="list-group list-group-horizontal"
-    onClick={()=>{this.state.array_num = 3 ;this.state.amount="2000"}}
+    onClick={()=>{this.state.array_num = 3 ;this.state.amount="2000";this.state.isCustom="false"}}
     >
     <li class="list-group-item"><i class="fa fa-rupee-sign" aria-hidden="true"></i> <span>2000</span></li>
     <li class="list-group-item">Support livelihood for 2 people with disability</li>
@@ -267,7 +267,7 @@ scrollTo = (target) =>{
 
 
     <ul class="list-group list-group-horizontal"
-    onClick={()=>{this.state.array_num = 4 ;this.state.amount="2500"}}
+    onClick={()=>{this.state.array_num = 4 ;this.state.amount="2500";this.state.isCustom="false"}}
     >
     <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>2500</span></li>
     <li class="list-group-item">Support  classroom training for 1 visually impaired</li>
@@ -283,7 +283,7 @@ scrollTo = (target) =>{
 
 
     <ul class="list-group list-group-horizontal"
-    onClick={()=>{this.state.array_num = 5 ;this.state.amount="3500"}}
+    onClick={()=>{this.state.array_num = 5 ;this.state.amount="3500";this.state.isCustom="false"}}
     >
     <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>3500</span></li>
     <li class="list-group-item">Support 3 sight restoring surgeries </li>
@@ -299,7 +299,7 @@ scrollTo = (target) =>{
 
 
     <ul class="list-group list-group-horizontal"
-    onClick={()=>{this.state.array_num = 6 ;this.state.amount="5000"}}
+    onClick={()=>{this.state.array_num = 6 ;this.state.amount="5000";this.state.isCustom="false"}}
     >
     <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>5000</span></li>
     <li class="list-group-item">Support classroom training for a 2 visually impaired children</li>
@@ -315,7 +315,7 @@ scrollTo = (target) =>{
 
 
     <ul class="list-group list-group-horizontal"
-    onClick={()=>{this.state.array_num = 7 ;this.state.amount="6500"}}
+    onClick={()=>{this.state.array_num = 7 ;this.state.amount="6500";this.state.isCustom="false"}}
     >
     <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>6500</span></li>
     <li class="list-group-item">Support 5 sight restoring surgeries</li>

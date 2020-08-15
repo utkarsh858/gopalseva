@@ -17,8 +17,8 @@ var yyyy = today.getFullYear();
 
 var time=today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
 var date=mm + '/' + dd + '/' + yyyy;
-
-
+    if(isCustom!=="true")
+    var title = (<h3>Total Donation amount: INR {amount}</h3>)
     // if(isCustom==="true") link=window.location.origin+customLink;
     return (
 
@@ -27,7 +27,7 @@ var date=mm + '/' + dd + '/' + yyyy;
         <div class="donation_form">
         <div class="container">
         <div class="donation_form_heading">
-        <h3>Total Donation amount: INR {amount}</h3>
+        {title}
         </div>
 
         <form class="needs-validation donate-form" role="form" id="cartForm" method="post" action="https://us-central1-gopal-seva.cloudfunctions.net/api/data" enctype='application/json'>
