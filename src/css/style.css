@@ -22,6 +22,15 @@ body {
 .react-multiple-carousel__arrow--right{right:-100px}*/
 
 
+.modal-frame{
+  	height: 390px;
+    overflow-x: hidden;
+  	overflow-y: auto;
+  	text-align: center;
+  	padding: 20px;
+  	margin-bottom: 20px;
+}
+
 .center-text{
 	text-align: center;
 }
@@ -42,8 +51,9 @@ body {
 }
 
 .section-title-1 {
+	padding-top: 30px;
 	text-align: center;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
 .section-title-1-divider {
 	width: 100px;
@@ -255,8 +265,8 @@ body {
 
 	/*padding-bottom: 40px;*/
 }
-.our-value-it h2{
-	font-weight: bolder;
+.our-value-it {
+	/*font-weight: bolder;*/
 	font-size: 30px;
 	font-family: serif;
 	font-style: oblique;
@@ -274,6 +284,14 @@ body {
 /*.our-value-item{
 	padding-left:-40px !important;
 }*/
+
+.people-support-item {
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+}
+
+
 .people-support-item-inner h5 {
     position: relative;
     font-size: 18px;
@@ -282,7 +300,9 @@ body {
 
 
 .people-support {
-    padding: 50px 0;
+    padding: 30px 0;
+    background-color: '#ffffff';
+
 }
 a {
     color: #9f085a;

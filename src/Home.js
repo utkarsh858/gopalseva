@@ -405,13 +405,10 @@ scrollTo = (target) =>{
     </div>
     </div>
 
-    <div class="our-value container-fluid">
+    <div class="our-value ">
         <div class="container">
         <div class="section-title-1">
-            <div class="our-value-it">
-                <h2>Our Values</h2>
-            </div>
-
+            <h2 >Our Values</h2>
             <div class="section-title-1-divider"></div>
         </div>
         <div class="our-value-items">
@@ -450,17 +447,19 @@ scrollTo = (target) =>{
 
 
 
-<div class="our-achievements" id="our-achievements-inner" >
+<div class="people-support" >
     <div class="container">
 
-        <div class="our-achievements-inner">
-            <h2 class="center-text">People we have supported</h2>
+        <div class="section-title-1">
+            <h2>People we have supported</h2>
         </div>
 
-        <div class="people-support-items " style={{ paddingBottom: '30px',paddingRight: '60px',paddingLeft: '60px', position: 'relative' }}>
+        {/*<div class="people-support-items " style={{ paddingBottom: '30px',paddingRight: '60px',paddingLeft: '60px', position: 'relative' }}>
+
+    */}
 
         
-          
+        <div class="people-support-items">
 
         
         {/* To understant the code of this carosel please vistit the below link : https://www.npmjs.com/package/react-multi-carousel*/}

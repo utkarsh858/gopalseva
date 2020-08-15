@@ -47,21 +47,26 @@ import React,{Component} from 'react';
 								    </div>
 								    <div class="col-md-7">
 									    <div class="modal-story-body-txt d-flex justify-content-between">
-										    <div class="modal-story-con">
+										    <div class="modal-story-con modal-frame">
 										    	{this.props.content}
 										    </div>
 
-										    <div class="share_story">
-										    	<span>Share this story</span>
-											    <ul>
-											    	<li><a href="#" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-											    	<li><a href="#" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-											    	<li><a href="#" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
-											    </ul>
+										    <div class="share_story row">
 
-											    <div class="donate-btn ml-auto">
-											    	<a href="../template_809/#" data-dismiss="modal" class="btn btn-primary" onClick={()=>{this.props.scrollHandler('form_i')}}>Donate</a>
-											    </div>   
+										    	<div class="col-12 col-md-6">
+											    	<span>Share this story</span>
+												    <ul>
+												    	<li><a href="#" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+												    	<li><a href="#" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+												    	<li><a href="#" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+												    </ul>
+												</div>
+
+												<div class="col-12 col-md-6">
+												    <div class="donate-btn ml-auto">
+												    	<a href="../template_809/#" data-dismiss="modal" class="btn btn-primary" onClick={()=>{this.props.scrollHandler('form_i')}}>Donate</a>
+												    </div>   
+												</div>
 										    </div>
 									    </div>
 								    </div>
