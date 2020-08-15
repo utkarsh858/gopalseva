@@ -26,6 +26,15 @@ body {
   padding-left: 30px;
 }*/
 
+.clear-spaces{
+	margin: 0px 0px 0px 0px; 
+	padding: 0px 0px 0px 0px;
+}
+
+.add-bottom-space{
+	padding-bottom: 10px;
+}
+
 .container-mk {
   padding-right: 0px;
   padding-left: 0px;
@@ -148,7 +157,20 @@ background-color: black;
 .people-support-item {
 	padding-left: 15px;
 	padding-right: 15px;
-	padding-bottom: 10px;
+	padding-bottom: 40px;
+}
+
+.our-value-item {
+   padding-right :15px;
+   padding-left: 15px;
+
+   width: 100%;
+   position: relative;
+   
+}
+
+.our-value-items{
+	margin-bottom: 40px;
 }
 
 .donate-btn .btn {

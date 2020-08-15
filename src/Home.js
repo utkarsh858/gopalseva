@@ -412,13 +412,13 @@ scrollTo = (target) =>{
         <div class="about-sec">
             <div class="container">
     
-    <div class="about-sec-inner">
+    
     <div class="about-sec-info">
-    <h3>About GopalSeva</h3>
+    <h3 class="clear-spaces add-bottom-space">About GopalSeva</h3>
     <p>GopalSeva is an international organisation that works with partners in more than 30 countries to eliminate avoidable hunger, and fight for the rights and needs of people with disability.</p>
     </div>
     <div class="about-sec-info">
-    <h3>In India since 1970</h3>
+    <h3 class="clear-spaces add-bottom-space">In India since 1970</h3>
     <p>GopalSeva' work in India has enabled thousands of people to lead lives of independence and dignity. We have been working with local partners to strengthen organisations and communities, and have supported the treatment of millions of people with eye disorders. We have educated, counseled, trained and rehabilitated people who are visually impaired or blind, and helped extend the reach of eye services to the least served areas of India.</p>
     </div>
     <div class="about-video">
@@ -427,7 +427,6 @@ scrollTo = (target) =>{
     <iframe width="80%" height="500" src="https://www.youtube.com/embed/nGS9ibpp2_o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
     </a>
     </center>
-    </div>
     </div>
     </div>
     </div>
@@ -440,22 +439,28 @@ scrollTo = (target) =>{
     <div class="our-value">
         <div class="container-mk2">
         <div class="section-title-1">
-            <h2 >Our Values</h2>
+            <h2 class="clear-spaces">Our Values</h2>
             <div class="section-title-1-divider"></div>
         </div>
         <div class="our-value-items">
         <div class="row">
-        <div class="col-md-4 our-value-item">
-        <h3>Protecting Stomarch with hunger</h3>
-        <p>Blindness is an important cause and the effect of poverty. We work with poor and marginalised communities in developing countries. At Sightsavers, we believe that people should not go blind unnecessarily. We prevent, treat and cure avoidable blindness and promote eye health.</p>
+        <div class="col-12 col-md-4 ">
+            <div class="our-value-item">
+                <h3>Protecting Stomarch with hunger</h3>
+                <p>Blindness is an important cause and the effect of poverty. We work with poor and marginalised communities in developing countries. At Sightsavers, we believe that people should not go blind unnecessarily. We prevent, treat and cure avoidable blindness and promote eye health.</p>
+                </div>
         </div>
-        <div class="col-md-4 our-value-item">
-        <h3>Equal Food</h3>
-        <p>People with empty stomach should be able to develop their potential to the full. We work with disabled people and others to promote equal rights and opportunities. We strengthen organisations and commnities to develop practical and enduring solutions.</p>
+        <div class="col-12 col-md-4 ">
+            <div class="our-value-item">
+                <h3>Equal Food</h3>
+                <p>People with empty stomach should be able to develop their potential to the full. We work with disabled people and others to promote equal rights and opportunities. We strengthen organisations and commnities to develop practical and enduring solutions.</p>
+            </div>
         </div>
-        <div class="col-md-4 our-value-item">
-        <h3>Collaboration</h3>
-        <p>We achieve much more when we collaborate. We forge alliances and partnerships to ensure a positive and long term impact on people's lives. Our supporters are a key part of the solution. We work together to accomplish our goals.</p>
+        <div class="col-12 col-md-4 ">
+            <div class="our-value-item">
+                <h3>Collaboration</h3>
+                <p>We achieve much more when we collaborate. We forge alliances and partnerships to ensure a positive and long term impact on people's lives. Our supporters are a key part of the solution. We work together to accomplish our goals.</p>
+            </div>
         </div>
         </div>
         </div>
@@ -511,7 +516,7 @@ scrollTo = (target) =>{
 		    <div>
 		  		<div class="people-support-item">
                     <div class="people-support-item-inner">
-                        <img src="/debki.jpg" alt="Hari Hari IMG 1"/>
+                        <img src={debkiimg} width="200px" height="200px" alt="Hari Hari IMG 1"/>
                         <h5>Stories / Social inclusion</h5>
                         <h3>First Story</h3>
                         <p>Hare krishna Please accept my humble obeisances</p>
@@ -526,7 +531,7 @@ scrollTo = (target) =>{
 		    <div>
 		    	<div class=" people-support-item">
                     <div class="people-support-item-inner">
-                        <img src="mataji.jpg" alt="Krishna IMG 2"/>
+                        <img src={utsav2} width="200px" height="200px" alt="Krishna IMG 2"/>
                         <h5>Stories/ Eye health</h5>
                         <h3>Second Story</h3>
                         <p>Hare krishna Please accept my humble obeisances</p>
@@ -541,7 +546,7 @@ scrollTo = (target) =>{
 		    <div>
 		    	<div class=" people-support-item">
                     <div class="people-support-item-inner">
-                        <img src="./img/sitarama.jpg" alt="Gauranga IMG 3"/>
+                        <img src={utsav1} width="200px" height="200px" alt="Gauranga IMG 3"/>
                         <h5>Stories/Inclusive Education</h5>
                         <h3>Third Story</h3>
                         <p>Hare krishna Please accept my humble obeisances</p>
@@ -556,7 +561,7 @@ scrollTo = (target) =>{
 		    <div>
 		    	<div class="people-support-item">
                     <div class="people-support-item-inner">
-                        <img src="./img/sitarama.jpg" alt="NityaNanda IMG 4"/>
+                        <img src={utsav1} width="200px" height="200px" alt="NityaNanda IMG 4"/>
                         <h5>Stories/Inclusive Education</h5>
                         <h3>Fourth Story</h3>
                         <p>Hare krishna Please accept my humble obeisances</p>
