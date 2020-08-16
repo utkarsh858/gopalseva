@@ -111,7 +111,15 @@ scrollTo = (target) =>{
     if(this.state.give_flag==0)
         customDonate = (
                                         <ul class="list-group list-group-horizontal"
-                                        onClick={()=>{
+                                        
+                                        >
+                                        <li class="list-group-item">
+                                        <span>Custom</span>
+                               
+                                        </li>
+                                        <li class="list-group-item">How much are you going to give today?</li>
+                                        <li class="list-group-item">
+                                        <div onClick={()=>{
 
                                             this.setState({
                                                 array_num:8,
@@ -121,15 +129,7 @@ scrollTo = (target) =>{
 
 
 
-                                        }}
-                                        >
-                                        <li class="list-group-item">
-                                        <span>Custom</span>
-                               
-                                        </li>
-                                        <li class="list-group-item">How much are you going to give today?</li>
-                                        <li class="list-group-item">
-                                        <div class="custom-control custom-radio">
+                                        }}class="custom-control custom-radio">
                                         <input type="radio" id="custom_amount_onetime" name="purpose_of_donation" class="custom-control-input" value="custom"/>
                                         <label class="custom-control-label" for="custom_amount_onetime"></label>
                                         </div>
@@ -282,19 +282,19 @@ scrollTo = (target) =>{
 
 
                                         <ul class="list-group list-group-horizontal" 
-                                        onClick={()=>{
+                                        
+                                        >
+                                        <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>800</span></li>
+                                        <li class="list-group-item">Support Meals for 10 children</li>
+                                        <li class="list-group-item">
+                                        <div onClick={()=>{
 
                                             this.setState({
                                                 array_num:0,
                                                 amount:"800",
                                                 isCustom:"false",
                                             })
-                                        }}
-                                        >
-                                        <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>800</span></li>
-                                        <li class="list-group-item">Support Meals for 10 children</li>
-                                        <li class="list-group-item">
-                                        <div class="custom-control custom-radio">
+                                        }} class="custom-control custom-radio">
                                         <input type="radio" id="customRadio1" name="purpose_of_donation" class="custom-control-input" value="800"/>
                                         <label class="custom-control-label" for="customRadio1"></label>
                                         </div>
@@ -303,19 +303,19 @@ scrollTo = (target) =>{
 
 
                                         <ul class="list-group list-group-horizontal"
-                                        onClick={()=>{
+                                        
+                                        >
+                                        <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>1000</span></li>
+                                        <li class="list-group-item">Support livelihood for 1 person with disability</li>
+                                        <li class="list-group-item">
+                                        <div onClick={()=>{
                                                                                     this.setState({
                                                 array_num:1,
                                                 amount:"1000",
                                                 isCustom:"false",
                                             })
 
-                                        }}
-                                        >
-                                        <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>1000</span></li>
-                                        <li class="list-group-item">Support livelihood for 1 person with disability</li>
-                                        <li class="list-group-item">
-                                        <div class="custom-control custom-radio">
+                                        }}class="custom-control custom-radio">
                                         <input type="radio" id="customRadio2" name="purpose_of_donation" class="custom-control-input" value="1000"/>
                                         <label class="custom-control-label" for="customRadio2"></label>
                                         </div>
@@ -325,19 +325,19 @@ scrollTo = (target) =>{
 
 
                                         <ul class="list-group list-group-horizontal"
-                                        onClick={()=>{
+                                        
+                                        >
+                                        <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>1500</span></li>
+                                        <li class="list-group-item">Support meals for 20 children</li>
+                                        <li class="list-group-item">
+                                        <div onClick={()=>{
                                             this.setState({
                                                 array_num:2,
                                                 amount:"1500",
                                                 isCustom:"false",
                                             })
 
-                                        }}
-                                        >
-                                        <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>1500</span></li>
-                                        <li class="list-group-item">Support meals for 20 children</li>
-                                        <li class="list-group-item">
-                                        <div class="custom-control custom-radio">
+                                        }} class="custom-control custom-radio">
                                         <input type="radio" id="customRadio3" name="purpose_of_donation" class="custom-control-input" value="1500"/>
                                         <label class="custom-control-label" for="customRadio3"></label>
                                         </div>
@@ -347,7 +347,12 @@ scrollTo = (target) =>{
 
 
                                         <ul class="list-group list-group-horizontal"
-                                        onClick={()=>{
+                                        
+                                        >
+                                        <li class="list-group-item"><i class="fa fa-rupee-sign" aria-hidden="true"></i> <span>2000</span></li>
+                                        <li class="list-group-item">Support livelihood for 2 people with disability</li>
+                                        <li class="list-group-item">
+                                        <div onClick={()=>{
                                             this.setState({
                                                 array_num:3,
                                                 amount:"2000",
@@ -355,12 +360,7 @@ scrollTo = (target) =>{
                                             })
 
 
-                                    }}
-                                        >
-                                        <li class="list-group-item"><i class="fa fa-rupee-sign" aria-hidden="true"></i> <span>2000</span></li>
-                                        <li class="list-group-item">Support livelihood for 2 people with disability</li>
-                                        <li class="list-group-item">
-                                        <div class="custom-control custom-radio">
+                                    }} class="custom-control custom-radio">
                                         <input type="radio" id="customRadio4" name="purpose_of_donation" class="custom-control-input" value="2000"/>
                                         <label class="custom-control-label" for="customRadio4"></label>
                                         </div>
@@ -371,7 +371,12 @@ scrollTo = (target) =>{
 
 
                                         <ul class="list-group list-group-horizontal"
-                                        onClick={()=>{
+                                        
+                                        >
+                                        <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>2500</span></li>
+                                        <li class="list-group-item">Support  classroom training for 1 visually impaired</li>
+                                        <li class="list-group-item">
+                                        <div onClick={()=>{
 
                                             this.setState({
                                                 array_num:4,
@@ -381,12 +386,7 @@ scrollTo = (target) =>{
 
 
 
-                                        }}
-                                        >
-                                        <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>2500</span></li>
-                                        <li class="list-group-item">Support  classroom training for 1 visually impaired</li>
-                                        <li class="list-group-item">
-                                        <div class="custom-control custom-radio">
+                                        }} class="custom-control custom-radio">
                                         <input type="radio" id="customRadio5" name="purpose_of_donation" class="custom-control-input" value="2500"/>
                                         <label class="custom-control-label" for="customRadio5"></label>
                                         </div>
@@ -397,7 +397,12 @@ scrollTo = (target) =>{
 
 
                                         <ul class="list-group list-group-horizontal"
-                                        onClick={()=>{
+                                        
+                                        >
+                                        <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>3500</span></li>
+                                        <li class="list-group-item">Support 3 sight restoring surgeries </li>
+                                        <li class="list-group-item">
+                                        <div onClick={()=>{
                                             this.setState({
                                                 array_num:5,
                                                 amount:"3500",
@@ -405,12 +410,7 @@ scrollTo = (target) =>{
                                             })
 
                
-                                        }}
-                                        >
-                                        <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>3500</span></li>
-                                        <li class="list-group-item">Support 3 sight restoring surgeries </li>
-                                        <li class="list-group-item">
-                                        <div class="custom-control custom-radio">
+                                        }} class="custom-control custom-radio">
                                         <input type="radio" id="customRadio6" name="purpose_of_donation" class="custom-control-input" value="3500"/>
                                         <label class="custom-control-label" for="customRadio6"></label>
                                         </div>
@@ -421,7 +421,12 @@ scrollTo = (target) =>{
 
 
                                         <ul class="list-group list-group-horizontal"
-                                        onClick={()=>{
+                                        
+                                        >
+                                        <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>5000</span></li>
+                                        <li class="list-group-item">Support classroom training for a 2 visually impaired children</li>
+                                        <li class="list-group-item">
+                                        <div onClick={()=>{
 
                                             this.setState({
                                                 array_num:6,
@@ -429,12 +434,7 @@ scrollTo = (target) =>{
                                                 isCustom:"false",
                                             })
 
-                                        }}
-                                        >
-                                        <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>5000</span></li>
-                                        <li class="list-group-item">Support classroom training for a 2 visually impaired children</li>
-                                        <li class="list-group-item">
-                                        <div class="custom-control custom-radio">
+                                        }} class="custom-control custom-radio">
                                         <input type="radio" id="customRadio7" name="purpose_of_donation" class="custom-control-input" value="5000"/>
                                         <label class="custom-control-label" for="customRadio7"></label>
                                         </div>
@@ -445,7 +445,12 @@ scrollTo = (target) =>{
 
 
                                         <ul class="list-group list-group-horizontal"
-                                        onClick={()=>{
+                                        
+                                        >
+                                        <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>6500</span></li>
+                                        <li class="list-group-item">Support 5 sight restoring surgeries</li>
+                                        <li class="list-group-item">
+                                        <div onClick={()=>{
 
                                             this.setState({
                                                 array_num:7,
@@ -453,12 +458,7 @@ scrollTo = (target) =>{
                                                 isCustom:"false",
                                             })
 
-                                        }}
-                                        >
-                                        <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>6500</span></li>
-                                        <li class="list-group-item">Support 5 sight restoring surgeries</li>
-                                        <li class="list-group-item">
-                                        <div class="custom-control custom-radio">
+                                        }} class="custom-control custom-radio">
                                         <input type="radio" id="customRadio8" name="purpose_of_donation" class="custom-control-input" value="6500"/>
                                         <label class="custom-control-label" for="customRadio8"></label>
                                         </div>
