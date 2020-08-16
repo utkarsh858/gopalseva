@@ -253,7 +253,7 @@ scrollTo = (target) =>{
 
                                 <ul class="nav nav-pills nav-justified " role="tablist">
                                     <li class="nav-item ">
-                                        <a class="nav-link active" data-toggle="tab" 
+                                        <a class="nav-link active " data-toggle="tab" 
                                         onClick={()=>{
                                         this.setState({
                                             give_flag:0,
@@ -264,7 +264,7 @@ scrollTo = (target) =>{
                                         </a>
                                     </li>
                                     <li class="nav-item ">
-                                        <a class="nav-link" data-toggle="tab"
+                                        <a class="nav-link " data-toggle="tab"
                                         onClick={()=>{
                                             this.setState({
                                                 give_flag : 1,
