@@ -116,7 +116,7 @@ scrollTo = (target) =>{
                                             this.setState({
                                                 array_num:8,
                                                 amount:"",
-                                                isCustom:"false",
+                                                isCustom:"true",
                                             })
 
 

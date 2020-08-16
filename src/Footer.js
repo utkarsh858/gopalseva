@@ -11,10 +11,10 @@ render(){
           <div class="footer-filler" ></div>
           <div class="footer" >
           <div >
-            <div style={{position:"absolute",bottom:0,zIndex:-1}}>
+            <div style={{position:"absolute",bottom:0,zIndex:-1,height:"100%",overflowY:"auto"}}>
 
                   
-                  <section style={{zIndex:-1,margin:0}} class="l-section wpb_row height_large color_secondary with_img with_overlay with_shape parallax_fixed" id="contact">
+                  <section style={{zIndex:-1,margin:0,height:"100%"}} class="l-section wpb_row height_large color_secondary with_img with_overlay with_shape parallax_fixed" id="contact">
 
 
                       <div class="l-section-img loaded" style={{zIndex:-1, backgroundImage: "url(" + imgUrl + ")" }} data-img-width="1280" data-img-height="754">
