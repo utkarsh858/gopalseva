@@ -107,6 +107,36 @@ scrollTo = (target) =>{
   }
 
   render(){
+    var customDonate;
+    if(this.state.give_flag==0)
+        customDonate = (
+                                        <ul class="list-group list-group-horizontal"
+                                        onClick={()=>{
+
+                                            this.setState({
+                                                array_num:8,
+                                                amount:"",
+                                                isCustom:"false",
+                                            })
+
+
+
+                                        }}
+                                        >
+                                        <li class="list-group-item">
+                                        <span>Custom</span>
+                               
+                                        </li>
+                                        <li class="list-group-item">How much are you going to give today?</li>
+                                        <li class="list-group-item">
+                                        <div class="custom-control custom-radio">
+                                        <input type="radio" id="custom_amount_onetime" name="purpose_of_donation" class="custom-control-input" value="custom"/>
+                                        <label class="custom-control-label" for="custom_amount_onetime"></label>
+                                        </div>
+                                        </li>
+                                        </ul>)
+    else 
+        customDonate = (<div></div>)
 
   	const responsive = {
 	  superLargeDesktop: {
@@ -224,14 +254,22 @@ scrollTo = (target) =>{
                                 <ul class="nav nav-pills nav-justified " role="tablist">
                                     <li class="nav-item ">
                                         <a class="nav-link active" data-toggle="tab" 
-                                        onClick={()=>{this.state.give_flag = 0}}
+                                        onClick={()=>{
+                                        this.setState({
+                                            give_flag:0,
+                                        })
+                                        }}
                                          id="onetime">
                                             Give Once
                                         </a>
                                     </li>
                                     <li class="nav-item ">
                                         <a class="nav-link" data-toggle="tab"
-                                        onClick={()=>{this.state.give_flag = 1}}
+                                        onClick={()=>{
+                                            this.setState({
+                                                give_flag : 1,
+                                            })
+                                        }}
                                         id="recurring">
                                             Give Monthly
                                         </a>
@@ -244,7 +282,14 @@ scrollTo = (target) =>{
 
 
                                         <ul class="list-group list-group-horizontal" 
-                                        onClick={()=>{this.state.array_num = 0 ;this.state.amount="800";this.state.isCustom="false"}}
+                                        onClick={()=>{
+
+                                            this.setState({
+                                                array_num:0,
+                                                amount:"800",
+                                                isCustom:"false",
+                                            })
+                                        }}
                                         >
                                         <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>800</span></li>
                                         <li class="list-group-item">Support Meals for 10 children</li>
@@ -258,7 +303,14 @@ scrollTo = (target) =>{
 
 
                                         <ul class="list-group list-group-horizontal"
-                                        onClick={()=>{this.state.array_num = 1 ;this.state.amount="1000";this.state.isCustom="false"}}
+                                        onClick={()=>{
+                                                                                    this.setState({
+                                                array_num:1,
+                                                amount:"1000",
+                                                isCustom:"false",
+                                            })
+
+                                        }}
                                         >
                                         <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>1000</span></li>
                                         <li class="list-group-item">Support livelihood for 1 person with disability</li>
@@ -273,7 +325,14 @@ scrollTo = (target) =>{
 
 
                                         <ul class="list-group list-group-horizontal"
-                                        onClick={()=>{this.state.array_num = 2 ;this.state.amount="1500";this.state.isCustom="false"}}
+                                        onClick={()=>{
+                                            this.setState({
+                                                array_num:2,
+                                                amount:"1500",
+                                                isCustom:"false",
+                                            })
+
+                                        }}
                                         >
                                         <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>1500</span></li>
                                         <li class="list-group-item">Support meals for 20 children</li>
@@ -288,7 +347,15 @@ scrollTo = (target) =>{
 
 
                                         <ul class="list-group list-group-horizontal"
-                                        onClick={()=>{this.state.array_num = 3 ;this.state.amount="2000";this.state.isCustom="false"}}
+                                        onClick={()=>{
+                                            this.setState({
+                                                array_num:3,
+                                                amount:"2000",
+                                                isCustom:"false",
+                                            })
+
+
+                                    }}
                                         >
                                         <li class="list-group-item"><i class="fa fa-rupee-sign" aria-hidden="true"></i> <span>2000</span></li>
                                         <li class="list-group-item">Support livelihood for 2 people with disability</li>
@@ -304,7 +371,17 @@ scrollTo = (target) =>{
 
 
                                         <ul class="list-group list-group-horizontal"
-                                        onClick={()=>{this.state.array_num = 4 ;this.state.amount="2500";this.state.isCustom="false"}}
+                                        onClick={()=>{
+
+                                            this.setState({
+                                                array_num:4,
+                                                amount:"2500",
+                                                isCustom:"false",
+                                            })
+
+
+
+                                        }}
                                         >
                                         <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>2500</span></li>
                                         <li class="list-group-item">Support  classroom training for 1 visually impaired</li>
@@ -320,7 +397,15 @@ scrollTo = (target) =>{
 
 
                                         <ul class="list-group list-group-horizontal"
-                                        onClick={()=>{this.state.array_num = 5 ;this.state.amount="3500";this.state.isCustom="false"}}
+                                        onClick={()=>{
+                                            this.setState({
+                                                array_num:5,
+                                                amount:"3500",
+                                                isCustom:"false",
+                                            })
+
+               
+                                        }}
                                         >
                                         <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>3500</span></li>
                                         <li class="list-group-item">Support 3 sight restoring surgeries </li>
@@ -336,7 +421,15 @@ scrollTo = (target) =>{
 
 
                                         <ul class="list-group list-group-horizontal"
-                                        onClick={()=>{this.state.array_num = 6 ;this.state.amount="5000";this.state.isCustom="false"}}
+                                        onClick={()=>{
+
+                                            this.setState({
+                                                array_num:6,
+                                                amount:"5000",
+                                                isCustom:"false",
+                                            })
+
+                                        }}
                                         >
                                         <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>5000</span></li>
                                         <li class="list-group-item">Support classroom training for a 2 visually impaired children</li>
@@ -352,7 +445,15 @@ scrollTo = (target) =>{
 
 
                                         <ul class="list-group list-group-horizontal"
-                                        onClick={()=>{this.state.array_num = 7 ;this.state.amount="6500";this.state.isCustom="false"}}
+                                        onClick={()=>{
+
+                                            this.setState({
+                                                array_num:7,
+                                                amount:"6500",
+                                                isCustom:"false",
+                                            })
+
+                                        }}
                                         >
                                         <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>6500</span></li>
                                         <li class="list-group-item">Support 5 sight restoring surgeries</li>
@@ -365,23 +466,9 @@ scrollTo = (target) =>{
                                         </ul>
 
 
+                                        {customDonate}
 
-
-                                        <ul class="list-group list-group-horizontal"
-                                        onClick={()=>{this.state.array_num = 8;this.state.isCustom="true"}}
-                                        >
-                                        <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i>
-                                        <span></span>
-                                        <input type="text" id="custom_amount_ot_value" name="" onChange={(e)=>{this.state.amount=e.target.value}}/> 
-                                        </li>
-                                        <li class="list-group-item">How much are you going to give today?</li>
-                                        <li class="list-group-item">
-                                        <div class="custom-control custom-radio">
-                                        <input type="radio" id="custom_amount_onetime" name="purpose_of_donation" class="custom-control-input" value="custom"/>
-                                        <label class="custom-control-label" for="custom_amount_onetime"></label>
-                                        </div>
-                                        </li>
-                                        </ul>
+                                        
 
                                     </div>
 
