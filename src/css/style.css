@@ -112,7 +112,7 @@ body {
 	pointer-events: none;
 	background-color: transparent;
 
-	z-index:-100;
+	z-index:-2;
 }
 .footer{
 height:100%;
@@ -123,7 +123,8 @@ pointer-events: auto;
 bottom: 0px;
 z-index:-1;
 /*padding:;*/
-background-color: black;
+background-color: black !important;
+
 }
 .container{
 	pointer-events: auto;
@@ -351,13 +352,7 @@ background-color: black;
     font-size: 20px;
     font-weight: bold;
 }
-.nav-link-left{
-	border-top-left-radius: 10px;
-	border-bottom-left-radius: 10px;
-}
-.nav-link-right{
 
-}
 .package-wrap .nav-pills .nav-link.active, .package-wrap .nav-pills .show>.nav-link {
     color: #000;
     border: 1px solid #ddd;
