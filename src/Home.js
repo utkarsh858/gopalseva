@@ -10,7 +10,8 @@ import './css/responsive.min.css';
 import './css/style_givelify_orig.css';
 import './style.php';
 
-import Carousel from 'react-bootstrap/Carousel';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
 
 
@@ -19,7 +20,7 @@ import './css/style.css';
 import './css/App.css';
 
 
-// import next_page from './donation.js';
+// import next_page f9rom './donation.js';
 
 
 
@@ -214,6 +215,31 @@ scrollTo = (target) =>{
 	  }
 	};
 
+    const CustomButtonGroup = ({ next, previous, goToSlide, carouselState }) => {
+          const { totalItems, currentSlide } = carouselState;
+          return (
+            <div className="custom-button-group">
+              
+
+            {/*
+
+              <button onClick={() => previous()}>Previous slide</button>
+              <button onClick={() => next()}>Next slide</button>
+
+            */}
+              <button onClick={() => previous()}><i  className="custom-left-arrow" />  </button>
+              <button onClick={() => next()}><i  className="custom-right-arrow" /> </button>
+
+              {/*
+              <button
+                onClick={() => goToSlide(Math.floor(Math.random() * totalItems + 1))}
+              >
+                Go to a random slide
+              </button>
+          */}
+            </div>
+          );
+        };
 	
   return (
 
@@ -672,17 +698,19 @@ scrollTo = (target) =>{
 
         
         {/* To understant the code of this carosel please vistit the below link : https://www.npmjs.com/package/react-multi-carousel*/}
-     {/*
+     
+
         <Carousel
-          arrows = {true}
-          swipeable={true}
-          draggable={true}
-		  showDots={true} renderDotsOutside={true}
+          
+          
+		  arrows = {false}
 		  responsive={responsive}
 		  ssr={true} // means to render carousel on server-side.
 		  infinite={true}
 		  autoPlay={this.props.deviceType !== "mobile" ? true : false}
 		  autoPlaySpeed={2500}
+          customButtonGroup={<CustomButtonGroup />}
+          renderButtonGroupOutside={true}
 		  
 		  
 		>
@@ -748,47 +776,10 @@ scrollTo = (target) =>{
 		    </div>
 		  
 		</Carousel>
-    */}
+    
 
 
-        <Carousel>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src="holder.js/800x400?text=First slide&bg=373940"
-      alt="First slide"
-    />
-    <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src="holder.js/800x400?text=Second slide&bg=282c34"
-      alt="Third slide"
-    />
-
-    <Carousel.Caption>
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src="holder.js/800x400?text=Third slide&bg=20232a"
-      alt="Third slide"
-    />
-
-    <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-</Carousel>
-
+        
             
         </div>
 
