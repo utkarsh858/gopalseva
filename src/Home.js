@@ -110,9 +110,59 @@ scrollTo = (target) =>{
     var customDonate;
     if(this.state.give_flag==0)
         customDonate = (
-                                        <ul class="list-group list-group-horizontal"
-                                        
-                                        >
+            <React.Fragment>
+            <ul class="list-group list-group-horizontal">
+                                        <li class="list-group-item">
+                                        <span>5555</span>
+                               
+                                        </li>
+                                        <li class="list-group-item">keval only once</li>
+                                        <li class="list-group-item">
+                                        <div onClick={()=>{
+
+                                            this.setState({
+                                                array_num:8,
+                                                amount:"",
+                                                isCustom:"true",
+                                            })
+
+
+
+                                        }}class="custom-control custom-radio">
+                                        <input type="radio" id="custom_amount_onetime" name="purpose_of_donation" class="custom-control-input" value="custom"/>
+                                        <label class="custom-control-label" for="custom_amount_onetime"></label>
+                                        </div>
+                                        </li>
+                                        </ul>
+
+
+                                        <ul class="list-group list-group-horizontal">
+                                        <li class="list-group-item">
+                                        <span>9999</span>
+                               
+                                        </li>
+                                        <li class="list-group-item">keval only once</li>
+                                        <li class="list-group-item">
+                                        <div onClick={()=>{
+
+                                            this.setState({
+                                                array_num:8,
+                                                amount:"",
+                                                isCustom:"true",
+                                            })
+
+
+
+                                        }}class="custom-control custom-radio">
+                                        <input type="radio" id="custom_amount_onetime" name="purpose_of_donation" class="custom-control-input" value="custom"/>
+                                        <label class="custom-control-label" for="custom_amount_onetime"></label>
+                                        </div>
+                                        </li>
+                                        </ul>
+
+
+
+                                        <ul class="list-group list-group-horizontal">
                                         <li class="list-group-item">
                                         <span>Custom</span>
                                
@@ -134,7 +184,9 @@ scrollTo = (target) =>{
                                         <label class="custom-control-label" for="custom_amount_onetime"></label>
                                         </div>
                                         </li>
-                                        </ul>)
+                                        </ul>
+                                        </React.Fragment>
+                                        )
     else 
         customDonate = (<div></div>)
 
@@ -236,6 +288,18 @@ scrollTo = (target) =>{
                                 </div>
                             </div>
                             <div class="our-achievement-item">
+                                <div class="our-achievement-item-info">
+                                    <h4>5 Million</h4>
+                                    <p>Meals in Bahadurgarh</p>
+                                </div>
+                            </div>
+                            <div class="our-achievement-item responsive-hide">
+                                <div class="our-achievement-item-info">
+                                    <h4>5 Million</h4>
+                                    <p>Meals in Bahadurgarh</p>
+                                </div>
+                            </div>
+                            <div class="our-achievement-item responsive-hide">
                                 <div class="our-achievement-item-info">
                                     <h4>5 Million</h4>
                                     <p>Meals in Bahadurgarh</p>
@@ -448,6 +512,26 @@ scrollTo = (target) =>{
                                         <ul class="list-group list-group-horizontal"
                                         
                                         >
+                                        <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>6500</span></li>
+                                        <li class="list-group-item">Support 5 sight restoring surgeries</li>
+                                        <li class="list-group-item">
+                                        <div onClick={()=>{
+
+                                            this.setState({
+                                                array_num:7,
+                                                amount:"6500",
+                                                isCustom:"false",
+                                            })
+
+                                        }} class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio8" name="purpose_of_donation" class="custom-control-input" value="6500"/>
+                                        <label class="custom-control-label" for="customRadio8"></label>
+                                        </div>
+                                        </li>
+                                        </ul>
+
+
+                                        <ul class="list-group list-group-horizontal">
                                         <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>6500</span></li>
                                         <li class="list-group-item">Support 5 sight restoring surgeries</li>
                                         <li class="list-group-item">

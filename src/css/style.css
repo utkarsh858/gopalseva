@@ -95,6 +95,12 @@ body {
 	}
 }
 
+@media screen and (max-width: 767px) {
+	.responsive-hide{
+		display: none;
+	}
+}
+
 
 .center-mk{
 	text-align: center;
