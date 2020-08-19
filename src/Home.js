@@ -219,6 +219,34 @@ scrollTo = (target) =>{
 	  }
 	};
 
+    const responsive2 = {
+      superLargeDesktop: {
+        // the naming can be any, depends on you.
+        breakpoint: { max: 4000, min: 3000 },
+        items: 2,
+        slidesToSlide : 1,
+        partialVisibilityGutter: 40
+      },
+      desktop: {
+        breakpoint: { max: 3000, min: 1024 },
+        items: 1,
+        slidesToSlide : 1, 
+        partialVisibilityGutter: 10
+      },
+      tablet: {
+        breakpoint: { max: 1024, min: 464 },
+        items: 1,
+        slidesToSlide : 1,
+        partialVisibilityGutter: 30
+      },
+      mobile: {
+        breakpoint: { max: 464, min: 0 },
+        items: 1,
+        slidesToSlide : 1,
+        partialVisibilityGutter: 30
+      }
+    }
+
     const CustomButtonGroup = ({ next, previous, goToSlide, carouselState }) => {
           const { totalItems, currentSlide } = carouselState;
           return (
@@ -244,6 +272,8 @@ scrollTo = (target) =>{
             </div>
           );
         };
+
+    
 	
   return (
 
@@ -289,6 +319,9 @@ scrollTo = (target) =>{
         </div>
     </div>
 
+
+    <div class="empty-gap-creater">
+    </div>
 
 
     <section class="container-mk " id="cause_details" >
@@ -638,37 +671,7 @@ scrollTo = (target) =>{
     <section class="container-mk">
 
 
-    <div class="our-value">
-        <div class="container-mk2">
-        <div class="section-title-1">
-            <h2 class="clear-spaces">Our Values</h2>
-            <div class="section-title-1-divider"></div>
-        </div>
-        <div class="our-value-items">
-        <div class="row">
-        <div class="col-12 col-md-4 ">
-            <div class="our-value-item">
-                <h3>Protecting Stomarch with hunger</h3>
-                <p>Blindness is an important cause and the effect of poverty. We work with poor and marginalised communities in developing countries. At Sightsavers, we believe that people should not go blind unnecessarily. We prevent, treat and cure avoidable blindness and promote eye health.</p>
-                </div>
-        </div>
-        <div class="col-12 col-md-4 ">
-            <div class="our-value-item">
-                <h3>Equal Food</h3>
-                <p>People with empty stomach should be able to develop their potential to the full. We work with disabled people and others to promote equal rights and opportunities. We strengthen organisations and commnities to develop practical and enduring solutions.</p>
-            </div>
-        </div>
-        <div class="col-12 col-md-4 ">
-            <div class="our-value-item">
-                <h3>Collaboration</h3>
-                <p>We achieve much more when we collaborate. We forge alliances and partnerships to ensure a positive and long term impact on people's lives. Our supporters are a key part of the solution. We work together to accomplish our goals.</p>
-            </div>
-        </div>
-        </div>
-        </div>
-        </div>
-    </div>
-
+    
     
 
 
@@ -687,7 +690,7 @@ scrollTo = (target) =>{
 
 
 <div class="people-support" >
-    <div class="container">
+    <div class="container transparent-mk">
 
         <div class="section-title-1">
             <h2>People we have supported</h2>
@@ -711,7 +714,8 @@ scrollTo = (target) =>{
 		  responsive={responsive}
 		  ssr={true} // means to render carousel on server-side.
 		  infinite={true}
-		  
+		  autoPlay={this.props.deviceType !== "mobile" ? true : false}
+          autoPlaySpeed={2500}
           customButtonGroup={<CustomButtonGroup />}
           renderButtonGroupOutside={true}
 		  showDots={true}
@@ -791,6 +795,62 @@ scrollTo = (target) =>{
     </div>
 </div>
 
+
+
+    <div class="our-value">
+        <div class="container transparent-mk-our-values">
+
+            <div class="section-title-1">
+                <h2 class="clear-spaces">Our Values</h2>
+                <div class="section-title-1-divider"></div>
+            </div>
+
+
+            <div class="our-value-items">
+
+                <Carousel
+                  arrows = {false}
+                  responsive={responsive2}
+                  ssr={true} // means to render carousel on server-side.
+                  infinite={true}
+                  autoPlay={this.props.deviceType !== "mobile" ? true : false}
+                  autoPlaySpeed={2500}
+                  customButtonGroup={<CustomButtonGroup />}
+                  renderButtonGroupOutside={true}
+                  showDots={true}
+                  renderDotsOutside ={ true}
+                  
+                >
+                    <div>
+                        <div class="our-value-item">
+                            <h3>Protecting Stomarch with hunger</h3>
+                            <p>Blindness is an important cause and the effect of poverty. We work with poor and marginalised communities in developing countries. At Sightsavers, we believe that people should not go blind unnecessarily. We prevent, treat and cure avoidable blindness and promote eye health.</p>
+                        </div>  
+                    </div>
+
+                    <div>
+                        <div class="our-value-item">
+                            <h3>Equal Food</h3>
+                            <p>People with empty stomach should be able to develop their potential to the full. We work with disabled people and others to promote equal rights and opportunities. We strengthen organisations and commnities to develop practical and enduring solutions.</p>
+                        </div>     
+                    </div>
+                    <div>   
+                        <div class="our-value-item">
+                            <h3>Collaboration</h3>
+                            <p>We achieve much more when we collaborate. We forge alliances and partnerships to ensure a positive and long term impact on people's lives. Our supporters are a key part of the solution. We work together to accomplish our goals.</p>
+                        </div> 
+                    </div>
+                  
+                </Carousel>
+            
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="empty-gap-creater">
+    </div>
 
 </section>
 
