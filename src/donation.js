@@ -144,7 +144,7 @@ class donation extends Component{
             <div class="col-md-4">
                 <div class="payment-button">
         <div class="form-group">
-        <button class="btn pay-button give_once" type="submit" name="paytm" id="paytm_btn"><strong>Proceed</strong><br/><small>(Powered by Paytm)</small></button>
+        <button class="btn pay-button give_once" type="submit" name="paytm" id="paytm_btn"><strong>Proceed</strong><br/></button>
                             
         </div>
         </div>
