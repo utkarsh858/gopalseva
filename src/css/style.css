@@ -205,12 +205,22 @@ background-color: black !important;
 	outline: none;
     box-shadow: 0px 0px 5px 5px rgba(255,255,255, 0.8);
 
-    /*position: relative;*/
-    /*left:60%;*/
+    position: relative;
+    /*:calc(70%-175px);*/
     /*margin-left:67%;*/
 }
 
+.don-footer{
+	width:100%;
+	opacity: 0.8;/*
+box-shadow: 0 0 8px 8px white inset;
+-moz-box-shadow: 0 0 8px 8px white inset;
+-webkit-box-shadow: 0 0 8px 8px white inset;
+-ms-box-shadow: 0 0 8px 8px white inset;
+-o-box-shadow: 0 0 8px 8px white inset;
 
+/*-ms-box-shadow:  40px 0 40px -16px;*/
+}
 
 
 
@@ -666,9 +676,9 @@ a {
 }
 .donation_form_heading h3 {
 	font-size: 30px;
-	margin-bottom: 30px;
-	border-bottom: 3px solid #fcc201;
-	padding-bottom: 15px;
+	/*margin-bottom: 30px;*/
+	/*border-bottom: 3px solid #fcc201;*/
+	/*padding-bottom: 15px;*/
 }
 .donation_form label {
 	font-size: 17px;

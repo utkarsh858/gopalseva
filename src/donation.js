@@ -4,6 +4,8 @@ import './css/style.css';
 import './css/bootstrap.min.css';
 import prabhupada from "./img/prabhupada.png";
 // var customLink = "/custom-donate"
+import logo from './img/logo_nav.jpeg';
+import footer from './img/footer-image-fadded.jpg';
 
 (function () {
     'use strict';
@@ -36,7 +38,7 @@ class donation extends Component{
         var time=today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
         var date=mm + '/' + dd + '/' + yyyy;
         if(isCustom!=="true")
-        var title = (<h3>Total Donation amount: INR {amount}</h3>)
+        var title = (<h3>Total Donation amount: ₹ {amount}</h3>)
     // if(isCustom==="true") link=window.location.origin+customLink;
     return (
 
@@ -44,6 +46,9 @@ class donation extends Component{
         <section class="container-fluid donate-proceed" id="form_details">
         <div class="donation_form">
         <div class="container">
+        <center>
+        <img src={logo} style={{marginBottom:20,height:150}}/>
+        </center>
         <div class="donation_form_heading">
         {title}
         </div>
@@ -59,10 +64,10 @@ class donation extends Component{
             <input type="hidden" name="link" value={link} />
 
         <div class="row">
-        <div class="col-md-7">
+        <div class="col-md-7" style={{"border-top":" 3px solid #fcc201",paddingTop:"30px"}}>
         <div class="row">
-        <div class="col-md-2">
-        <div class="form-group">
+        <div class="col-md-2" >
+        <div class="form-group" >
         <label>Title <sup>*</sup></label>
                                             <select style={{ borderWidth: 1, borderColor: "orange" }} id="TitleControl" name="Title" class="form-control">
         <option value="Mr.">Mr.</option>
@@ -153,6 +158,8 @@ class donation extends Component{
         </form>
         </div>
         </div>
+
+        <img src={footer} class="don-footer"/>
         </section>
 
         );
