@@ -813,8 +813,7 @@ scrollTo = (target) =>{
                   responsive={responsive2}
                   ssr={true} // means to render carousel on server-side.
                   infinite={true}
-                  autoPlay={this.props.deviceType !== "mobile" ? true : false}
-                  autoPlaySpeed={2500}
+                  
                   customButtonGroup={<CustomButtonGroup />}
                   renderButtonGroupOutside={true}
                   showDots={true}
@@ -823,21 +822,57 @@ scrollTo = (target) =>{
                 >
                     <div>
                         <div class="our-value-item">
-                            <h3>Protecting Stomarch with hunger</h3>
-                            <p>Blindness is an important cause and the effect of poverty. We work with poor and marginalised communities in developing countries. At Sightsavers, we believe that people should not go blind unnecessarily. We prevent, treat and cure avoidable blindness and promote eye health.</p>
+                            <div class =" row"> 
+                                <div class="col-12 col-md-6">
+
+                                </div>
+
+                                <div class="col-12 col-md-6">
+                                    <blockquote>
+                                        Blindness is an important cause and the effect of poverty. We work with poor and marginalised communities in developing countries. At Sightsavers, we believe that people should not go blind unnecessarily. We prevent, treat and cure avoidable blindness and promote eye health.
+                                        <cite>Protecting Stomarch with hunger</cite>
+                                    </blockquote>
+                                </div>
+                            </div>
+                            
+
                         </div>  
                     </div>
 
                     <div>
                         <div class="our-value-item">
-                            <h3>Equal Food</h3>
-                            <p>People with empty stomach should be able to develop their potential to the full. We work with disabled people and others to promote equal rights and opportunities. We strengthen organisations and commnities to develop practical and enduring solutions.</p>
+                            <div class =" row"> 
+                                <div class="col-12 col-md-6">
+
+                                </div>
+
+                                <div class="col-12 col-md-6">
+                                    <blockquote>
+                                        People with empty stomach should be able to develop their potential to the full. We work with disabled people and others to promote equal rights and opportunities. We strengthen organisations and commnities to develop practical and enduring solutions.
+                                        <cite>Equal Food</cite>
+                                    </blockquote>
+                                </div>
+                            </div>
+                            
+
                         </div>     
                     </div>
                     <div>   
                         <div class="our-value-item">
-                            <h3>Collaboration</h3>
-                            <p>We achieve much more when we collaborate. We forge alliances and partnerships to ensure a positive and long term impact on people's lives. Our supporters are a key part of the solution. We work together to accomplish our goals.</p>
+                            <div class =" row"> 
+                                <div class="col-12 col-md-6">
+
+                                </div>
+
+                                <div class="col-12 col-md-6">
+                                    <blockquote>
+                                        We achieve much more when we collaborate. We forge alliances and partnerships to ensure a positive and long term impact on people's lives. Our supporters are a key part of the solution. We work together to accomplish our goals.
+                                        <cite>Collaboration</cite>
+                                    </blockquote>
+                                </div>    
+                            </div>
+                            
+
                         </div> 
                     </div>
                   
