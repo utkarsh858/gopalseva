@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
  import  {Link as Direct} from 'react-router-dom';
-
+import Appreciation from './Appreciation.js';
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 import './css/bootstrap.min.css';
@@ -33,7 +33,7 @@ import logo from './img/logo_nav.jpeg';
 import debkiimg from  './img/sitarama.jpg';
 import utsav1 from "./img/utsav_vigrah_1.jpeg";
 import utsav2 from "./img/utsav_vigrah_2.jpeg";
-
+import temp from './img/mataji.jpg';
 
 
 
@@ -820,62 +820,13 @@ scrollTo = (target) =>{
                   renderDotsOutside ={ true}
                   
                 >
-                    <div>
-                        <div class="our-value-item">
-                            <div class =" row"> 
-                                <div class="col-12 col-md-6">
 
-                                </div>
-
-                                <div class="col-12 col-md-6">
-                                    <blockquote>
-                                        Blindness is an important cause and the effect of poverty. We work with poor and marginalised communities in developing countries. At Sightsavers, we believe that people should not go blind unnecessarily. We prevent, treat and cure avoidable blindness and promote eye health.
-                                        <cite>Protecting Stomarch with hunger</cite>
-                                    </blockquote>
-                                </div>
-                            </div>
-                            
-
-                        </div>  
-                    </div>
-
-                    <div>
-                        <div class="our-value-item">
-                            <div class =" row"> 
-                                <div class="col-12 col-md-6">
-
-                                </div>
-
-                                <div class="col-12 col-md-6">
-                                    <blockquote>
-                                        People with empty stomach should be able to develop their potential to the full. We work with disabled people and others to promote equal rights and opportunities. We strengthen organisations and commnities to develop practical and enduring solutions.
-                                        <cite>Equal Food</cite>
-                                    </blockquote>
-                                </div>
-                            </div>
-                            
-
-                        </div>     
-                    </div>
-                    <div>   
-                        <div class="our-value-item">
-                            <div class =" row"> 
-                                <div class="col-12 col-md-6">
-
-                                </div>
-
-                                <div class="col-12 col-md-6">
-                                    <blockquote>
-                                        We achieve much more when we collaborate. We forge alliances and partnerships to ensure a positive and long term impact on people's lives. Our supporters are a key part of the solution. We work together to accomplish our goals.
-                                        <cite>Collaboration</cite>
-                                    </blockquote>
-                                </div>    
-                            </div>
-                            
-
-                        </div> 
-                    </div>
                   
+<Appreciation content={"dedwedweddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddwed"} title={"pm hai bhai"} image={temp} name={"Narendra Modi"}/>
+<Appreciation content={"dedweddwedwedwedwed"} title={"pm hai bhai"} image={temp} name={"Narendra Modi"}/>
+<Appreciation content={"dedwedwedewdwedwewed"} title={"pm hai bhai"} image={temp} name={"Narendra Modi"}/>
+<Appreciation content={"dedwedwaaaaaaaaaaaaaaaaaaaaaaaaaedwed"} title={"pm hai bhai"} image={temp} name={"Narendra Modi"}/>
+<Appreciation content={"d"} title={"pm hai bhai"} image={temp} name={"Narendra Modi"}/>
                 </Carousel>
             
             </div>
@@ -887,8 +838,8 @@ scrollTo = (target) =>{
     <div class="empty-gap-creater">
     </div>
 
-</section>
 
+</section>
 
 
     
