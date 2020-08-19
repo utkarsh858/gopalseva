@@ -26,6 +26,19 @@ body {
   padding-left: 30px;
 }*/
 
+.nav-img{
+	max-width: 250px;
+}
+
+@media screen and (max-width: 500px) {
+.nav-img{
+	width: 100px;
+}
+.header{
+	height:70px !important;
+}
+}
+
 .clear-spaces{
 	margin: 0px 0px 0px 0px; 
 	padding: 0px 0px 0px 0px;
@@ -191,6 +204,10 @@ background-color: black !important;
 	max-width: 370px;
 	outline: none;
     box-shadow: 0px 0px 5px 5px rgba(255,255,255, 0.8);
+
+    /*position: relative;*/
+    /*left:60%;*/
+    /*margin-left:67%;*/
 }
 
 

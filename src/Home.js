@@ -170,11 +170,11 @@ scrollTo = (target) =>{
 
     {/*As of now we don't possess any additional items to be added as menu so I am removing the menu option, your servant*/}
     {
-    <div class="header fixed-bottom" style={{paddingBottom:0, paddingTop:0}}>
+    <div class="header fixed-bottom" >
         <nav class="navbar navbar-light" style={{paddingBottom:0, paddingTop:0}}>
-            <div class="container">
+            <div class="container" style={{width:"100%"}}>
                 <a class="navbar-brand" href="/" >
-                <img src={logo} width="300px" height="160px" alt="Gopal Seva Logo"/></a>
+                <img src={logo}  class="nav-img" alt="Gopal Seva Logo"/></a>
 
             {/*
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
