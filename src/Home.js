@@ -711,11 +711,11 @@ scrollTo = (target) =>{
 		  responsive={responsive}
 		  ssr={true} // means to render carousel on server-side.
 		  infinite={true}
-		  autoPlay={this.props.deviceType !== "mobile" ? true : false}
-		  autoPlaySpeed={2500}
+		  
           customButtonGroup={<CustomButtonGroup />}
           renderButtonGroupOutside={true}
-		  
+		  showDots={true}
+          renderDotsOutside ={ true}
 		  
 		>
 		    <div>

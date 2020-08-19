@@ -214,11 +214,96 @@ background-color: black !important;
 
 }
 
-.people-support-item {
-	padding-left: 15px;
-	padding-right: 15px;
-	padding-bottom: 40px;
+
+
+
+
+
+
+
+
+
+
+.people-support {
+    padding: 50px 0;
+    /*position:  relative;*/
 }
+
+.people-support-item {
+
+	/*position: absolute;
+  	top: 50%;
+  	transform: translateY(-50%);
+*/
+	display:grid;
+	justify-content: center;
+  	align-items: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 40px;
+	height : 500px;
+	
+}
+.people-support-item-inner {
+	margin:auto;
+    border: 2px solid #e7ecf1;
+    padding: 10px;
+    height: 100%;
+    transition: all 0.5s;
+}
+.people-support-item-inner:hover {
+    box-shadow: 0 0 10px #ddd;
+}
+.people-support-item-inner:hover img {
+    transform: scale(1.05);
+}
+.people-support-item-inner h5 {
+    position: relative;
+    font-size: 16px;
+    margin-bottom: 1px;
+    padding-top: 10px;
+}
+.people-support-item-inner h5:after {
+    content: "";
+    display: block;
+    width: 130px;
+    height: 3px;
+    background: #ffbb22;
+    
+}
+
+.people-support-item-inner img {
+    padding :2px;
+    transform: scale(1);
+    transition: all 0.5s;
+}
+
+.people-support-item-inner h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top:  0px;
+    padding-top:  10px;
+    margin-bottom: 1px;
+}
+
+.people-support-item-inner p{
+	margin-bottom: 5px;
+}
+
+.people-support-item-inner .btn-row {
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .our-value-item {
    padding-right :15px;
@@ -533,52 +618,15 @@ box-shadow: 0 0 8px 8px white inset;
     margin: 0 0 20px;
     font-weight: bold;
 }
-.people-support-item-inner h5 {
-    position: relative;
-    font-size: 18px;
-}
 
 
 
-.people-support {
-    padding: 50px 0;
-}
+
 a {
     color: #9f085a;
 }
-.people-support-item-inner img {
-    margin-bottom: 30px;
-    transform: scale(1);
-    transition: all 0.5s;
-}
-.people-support-item-inner {
-    border: 2px solid #e7ecf1;
-    padding: 20px;
-    height: 100%;
-    transition: all 0.5s;
-}
-.people-support-item-inner:hover {
-    box-shadow: 0 0 10px #ddd;
-}
-.people-support-item-inner:hover img {
-    transform: scale(1.05);
-}
-.people-support-item-inner h5:after {
-    content: "";
-    display: block;
-    width: 130px;
-    height: 3px;
-    background: #ffbb22;
-    margin: 2px 0;
-}
-.people-support-item-inner h3 {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 20px 0 10px;
-}
-.people-support-item-inner .btn-row {
-    font-weight: bold;
-}
+
+
 
 .footer {
 	background: #ffbb22;
