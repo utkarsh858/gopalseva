@@ -1,0 +1,72 @@
+/*.bubble{
+	background-color: red;
+	border-radius: 20px;
+	height : 300px;
+	width: 100%;
+	padding:  10px 20px 10px 20px;
+}
+*/
+.appr-profile{
+	border-radius: 50%;
+	width: 200px;
+	/*margin-top: 50px;*/
+}
+
+.bubble{
+	position: relative;
+	/*position: absolute;*/
+	/*bottom: 100%;*/
+	display: inline-block;
+	width:40%;
+	/*height:300px;*/
+	word-wrap: break-word;
+	background: #00aabb;
+	padding:  10px 20px 10px 20px;
+	margin:  10px 20px 10px 20px;
+	border-radius: .4em;
+}
+
+.bubble:after{
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 28px solid transparent;
+	border-left-color: #00aabb;
+	border-right: 0;
+	border-top: 0;
+	margin-top: -14px;
+	margin-right: -28px;
+}
+.person{
+	padding:  10px 20px 10px 20px;
+	width: 40%;
+	/*margin: 0 20px 0 20px;*/
+	display: inline-block;
+	/*background-color: green;*/
+	height: 300px;
+}
+
+@media screen and (max-width: 800px) {
+.bubble{
+	display: block;
+	width: 80%;
+}
+/*.bubble:after{
+	right:none;
+	bottom: 0;
+	left: 50%;
+		border-top-color: #00aabb;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -10px;
+	margin-bottom: -20px;
+}*/
+.person{
+	display: block;
+	width:100%;
+	/*height:70px !important;*/
+}
+}
