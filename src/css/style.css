@@ -227,7 +227,7 @@ background-color: black !important;
 .people-support {
     padding: 50px 0;
     /*position:  relative;*/
-    background-color: #faeeb9;
+    background-color: white;
     margin-top : 10px;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -250,14 +250,14 @@ background-color: black !important;
 }
 .people-support-item-inner {
 	margin:auto;
-    border: 2px solid #964b00;
-    background-color: #f5e4b8 !important;
+    border: 2px solid #e7ebf4;
+    background-color: white !important;
     padding: 10px;
     height: 100%;
     transition: all 0.5s;
 }
 .people-support-item-inner:hover {
-    box-shadow: 0 0 13px #964b00;
+    box-shadow: 0 0 13px grey;
 }
 .people-support-item-inner:hover img {
     transform: scale(1.05);
@@ -273,7 +273,7 @@ background-color: black !important;
     display: block;
     width: 130px;
     height: 3px;
-    background: #ffbb22;
+    background: white;
     
 }
 
@@ -301,7 +301,7 @@ background-color: black !important;
 
 
 .transparent-mk{
-	background-color: #faeeb9 !important;
+	background-color: white !important;
 }
 
 .bg-success-m {

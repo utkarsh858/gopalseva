@@ -35,8 +35,18 @@ import utsav1 from "./img/utsav_vigrah_1.jpeg";
 import utsav2 from "./img/utsav_vigrah_2.jpeg";
 import temp from './img/mataji.jpg';
 
+import cow1 from './img/cow1.jpeg';
+import cow2 from './img/cow2.jpeg';
+import vigraha1 from './img/vigraha1.jpeg';
+import vigraha2 from './img/vigraha2.jpeg';
+import foodforlife1 from './img/foodforlife1.jpeg';
+import foodforlife2 from './img/foodforlife2.jpeg';
+import bookdis1 from './img/bookdis1.jpeg'
+import bookdis2 from './img/bookdis2.jpeg'
 
-
+import pranab from './img/pranab.jpg'
+import devendra from './img/devendra.jpg'
+import narendra from './img/narendra.jpg'
 // this file contains all the code for the stories and carousel, that we need
 // here in this file we will refernce that code as per our requirements
 import StoryModal from './Story.js' ;
@@ -147,7 +157,7 @@ scrollTo = (target) =>{
                                         <div onClick={()=>{
 
                                             this.setState({
-                                                array_num:8,
+                                                array_num:9,
                                                 amount:"",
                                                 isCustom:"true",
                                             })
@@ -173,7 +183,7 @@ scrollTo = (target) =>{
                                         <div onClick={()=>{
 
                                             this.setState({
-                                                array_num:8,
+                                                array_num:10,
                                                 amount:"",
                                                 isCustom:"true",
                                             })
@@ -314,7 +324,7 @@ scrollTo = (target) =>{
     <div class="banner-sec" >
         <div class="banner-info">
             <div class="banner-info-inner">
-                <h2>Food For Life Program in Bahadurgarh</h2>
+                <h2>Your donation will help us reach every home and spread Krishna Consciousness</h2>
             </div>
         </div>
     </div>
@@ -340,32 +350,32 @@ scrollTo = (target) =>{
                         <div class="our-achievement-items">
                             <div class="our-achievement-item">
                                 <div class="our-achievement-item-info">
-                                    <h4>55 million</h4>
-                                    <p>Meals distributed world wide since 1966</p>
+                                    <h4>700+</h4>
+                                    <p>Daily temple visitors.</p>
                                 </div>
                             </div>
                             <div class="our-achievement-item">
                                 <div class="our-achievement-item-info">
-                                    <h4>36.4 million</h4>
-                                    <p>Meals provided only in India</p>
+                                    <h4>1200+</h4>
+                                    <p>Daily distribution of prasadam plates.</p>
                                 </div>
                             </div>
                             <div class="our-achievement-item">
                                 <div class="our-achievement-item-info">
-                                    <h4>5 Million</h4>
-                                    <p>Meals in Bahadurgarh</p>
+                                    <h4>100+</h4>
+                                    <p>Daily distribution of Srila Prabhupada's transcendental literatures.</p>
                                 </div>
                             </div>
                             <div class="our-achievement-item responsive-hide">
                                 <div class="our-achievement-item-info">
                                     <h4>5 Million</h4>
-                                    <p>Meals in Bahadurgarh</p>
+                                    <p>Only in desktop version!!</p>
                                 </div>
                             </div>
                             <div class="our-achievement-item responsive-hide">
                                 <div class="our-achievement-item-info">
                                     <h4>5 Million</h4>
-                                    <p>Meals in Bahadurgarh</p>
+                                    <p>Only in desktop version!!</p>
                                 </div>
                             </div>
                         </div>
@@ -413,13 +423,13 @@ scrollTo = (target) =>{
                                         
                                         >
                                         <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>800</span></li>
-                                        <li class="list-group-item">Support Meals for 10 children</li>
+                                        <li class="list-group-item">Annadan Sevā (Khichadi) for 100 People </li>
                                         <li class="list-group-item">
                                         <div onClick={()=>{
 
                                             this.setState({
                                                 array_num:0,
-                                                amount:"800",
+                                                amount:"2500",
                                                 isCustom:"false",
                                             })
                                         }} class="custom-control custom-radio">
@@ -434,12 +444,12 @@ scrollTo = (target) =>{
                                         
                                         >
                                         <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>1000</span></li>
-                                        <li class="list-group-item">Support livelihood for 1 person with disability</li>
+                                        <li class="list-group-item">Annadan Sevā (Khichadi) for 300 People</li>
                                         <li class="list-group-item">
                                         <div onClick={()=>{
                                                                                     this.setState({
                                                 array_num:1,
-                                                amount:"1000",
+                                                amount:"7500",
                                                 isCustom:"false",
                                             })
 
@@ -456,12 +466,12 @@ scrollTo = (target) =>{
                                         
                                         >
                                         <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>1500</span></li>
-                                        <li class="list-group-item">Support meals for 20 children</li>
+                                        <li class="list-group-item">Brahmana Bhoja Sevā</li>
                                         <li class="list-group-item">
                                         <div onClick={()=>{
                                             this.setState({
                                                 array_num:2,
-                                                amount:"1500",
+                                                amount:"5100",
                                                 isCustom:"false",
                                             })
 
@@ -478,12 +488,12 @@ scrollTo = (target) =>{
                                         
                                         >
                                         <li class="list-group-item"><i class="fa fa-rupee-sign" aria-hidden="true"></i> <span>2000</span></li>
-                                        <li class="list-group-item">Support livelihood for 2 people with disability</li>
+                                        <li class="list-group-item">Vigraha Sevā (Rājbhoga)</li>
                                         <li class="list-group-item">
                                         <div onClick={()=>{
                                             this.setState({
                                                 array_num:3,
-                                                amount:"2000",
+                                                amount:"1008",
                                                 isCustom:"false",
                                             })
 
@@ -502,13 +512,13 @@ scrollTo = (target) =>{
                                         
                                         >
                                         <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>2500</span></li>
-                                        <li class="list-group-item">Support  classroom training for 1 visually impaired</li>
+                                        <li class="list-group-item">Vigraha Sevā (Bālbhoga)</li>
                                         <li class="list-group-item">
                                         <div onClick={()=>{
 
                                             this.setState({
                                                 array_num:4,
-                                                amount:"2500",
+                                                amount:"501",
                                                 isCustom:"false",
                                             })
 
@@ -528,12 +538,12 @@ scrollTo = (target) =>{
                                         
                                         >
                                         <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>3500</span></li>
-                                        <li class="list-group-item">Support 3 sight restoring surgeries </li>
+                                        <li class="list-group-item">Vigraha Sevā (Srngār) </li>
                                         <li class="list-group-item">
                                         <div onClick={()=>{
                                             this.setState({
                                                 array_num:5,
-                                                amount:"3500",
+                                                amount:"2000",
                                                 isCustom:"false",
                                             })
 
@@ -552,13 +562,13 @@ scrollTo = (target) =>{
                                         
                                         >
                                         <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>5000</span></li>
-                                        <li class="list-group-item">Support classroom training for a 2 visually impaired children</li>
+                                        <li class="list-group-item">Support Bhagavad Gitā Distribution (51 books)</li>
                                         <li class="list-group-item">
                                         <div onClick={()=>{
 
                                             this.setState({
                                                 array_num:6,
-                                                amount:"5000",
+                                                amount:"7500",
                                                 isCustom:"false",
                                             })
 
@@ -576,13 +586,13 @@ scrollTo = (target) =>{
                                         
                                         >
                                         <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>6500</span></li>
-                                        <li class="list-group-item">Support 5 sight restoring surgeries</li>
+                                        <li class="list-group-item">Sponsor Srimad Bhāgavatam Set for a Vāishanava (on Ekādasi)</li>
                                         <li class="list-group-item">
                                         <div onClick={()=>{
 
                                             this.setState({
                                                 array_num:7,
-                                                amount:"6500",
+                                                amount:"6000",
                                                 isCustom:"false",
                                             })
 
@@ -649,17 +659,18 @@ scrollTo = (target) =>{
     
     
     <div class="about-sec-info">
-    <h3 class="clear-spaces add-bottom-space">About GopalSeva</h3>
-    <p>GopalSeva is an international organisation that works with partners in more than 30 countries to eliminate avoidable hunger, and fight for the rights and needs of people with disability.</p>
+    <h3 class="clear-spaces add-bottom-space">About GopalSevā</h3>
+    <p>
+    GopalSevā is a platform to generate funds for the ongoing services at ISKCON Bahadurgarh.</p>
     </div>
     <div class="about-sec-info">
-    <h3 class="clear-spaces add-bottom-space">In India since 1970</h3>
-    <p>GopalSeva' work in India has enabled thousands of people to lead lives of independence and dignity. We have been working with local partners to strengthen organisations and communities, and have supported the treatment of millions of people with eye disorders. We have educated, counseled, trained and rehabilitated people who are visually impaired or blind, and helped extend the reach of eye services to the least served areas of India.</p>
+    <h3 class="clear-spaces add-bottom-space">ISKCON Bahadurgarh .... at a glance</h3>
+    <p>A surge of positivity with people chanting Hare Krishna Mahamantra, singing melodious kirtans and glories of Krishna, ringing cymbals and dancing in a moment of pure joy; that is any ISKCON temple picturized through words. Visit an ISKCON Temple and you will probably realize that happiness is simply attained by something as simple as chanting the holy names of God, dancing, and feasting your way out of problems!</p>
     </div>
     <div class="about-video">
     <center>
     <a href="../template_809/#">
-    <iframe width="80%" height="500" src="https://www.youtube.com/embed/nGS9ibpp2_o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    <iframe width="80%" height="500" src="https://www.youtube.com/embed/ZcZqFHEhnMQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
     </a>
     </center>
     </div>
@@ -676,11 +687,12 @@ scrollTo = (target) =>{
 
 
 
-    <StoryModal id="debki-story" scrollHandler={this.scrollTo} imgsrc={debkiimg} content={<><h3>Debki's story</h3><p>28-year-old Debki hails from the Bahadurgarh District of Haryana. Debki has orthopedic disability and stays with her parents and three siblings in the Dumka district of Jharkhand.</p><p>Earlier, Debki's father was the sole earning member of the house. He was a daily wage employee and the earnings were not enough for the entire family to sustain themselves. However, after the intervention of Sightsavers in association with Chetna Vikas, Debki received a one-year training in Computer from Vocational Training Institute in Dumka.</p><p>Today, Debki runs a Photo Studio/Printing Centre in her district. She has been a member of Utthan Nishakt Swayam Sahayata Samuha, a Self-Help Group supported by Sightsavers. Besides that, Debki is also pursuing her post-graduation from IGNOU (Indira Gandhi National Open University). "I am really glad to be able to financially support my family. Hopefully, I will take teaching as a profession in the long-run."</p></>}/> 
+    <StoryModal id="foodForLife" scrollHandler={this.scrollTo} imgsrc={foodforlife2} content={<><h3>Food For Life/ Annadān Sevā</h3><p>Annadanam Sevā means feeding the needy. Srila Prabhupada, the Founder-Acarya of ISKCON once said” No one should go hungry within 10 miles of an ISKCON temple.” Serving a hungry stomach with two square meal is the topmost necessity for the survival.</p><p>Encompassing this vision of Srila Prabhupada, ISKCON Bahadurgarh is working strenuously towards nourishing the society by regular prasadam distribution programs.</p><p>While the challenges are enormous, they can be overcome by the collective effort of each one of us and requires your whole-hearted support.
+You may also sponsor one needy child a full meal of Krishna Prasdam for an entire year. Please come forward and donate generously.</p></>}/> 
+    <StoryModal id="vigrahaSevā" scrollHandler={this.scrollTo} imgsrc={vigraha2} content={<><h3>Sri Vigraha Sevā</h3><h4>A direct loving exchange through Deity service</h4><p>All of us are endowed with the tendencies of loving and serving. Being a social entity, we all desire that these two tendencies be reposed in a way that we derive unlimited happiness and a long-term fulfilment. Become a part of Sri Vigraha Sevā and let your loving and serving tendencies be directed in a manner that combines together to increase your devotion and also let you embark on the path of success.</p>Genuine love is symptomized by the offering of the items dear to the beloved and rendering service to him unconditionally. When such a bond of love is established, even the serving experience becomes a lifetime cherished memory. Let us allow our service enthusiasm brim out of the fountain of our heart as an expression of the gratitude towards the Lordships for all the unlimited blessings showered upon us. Let us make an offering of love through delicacies to the Lord. <p></p><p>An opportunity for you to contribute towards Aabhusan , daily worship, bhoga offerings, garland offering & various other sevās which are regularly performed to the Deities in our temple. You can choose to offer Deity sevās to Their Lordships Sri Sri Radha MadanGopal and receive their blessings.</p></>}/> 
 
-    <StoryModal id="shobha-story" scrollHandler={this.scrollTo} imgsrc={utsav2} content={<><h3>Shobha's story</h3><h4>A Gleaming Vision</h4><p>65-year-old Shobha is a daily wage labourer and lives with her son in Alipurduar, West Bengal. Thrice a week, Shobha would walk up the hill to collect dry leaves and branches that were used as fuel.</p><p>Shobha was diagnosed with cataract in the eye screening camp organised by Sightsavers in her village under the Rural Eye Health Programme. She was referred to the base hospital and was operated for the cataract-    removal surgery. "Cataract had really affected me in many ways. I could not even do my day-to-day work before the surgery. However, since I can see clearly now, I wait to go back to my normal life," says Shobha.</p></>}/> 
-
-    <StoryModal id="alia-story" scrollHandler={this.scrollTo} imgsrc={utsav1} content={<><h3>Aliya's story</h3><h4>Six-year old Aliya is a native of Hazaribagh, Jharkhand. She has low vision since birth.</h4><p>Aliya was enrolled in a nursery school where she had become irregular due to the non-availability of resources to help her through in studies. While visiting a doctor, it was found that due to the damage in the cornea of her eye, Aliya's vision could not get any better.</p><p>Sightsavers in association with Sarva Shiksha Abhiyan had distributed Low Vision Devices to children with visual impairment under its Inclusive Education Programme in Jharkhand and providentially, Aliya was a part of it. With the help of these devices, Aliya was finally able to read like any other child who could.</p><p>Aliya is now regular at school and enjoys her studies like never before. Her parents feel grateful towards Sightsavers' team in helping out their daughter.</p></>}/> 
+    <StoryModal id="goSevā" scrollHandler={this.scrollTo} imgsrc={cow2} content={<><h3>Cow Care/Go Sevā</h3><h4>Because Krishna loves the cows.....</h4><p>Because Krishna loves the cows, His devotees not only protect them but also see to their comfort, a practice that has spiritual, psychological, and practical material benefits.</p><p>In our simple life, we appreciate more and more the value of the cows. Cow protection helps us think of Krishna. We can catch glimpses of His attractive and wonderful personality in many ways that would be more difficult without protected cows.</p><p>Your donation will help us to support on-going maintenance expenses such as Goshala construction, purchasing a cow, fodder, medical expenses etc. We are determined to care for the entire life of the cow. We await for your kind participation in this transcedental service by providing us with cows. If you are unable to sponsor a cow you can give small amount also....we will collect and then purchase a cow.</p></>}/> 
+    <StoryModal id="bookDis" scrollHandler={this.scrollTo} imgsrc={bookdis2} content={<><h3>Book Distribution/Sāstra Dān</h3><h4>Books are the basis.....</h4><p>Srila Prabhupada's books have changed hundreds of thousands of lives in a very positive way. At ISKCON, devotees go out in severe cold, intense heat and monsoon. just to give out the treasure-house of vedic knowledge to the suffering souls. Millions of people have been given a progressive spiritual direction in life by reading Srila Prabhupad,s books. These books are so potent that anyone who reads them is sure to become krishna Conscious, so it is a very valuable service to distribute our books.</p><p>You can sponsor the distribution of Srimad Bhagavat Gita freely to those sincere devotees who seek to advance inspiritual life but genuinely cannot afford to buy one.</p></>}/> 
     
     
     
@@ -693,7 +705,7 @@ scrollTo = (target) =>{
     <div class="container transparent-mk">
 
         <div class="section-title-1">
-            <h2>People we have supported</h2>
+            <h2>Our Active Services</h2>
         </div>
 
         {/*<div class="people-support-items " style={{ paddingBottom: '30px',paddingRight: '60px',paddingLeft: '60px', position: 'relative' }}>
@@ -722,66 +734,66 @@ scrollTo = (target) =>{
           renderDotsOutside ={ true}
 		  
 		>
-		    <div>
-		  		<div class="people-support-item">
+		        <div>
+                <div class="people-support-item">
                     <div class="people-support-item-inner">
-                        <img src={debkiimg} width="200px" height="200px" alt="Hari Hari IMG 1"/>
-                        <h5>Stories / Social inclusion</h5>
-                        <h3>First Story</h3>
-                        <p>Hare krishna Please accept my humble obeisances</p>
+                        <img src={foodforlife1} width="200px" height="200px" alt="Hari Hari IMG 1"/>
+                        <h5>Food For Life/ Annadān Sevā</h5>
+                        <h3>Prasadam: Lord’s special treat </h3>
+                        <p>Because by the liberal distribution of Krsna-prasadam and sankirtan, the whole world can become peaceful and prosperous.</p>
                         <div class="btn-row">
-                            <a href="../template_809/#"  data-toggle="modal" data-target="#debki-story">Read story</a>
+                            <a href="../template_809/#"  data-toggle="modal" data-target="#foodForLife">Explore more</a>
                         </div>
                     </div>
                 </div>
-		    </div>
+            </div>
 
 
-		    <div>
-		    	<div class=" people-support-item">
+            <div>
+                <div class=" people-support-item">
                     <div class="people-support-item-inner">
-                        <img src={utsav2} width="200px" height="200px" alt="Krishna IMG 2"/>
-                        <h5>Stories/ Eye health</h5>
-                        <h3>Second Story</h3>
-                        <p>Hare krishna Please accept my humble obeisances</p>
+                        <img src={vigraha1} width="200px" height="200px" alt="Krishna IMG 2"/>
+                        <h5>Diety Worship/Vigraha Sevā</h5>
+                        <h3>A direct loving exchange through Deity service</h3>
+                        <p>Becasuse by your unalloyed service to the Deities, you will become more and more attracted to the spiritual world.</p>
                         <div class="btn-row">
-                            <a href="../template_809/#" data-toggle="modal" data-target="#shobha-story">
-                                Read story
+                            <a href="../template_809/#" data-toggle="modal" data-target="#vigrahaSevā">
+                                Explore more
                             </a>
                         </div>
                     </div>
                 </div>
-		    </div>
-		    <div>
-		    	<div class=" people-support-item">
+            </div>
+            <div>
+                <div class=" people-support-item">
                     <div class="people-support-item-inner">
-                        <img src={utsav1} width="200px" height="200px" alt="Gauranga IMG 3"/>
-                        <h5>Stories/Inclusive Education</h5>
-                        <h3>Third Story</h3>
-                        <p>Hare krishna Please accept my humble obeisances</p>
+                        <img src={cow1} width="200px" height="200px" alt="Gauranga IMG 3"/>
+                        <h5>Cow Care/Go Sevā</h5>
+                        <h3>Because Krishna loves cows</h3>
+                        <p>Cows & Krishna have always been together. Krishna serves cows in Vrndavan & so should we.... </p>
                         <div class="btn-row">
-                            <a href="../template_809/#" data-toggle="modal" data-target="#alia-story">
-                                Read story
+                            <a href="../template_809/#" data-toggle="modal" data-target="#goSevā">
+                                Explore more
                             </a>
                         </div>
                     </div>
                 </div>
-		    </div>
-		    <div>
-		    	<div class="people-support-item">
+            </div>
+            <div>
+                <div class="people-support-item">
                     <div class="people-support-item-inner">
-                        <img src={utsav1} width="200px" height="200px" alt="NityaNanda IMG 4"/>
-                        <h5>Stories/Inclusive Education</h5>
-                        <h3>Fourth Story</h3>
-                        <p>Hare krishna Please accept my humble obeisances</p>
+                        <img src={bookdis1} width="200px" height="200px" alt="NityaNanda IMG 4"/>
+                        <h5>Book Distribution/Sāstra Dān</h5>
+                        <h3>Wisdom for the soul</h3>
+                        <p>Because one transcendental book distributed means we go forward one step in our Krishna Consciousness... </p>
                         <div class="btn-row">
-                            <a href="../template_809/#" data-toggle="modal" data-target="#alia-story">
-                                Read story
+                            <a href="../template_809/#" data-toggle="modal" data-target="#bookDis">
+                                Explore more
                             </a>
                         </div>
                     </div>
                 </div>
-		    </div>
+            </div>
 		  
 		</Carousel>
     
@@ -801,7 +813,7 @@ scrollTo = (target) =>{
         <div class="container transparent-mk-our-values">
 
             <div class="section-title-1">
-                <h2 class="clear-spaces">Our Values</h2>
+                <h2 class="clear-spaces">IMPORTANT DIGNITARIES SPEAK ABOUT 'ISKCON'</h2>
                 <div class="section-title-1-divider"></div>
             </div>
 
@@ -822,11 +834,10 @@ scrollTo = (target) =>{
                 >
 
                   
-<Appreciation content={"dedwedweddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddwed"} title={"pm hai bhai"} image={temp} name={"Narendra Modi"}/>
-<Appreciation content={"dedweddwedwedwedwed"} title={"pm hai bhai"} image={temp} name={"Narendra Modi"}/>
-<Appreciation content={"dedwedwedewdwedwewed"} title={"pm hai bhai"} image={temp} name={"Narendra Modi"}/>
-<Appreciation content={"dedwedwaaaaaaaaaaaaaaaaaaaaaaaaaedwed"} title={"pm hai bhai"} image={temp} name={"Narendra Modi"}/>
-<Appreciation content={"d"} title={"pm hai bhai"} image={temp} name={"Narendra Modi"}/>
+<Appreciation content={"The ISKCON family has emerged at the forefront of the quest to create a more peaceful, harmonious and compassionate society. ISKCON's journey has been a manifestation of 'Vasudhaiva Kutumbakam' Integration has been at the core of your philosophy. ISKCON's story has been the story of the determination and devotion of lakhs of devotees spread across the world. Inspired by the teaching of Lord Krishna, they spread His message far and wide. The efforts of the ISKCON family in sectors like education, publishing and disaster-relief are commendable."} title={"Prime Minister of India"} image={narendra} name={"Narendra Modi"}/>
+<Appreciation content={"ISKCON has over the years played an important role in popularizing the noble and eternal message of the Srimad Bhagvad Gita, and promotion spiritual harmony. if today the Bhagavad-Gita is printed of copies in scores of Indian. languages and distributed all over the world, the credit for this sacred service goes chiefly to ISKCON. I congratulate ISKCON for its efforts to highlight and propagate the timeless teachings of Lord Krishna across the World. I also pay humble tribute to the contributions of His Divine A.C. Bhaktivedanta Swami Prabhupada who Incorporated ISKCON in 1966 and whose teachings continue to resobate in the hearts of Krishna devotees all over the world even today."} title={"Former President of India"} image={pranab} name={"Pranab Mukherjee"}/>
+<Appreciation content={"We achieve much more when we collaborate. We forge alliances and partnerships to ensure a positive and long term impact on people's lives. Our supporters are a key part of the solution. We work together to accomplish our goals."} title={"Former Chief Minister of Maharastra"} image={devendra} name={"Devendra Fadnavis"}/>
+
                 </Carousel>
             
             </div>
