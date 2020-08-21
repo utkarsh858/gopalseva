@@ -17,7 +17,7 @@ export default class Appreciation extends Component{
 			</div>
 			<div class="person">
 			<center>
-			<img src={this.props.image} class="appr-profile" /><br/>
+			<img src={this.props.image} class="appr-profile" /><br/><br/><br/>
 			<span style={{fontWeight:"bold"}} >
 			{this.props.name}
 			</span><br/>
