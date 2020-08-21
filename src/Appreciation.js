@@ -8,7 +8,7 @@ export default class Appreciation extends Component{
 	
 	render(){
 		return(
-			<center style={{position:"relative"}}>
+			<center style={{position:"relative",marginBottom:"40px"}}>
 
 			<div class="bubble">
 
