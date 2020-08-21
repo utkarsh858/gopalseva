@@ -165,8 +165,8 @@ scrollTo = (target) =>{
 
 
                                         }}class="custom-control custom-radio">
-                                        <input type="radio" id="custom_amount_onetime" name="purpose_of_donation" class="custom-control-input" value="custom"/>
-                                        <label class="custom-control-label" for="custom_amount_onetime"></label>
+                                        <input type="radio" id="custom_amount_onetime2" name="purpose_of_donation" class="custom-control-input" value="custom"/>
+                                        <label class="custom-control-label" for="custom_amount_onetime2"></label>
                                         </div>
                                         </li>
                                         </ul>
@@ -191,8 +191,8 @@ scrollTo = (target) =>{
 
 
                                         }}class="custom-control custom-radio">
-                                        <input type="radio" id="custom_amount_onetime" name="purpose_of_donation" class="custom-control-input" value="custom"/>
-                                        <label class="custom-control-label" for="custom_amount_onetime"></label>
+                                        <input type="radio" id="custom_amount_onetime3" name="purpose_of_donation" class="custom-control-input" value="custom"/>
+                                        <label class="custom-control-label" for="custom_amount_onetime3"></label>
                                         </div>
                                         </li>
                                         </ul>
@@ -617,8 +617,8 @@ scrollTo = (target) =>{
                                             })
 
                                         }} class="custom-control custom-radio">
-                                        <input type="radio" id="customRadio8" name="purpose_of_donation" class="custom-control-input" value="6500"/>
-                                        <label class="custom-control-label" for="customRadio8"></label>
+                                        <input type="radio" id="customRadio9" name="purpose_of_donation" class="custom-control-input" value="6500"/>
+                                        <label class="custom-control-label" for="customRadio9"></label>
                                         </div>
                                         </li>
                                         </ul>
