@@ -6,15 +6,13 @@
 	padding:  10px 20px 10px 20px;
 }
 */
-.appr-profile{
-	border-radius: 50%;
-	width: 300px;
-	/*margin-top: 50px;*/
-}
 
 .bubble{
+	float:left;
 	position: relative;
+	/*bottom: 100px;*/
 	/*position: absolute;*/
+	/*top :0;left:0;*/
 	/*bottom: 100%;*/
 	display: inline-block;
 	width:40%;
@@ -42,12 +40,21 @@
 	margin-right: -28px;
 }
 .person{
+	/*float: left;*/
+	/*position: absolute;*/
+	/*top:0px;*/
 	padding:  10px 20px 10px 20px;
 	width: 40%;
 	/*margin: 0 20px 0 20px;*/
 	display: inline-block;
 	/*background-color: green;*/
-	height: 300px;
+	min-height: 300px;
+}
+.appr-profile{
+	border-radius: 50%;
+	/*max-width: 100%;*/
+	max-width: 300px;
+	/*margin-top: 50px;*/
 }
 
 @media screen and (max-width: 800px) {
