@@ -30,7 +30,7 @@ render(){
                                       <div>
                                           <div >
                                               <div>
-                                                  <p style={{margin:0,fontSize:"0.7em"}}>For non-Indian passport holders: Due to financial rules of the government, non-Indian passport holders can donate only through the FCRA accounts. Please use the contact form below if you need any assistace in this connection.
+                                                  <p style={{margin:0,fontSize:"1em"}}>For non-Indian passport holders: Due to financial rules of the government, non-Indian passport holders can donate only through the FCRA accounts. Please use the contact form below if you need any assistace in this connection.
 
                                                   </p>
                                                       <div class="w-separator size_small">
