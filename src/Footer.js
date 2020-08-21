@@ -10,7 +10,7 @@ render(){
 		  <div class="no-pointer-events">
           <div class="footer-filler" ></div>
           <div class="footer" >
-          <div >
+          
             <div style={{position:"absolute",bottom:0,zIndex:-1,height:"100%",overflowY:"auto"}}>
 
                   
@@ -137,7 +137,7 @@ render(){
 
 
               </div>
-              </div>
+              
 </div>
 </div>
 	)
