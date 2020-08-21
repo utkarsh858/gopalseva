@@ -538,7 +538,11 @@ box-shadow: 0 0 8px 8px white inset;
 @media screen and (max-width: 767px){
 	.package-wrap {
 		/*margin-left : 30px;*/
-		padding: 10px 5px 50px 5px;
+		padding: 10px 0px 50px 0px;
+	}
+	.container-mk2{
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
 @media screen and (min-width: 800px){
@@ -591,7 +595,7 @@ box-shadow: 0 0 8px 8px white inset;
     border: 1px solid #ddd;
     background-color: #ffbb22;
 }
- .list-group{
+.package-wrap .list-group{
 	width:100%;
 }
 
