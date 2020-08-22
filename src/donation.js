@@ -44,11 +44,27 @@ class donation extends Component{
 
 
         <section class="container-fluid donate-proceed" id="form_details">
-        <div class="donation_form">
+    <div class="header fixed-bottom" >
+        <nav class="navbar navbar-light" style={{paddingBottom:0, paddingTop:0}}>
+            <div class="container" style={{width:"100%"}}>
+                <a class="navbar-brand" href="/" >
+                <img src={logo}  class="nav-img" alt="Gopal Seva Logo"/></a>
+
+            {/*
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            */}
+            {/*
+                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+            */}
+
+
+            </div>
+        </nav>
+    </div>
+        <div class="donation_form" style={{height:"100%"}}>
         <div class="container">
-        <center>
-        <img src={logo} style={{marginBottom:20,height:150}}/>
-        </center>
         <div class="donation_form_heading">
         {title}
         </div>
@@ -116,14 +132,15 @@ class donation extends Component{
         </div>
         <div class="col-md-4">
         <div class="form-group">
-        <label>Country</label>
-                                            <input style={{ borderWidth: 1, borderColor: "orange" }} type="text" value="INDIA" id="Country_id8" name="country" class="form-control cntryctrl" autocomplete="off" required/>
+        
+                                            <input style={{ borderWidth: 1, borderColor: "orange" }} type="hidden" value="INDIA" id="Country_id8" name="country" class="form-control cntryctrl" autocomplete="off" required/>
         </div>
         </div>
         <div class="col-md-4">
         <div class="form-group">
-        <label for="validationCustom01">PAN <sup>*</sup></label>
+        <label for="validationCustom01">PAN <sup>#</sup></label>
                                             <input style={{ borderWidth: 1, borderColor: "orange" }} type="text" id="PANNumber_id9" name="pan" class="form-control pancontrol" placeholder="BAJPC4350M" autocomplete="off" required/>
+                                            <small style={{color:"#fb751c"}}># To claim 80G receipt, PAN number is required.</small>
         </div>
         </div>
 
@@ -142,17 +159,20 @@ class donation extends Component{
         </div>
         <div class="row">
             <div class="col-md-4">
-                <div class="payment-button">
-        <div class="form-group">
-        <button class="btn pay-button give_once" type="submit" name="paytm" id="paytm_btn"><strong>Proceed</strong><br/></button>
-                            
-        </div>
-        </div>
+
                 </div>
         </div>
         </div>
         <div class="col-md-5">
         <img src={prabhupada} class="donate-img"/>
+        <center>
+                        <div class="payment-button">
+        <div class="form-group">
+        <button class="btn pay-button give_once" type="submit" name="paytm" id="paytm_btn"><bold>Proceed</bold><br/></button>
+                            
+        </div>
+        </div>
+        </center>
         </div>
         </div>
         </form>

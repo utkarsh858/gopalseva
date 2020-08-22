@@ -6,6 +6,10 @@
 	padding:  10px 20px 10px 20px;
 }
 */
+.quote{
+width: 100%;
+
+}
 
 .bubble{
 	float:left;
@@ -22,23 +26,10 @@
 	background: #00aabb;
 	padding:  10px 20px 10px 20px;
 	margin:  10px 20px 10px 20px;
-	border-radius: .4em;
+	/*border-radius: .4em;*/
 }
 
-.bubble:after{
-	content: '';
-	position: absolute;
-	right: 0;
-	top: 50%;
-	width: 0;
-	height: 0;
-	border: 28px solid transparent;
-	border-left-color: #00aabb;
-	border-right: 0;
-	border-top: 0;
-	margin-top: -14px;
-	margin-right: -28px;
-}
+
 .person{
 	/*float: left;*/
 	/*position: absolute;*/

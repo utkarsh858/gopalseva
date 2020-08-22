@@ -62,7 +62,7 @@ render(){
                                                               </div>
 
                                                               <div class="w-iconbox-meta">
-                                                                  <h3 class="w-iconbox-title" style={{ fontSize: "1em" }}>+91 9654 789 832</h3>
+                                                                  <h3 class="w-iconbox-title" style={{ fontSize: "1em" }}>+91 9012629161</h3>
                                                               </div>
                                                           </div>
 
@@ -73,7 +73,7 @@ render(){
                                                               </div>
 
                                                               <div class="w-iconbox-meta">
-                                                                  <h3 class="w-iconbox-title" style={{ fontSize: "1em" }}>yudhistir@iskcon.org</h3>
+                                                                  <h3 class="w-iconbox-title" style={{ fontSize: "1em" }}>care.iskconbg@gmail.com</h3>
                                                               </div>
                                                           </div>
                                                       </div>

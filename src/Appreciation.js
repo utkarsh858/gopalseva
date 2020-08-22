@@ -3,6 +3,7 @@ import Grid from '@material-ui/core/Grid';
 import './css/Appreciation.css'
 import temp from './img/mataji.jpg';
 import speech from "./img/speech.png"
+import quote from "./img/quote.png"
 
 export default class Appreciation extends Component{
 	
@@ -10,8 +11,9 @@ export default class Appreciation extends Component{
 		return(
 			<center style={{position:"relative",marginBottom:"40px"}}>
 			<div class="bubble">
-
+			<img scr={quote} class="quote"/>
 				{this.props.content}
+			}
 
 			</div>
 			<div class="person">

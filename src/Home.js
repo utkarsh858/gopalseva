@@ -60,19 +60,22 @@ class Home extends Component {
   constructor(props){
     super(props)
     this.state={
-      give_flag : 0,
+      give_flag : 1,
       array_num : 0,
       amount:"",
       isCustom:"false",
       give_once_links : [
-"https://www.google.com",
-"https://www.google.com",
-"https://www.google.com",
-"https://www.google.com",
-"https://www.google.com",
-"https://www.google.com",
-"https://www.google.com",
-"https://www.google.com",
+"https://www.800once.com",
+"https://www.1000once.com",
+"https://www.1500once.com",
+"https://www.2000once.com",
+"https://www.2500once.com",
+"https://www.3500once.com",
+"https://www.5000once.com",
+"https://www.6500once.com",
+"https://www.6500once.com",
+"https://www.5555once.com",
+"https://www.9999once.com",
 "https://www.payumoney.com/react/app/merchant/#/pay/merchant/E3C27F8A2FC2FCF18EC20F91BC1A6CC7?param=7115583",
 "https://www.google.com",
 "https://www.google.com",
@@ -80,17 +83,15 @@ class Home extends Component {
 "https://www.google.com",
       ],
       give_monthly_links : [
-      "13.com",
-      "23.com",
-      "33.com",
-      "43.com",
-      "53.com",
-      "63.com",
-      "73.com",
-      "83.com",
-      "93.com",
-      "10.com",
-      "11.com",
+"https://www.800monthly.com",
+"https://www.1000monthly.com",
+"https://www.1500monthly.com",
+"https://www.2000monthly.com",
+"https://www.2500monthly.com",
+"https://www.3500monthly.com",
+"https://www.5000monthly.com",
+"https://www.6500monthly.com",
+"https://www.6500monthly.com",
       ],
     }
 
@@ -124,7 +125,7 @@ scrollTo = (target) =>{
             <React.Fragment>
             <ul class="list-group list-group-horizontal">
                                         <li class="list-group-item">
-                                        <span>5555</span>
+                                        <i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>5555</span>
                                
                                         </li>
                                         <li class="list-group-item">keval only once</li>
@@ -133,7 +134,7 @@ scrollTo = (target) =>{
 
                                             this.setState({
                                                 array_num:9,
-                                                amount:"",
+                                                amount:"5555",
                                                 isCustom:"true",
                                             })
 
@@ -149,7 +150,7 @@ scrollTo = (target) =>{
 
                                         <ul class="list-group list-group-horizontal">
                                         <li class="list-group-item">
-                                        <span>9999</span>
+                                        <i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>9999</span>
                                
                                         </li>
                                         <li class="list-group-item">keval only once</li>
@@ -158,7 +159,7 @@ scrollTo = (target) =>{
 
                                             this.setState({
                                                 array_num:10,
-                                                amount:"",
+                                                amount:"9999",
                                                 isCustom:"true",
                                             })
 
@@ -175,7 +176,7 @@ scrollTo = (target) =>{
 
                                         <ul class="list-group list-group-horizontal">
                                         <li class="list-group-item">
-                                        <span>Custom</span>
+                                        <i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>Custom</span>
                                
                                         </li>
                                         <li class="list-group-item">How much are you going to give today?</li>
@@ -391,7 +392,7 @@ scrollTo = (target) =>{
 
                                 <ul class="nav nav-pills nav-justified " role="tablist">
                                     <li class="nav-item ">
-                                        <a class="nav-link active " data-toggle="tab" 
+                                        <a class="nav-link  " data-toggle="tab" 
                                         onClick={()=>{
                                         this.setState({
                                             give_flag:0,
@@ -402,7 +403,7 @@ scrollTo = (target) =>{
                                         </a>
                                     </li>
                                     <li class="nav-item ">
-                                        <a class="nav-link " data-toggle="tab"
+                                        <a class="nav-link active" data-toggle="tab"
                                         onClick={()=>{
                                             this.setState({
                                                 give_flag : 1,
@@ -429,7 +430,7 @@ scrollTo = (target) =>{
 
                                             this.setState({
                                                 array_num:0,
-                                                amount:"2500",
+                                                amount:"800",
                                                 isCustom:"false",
                                             })
                                         }} class="custom-control custom-radio">
@@ -449,7 +450,7 @@ scrollTo = (target) =>{
                                         <div onClick={()=>{
                                                                                     this.setState({
                                                 array_num:1,
-                                                amount:"7500",
+                                                amount:"1000",
                                                 isCustom:"false",
                                             })
 
@@ -471,7 +472,7 @@ scrollTo = (target) =>{
                                         <div onClick={()=>{
                                             this.setState({
                                                 array_num:2,
-                                                amount:"5100",
+                                                amount:"1500",
                                                 isCustom:"false",
                                             })
 
@@ -493,7 +494,7 @@ scrollTo = (target) =>{
                                         <div onClick={()=>{
                                             this.setState({
                                                 array_num:3,
-                                                amount:"1008",
+                                                amount:"2000",
                                                 isCustom:"false",
                                             })
 
@@ -518,7 +519,7 @@ scrollTo = (target) =>{
 
                                             this.setState({
                                                 array_num:4,
-                                                amount:"501",
+                                                amount:"2500",
                                                 isCustom:"false",
                                             })
 
@@ -543,7 +544,7 @@ scrollTo = (target) =>{
                                         <div onClick={()=>{
                                             this.setState({
                                                 array_num:5,
-                                                amount:"2000",
+                                                amount:"3500",
                                                 isCustom:"false",
                                             })
 
@@ -568,7 +569,7 @@ scrollTo = (target) =>{
 
                                             this.setState({
                                                 array_num:6,
-                                                amount:"7500",
+                                                amount:"5000",
                                                 isCustom:"false",
                                             })
 
@@ -592,7 +593,7 @@ scrollTo = (target) =>{
 
                                             this.setState({
                                                 array_num:7,
-                                                amount:"6000",
+                                                amount:"6500",
                                                 isCustom:"false",
                                             })
 
@@ -658,11 +659,11 @@ scrollTo = (target) =>{
             <div class="container-mk2">
     
     
-    <div class="about-sec-info">
+    {/*<div class="about-sec-info">
     <h3 class="clear-spaces add-bottom-space">About GopalSevā</h3>
     <p>
     GopalSevā is a platform to generate funds for the ongoing services at ISKCON Bahadurgarh.</p>
-    </div>
+    </div> */}
     <div class="about-sec-info">
     <h3 class="clear-spaces add-bottom-space">ISKCON Bahadurgarh .... at a glance</h3>
     <p>A surge of positivity with people chanting Hare Krishna Mahamantra, singing melodious kirtans and glories of Krishna, ringing cymbals and dancing in a moment of pure joy; that is any ISKCON temple picturized through words. Visit an ISKCON Temple and you will probably realize that happiness is simply attained by something as simple as chanting the holy names of God, dancing, and feasting your way out of problems!</p>
@@ -737,7 +738,7 @@ You may also sponsor one needy child a full meal of Krishna Prasdam for an entir
 		        <div>
                 <div class="people-support-item">
                     <div class="people-support-item-inner">
-                        <img src={foodforlife1} width="100%"  alt="Hari Hari IMG 1"/>
+                        <img src={foodforlife1}  width="100%" style={{borderRadius:"5px"}} alt="Hari Hari IMG 1"/>
                         <h5>Food For Life/ Annadān Sevā</h5>
                         <h3>Prasadam: Lord’s special treat </h3>
                         <p>Because by the liberal distribution of Krsna-prasadam and sankirtan, the whole world can become peaceful and prosperous.</p>
@@ -752,7 +753,7 @@ You may also sponsor one needy child a full meal of Krishna Prasdam for an entir
             <div>
                 <div class=" people-support-item">
                     <div class="people-support-item-inner">
-                        <img src={vigraha1} width="100%" alt="Krishna IMG 2"/>
+                        <img src={vigraha1} width="100%" style={{borderRadius:"5px"}} alt="Krishna IMG 2"/>
                         <h5>Diety Worship/Vigraha Sevā</h5>
                         <h3>A direct loving exchange through Deity service</h3>
                         <p>Becasuse by your unalloyed service to the Deities, you will become more and more attracted to the spiritual world.</p>
@@ -767,7 +768,7 @@ You may also sponsor one needy child a full meal of Krishna Prasdam for an entir
             <div>
                 <div class=" people-support-item">
                     <div class="people-support-item-inner">
-                        <img src={cow1}width="100%"  alt="Gauranga IMG 3"/>
+                        <img src={cow1}width="100%" style={{borderRadius:"5px"}} alt="Gauranga IMG 3"/>
                         <h5>Cow Care/Go Sevā</h5>
                         <h3>Because Krishna loves cows</h3>
                         <p>Cows & Krishna have always been together. Krishna serves cows in Vrndavan & so should we.... </p>
@@ -782,7 +783,7 @@ You may also sponsor one needy child a full meal of Krishna Prasdam for an entir
             <div>
                 <div class="people-support-item">
                     <div class="people-support-item-inner">
-                        <img src={bookdis1} width="100%"  alt="NityaNanda IMG 4"/>
+                        <img src={bookdis1} width="100%" style={{borderRadius:"5px"}} alt="NityaNanda IMG 4"/>
                         <h5>Book Distribution/Sāstra Dān</h5>
                         <h3>Wisdom for the soul</h3>
                         <p>Because one transcendental book distributed means we go forward one step in our Krishna Consciousness... </p>
@@ -818,7 +819,6 @@ You may also sponsor one needy child a full meal of Krishna Prasdam for an entir
             </div>
 
 
-            <div class="our-value-items">
 
                 <Carousel 
                   arrows = {false}
@@ -840,7 +840,7 @@ You may also sponsor one needy child a full meal of Krishna Prasdam for an entir
 
                 </Carousel>
             
-            </div>
+            
 
 
         </div>
