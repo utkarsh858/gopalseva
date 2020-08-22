@@ -702,15 +702,11 @@ You may also sponsor one needy child a full meal of Krishna Prasdam for an entir
 
 
 <div class="people-support" >
-    <div class="container transparent-mk">
+    <div class="container transparent-mk card-width-increase">
 
         <div class="section-title-1">
             <h2>Our Active Services</h2>
         </div>
-
-        {/*<div class="people-support-items " style={{ paddingBottom: '30px',paddingRight: '60px',paddingLeft: '60px', position: 'relative' }}>
-
-    */}
 
         
         <div class="people-support-items">
@@ -737,7 +733,7 @@ You may also sponsor one needy child a full meal of Krishna Prasdam for an entir
 		        <div>
                 <div class="people-support-item">
                     <div class="people-support-item-inner">
-                        <img src={foodforlife1} width="100%"  alt="Hari Hari IMG 1"/>
+                        <img src={foodforlife1} width="100%"  alt="Food Distribution"/>
                         <h5>Food For Life/ Annadān Sevā</h5>
                         <h3>Prasadam: Lord’s special treat </h3>
                         <p>Because by the liberal distribution of Krsna-prasadam and sankirtan, the whole world can become peaceful and prosperous.</p>
@@ -752,7 +748,7 @@ You may also sponsor one needy child a full meal of Krishna Prasdam for an entir
             <div>
                 <div class=" people-support-item">
                     <div class="people-support-item-inner">
-                        <img src={vigraha1} width="100%" alt="Krishna IMG 2"/>
+                        <img src={vigraha1} width="100%" alt="Deities Being Bathed"/>
                         <h5>Diety Worship/Vigraha Sevā</h5>
                         <h3>A direct loving exchange through Deity service</h3>
                         <p>Becasuse by your unalloyed service to the Deities, you will become more and more attracted to the spiritual world.</p>
@@ -767,7 +763,7 @@ You may also sponsor one needy child a full meal of Krishna Prasdam for an entir
             <div>
                 <div class=" people-support-item">
                     <div class="people-support-item-inner">
-                        <img src={cow1}width="100%"  alt="Gauranga IMG 3"/>
+                        <img src={cow1}width="100%"  alt="Cows Glancing"/>
                         <h5>Cow Care/Go Sevā</h5>
                         <h3>Because Krishna loves cows</h3>
                         <p>Cows & Krishna have always been together. Krishna serves cows in Vrndavan & so should we.... </p>
@@ -782,7 +778,7 @@ You may also sponsor one needy child a full meal of Krishna Prasdam for an entir
             <div>
                 <div class="people-support-item">
                     <div class="people-support-item-inner">
-                        <img src={bookdis1} width="100%"  alt="NityaNanda IMG 4"/>
+                        <img src={bookdis1} width="100%"  alt="Devotees Distributing Books"/>
                         <h5>Book Distribution/Sāstra Dān</h5>
                         <h3>Wisdom for the soul</h3>
                         <p>Because one transcendental book distributed means we go forward one step in our Krishna Consciousness... </p>

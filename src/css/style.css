@@ -236,10 +236,6 @@ background-color: black !important;
 
 .people-support-item {
 
-	/*position: absolute;
-  	top: 50%;
-  	transform: translateY(-50%);
-*/
 	display:grid;
 	justify-content: center;
   	align-items: center;
@@ -300,6 +296,12 @@ background-color: black !important;
     font-weight: bold;
 }
 
+.card-width-increase{
+	margin-left : 0px;
+	margin-right: 0px;
+	padding-left : 0px;
+	padding-right: 0px;
+}
 
 .transparent-mk{
 	background-color: white !important;
