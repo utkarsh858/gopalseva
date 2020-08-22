@@ -225,6 +225,7 @@ background-color: black !important;
 
 
 
+
 .people-support {
     /*padding: 50px 0;*/
     /*position:  relative;*/
@@ -232,6 +233,7 @@ background-color: black !important;
     /*margin-top : 10px;*/
     margin-bottom: 20px;
     border-radius: 10px;
+
 }
 
 .people-support-item {
@@ -244,6 +246,24 @@ background-color: black !important;
 	padding-bottom: 40px;
 	height : 500px;
 	
+}
+@media screen and (min-width: 1200px){
+	.people-container{
+		width : 1200px;
+		margin-left : 10px;
+	}
+	.people-support-item{
+		height : 505px;
+		width:  383px;
+
+	}
+}
+
+@media screen and (min-width: 1500px){
+	.people-support-item{
+		height : 510px;
+		width:  400px;
+	}
 }
 .people-support-item-inner {
 	margin:auto;
@@ -750,6 +770,13 @@ a {
 }
 .thank-you-inner img {
     max-width: 280px;
+}
+@media (min-width:1200px)
+{
+	.container
+	{
+		max-width:1180px
+	}
 }
 
 @media screen and (min-width: 1500px) {

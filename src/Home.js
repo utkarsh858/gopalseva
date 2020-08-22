@@ -679,129 +679,124 @@ scrollTo = (target) =>{
 
     </section>
 
-    <section class="container-mk">
-
-
-    
-    
 
 
 
-    <StoryModal id="foodForLife" scrollHandler={this.scrollTo} imgsrc={foodforlife2} content={<><h3>Food For Life/ Annadān Sevā</h3><p>Annadanam Sevā means feeding the needy. Srila Prabhupada, the Founder-Acarya of ISKCON once said” No one should go hungry within 10 miles of an ISKCON temple.” Serving a hungry stomach with two square meal is the topmost necessity for the survival.</p><p>Encompassing this vision of Srila Prabhupada, ISKCON Bahadurgarh is working strenuously towards nourishing the society by regular prasadam distribution programs.</p><p>While the challenges are enormous, they can be overcome by the collective effort of each one of us and requires your whole-hearted support.
+     <StoryModal id="foodForLife" scrollHandler={this.scrollTo} imgsrc={foodforlife2} content={<><h3>Food For Life/ Annadān Sevā</h3><p>Annadanam Sevā means feeding the needy. Srila Prabhupada, the Founder-Acarya of ISKCON once said” No one should go hungry within 10 miles of an ISKCON temple.” Serving a hungry stomach with two square meal is the topmost necessity for the survival.</p><p>Encompassing this vision of Srila Prabhupada, ISKCON Bahadurgarh is working strenuously towards nourishing the society by regular prasadam distribution programs.</p><p>While the challenges are enormous, they can be overcome by the collective effort of each one of us and requires your whole-hearted support.
 You may also sponsor one needy child a full meal of Krishna Prasdam for an entire year. Please come forward and donate generously.</p></>}/> 
     <StoryModal id="vigrahaSevā" scrollHandler={this.scrollTo} imgsrc={vigraha2} content={<><h3>Sri Vigraha Sevā</h3><h4>A direct loving exchange through Deity service</h4><p>All of us are endowed with the tendencies of loving and serving. Being a social entity, we all desire that these two tendencies be reposed in a way that we derive unlimited happiness and a long-term fulfilment. Become a part of Sri Vigraha Sevā and let your loving and serving tendencies be directed in a manner that combines together to increase your devotion and also let you embark on the path of success.</p>Genuine love is symptomized by the offering of the items dear to the beloved and rendering service to him unconditionally. When such a bond of love is established, even the serving experience becomes a lifetime cherished memory. Let us allow our service enthusiasm brim out of the fountain of our heart as an expression of the gratitude towards the Lordships for all the unlimited blessings showered upon us. Let us make an offering of love through delicacies to the Lord. <p></p><p>An opportunity for you to contribute towards Aabhusan , daily worship, bhoga offerings, garland offering & various other sevās which are regularly performed to the Deities in our temple. You can choose to offer Deity sevās to Their Lordships Sri Sri Radha MadanGopal and receive their blessings.</p></>}/> 
 
     <StoryModal id="goSevā" scrollHandler={this.scrollTo} imgsrc={cow2} content={<><h3>Cow Care/Go Sevā</h3><h4>Because Krishna loves the cows.....</h4><p>Because Krishna loves the cows, His devotees not only protect them but also see to their comfort, a practice that has spiritual, psychological, and practical material benefits.</p><p>In our simple life, we appreciate more and more the value of the cows. Cow protection helps us think of Krishna. We can catch glimpses of His attractive and wonderful personality in many ways that would be more difficult without protected cows.</p><p>Your donation will help us to support on-going maintenance expenses such as Goshala construction, purchasing a cow, fodder, medical expenses etc. We are determined to care for the entire life of the cow. We await for your kind participation in this transcedental service by providing us with cows. If you are unable to sponsor a cow you can give small amount also....we will collect and then purchase a cow.</p></>}/> 
     <StoryModal id="bookDis" scrollHandler={this.scrollTo} imgsrc={bookdis2} content={<><h3>Book Distribution/Sāstra Dān</h3><h4>Books are the basis.....</h4><p>Srila Prabhupada's books have changed hundreds of thousands of lives in a very positive way. At ISKCON, devotees go out in severe cold, intense heat and monsoon. just to give out the treasure-house of vedic knowledge to the suffering souls. Millions of people have been given a progressive spiritual direction in life by reading Srila Prabhupad,s books. These books are so potent that anyone who reads them is sure to become krishna Conscious, so it is a very valuable service to distribute our books.</p><p>You can sponsor the distribution of Srimad Bhagavat Gita freely to those sincere devotees who seek to advance inspiritual life but genuinely cannot afford to buy one.</p></>}/> 
     
-    
-    
-    
-    
 
 
+    <section class="container people-container">
 
-<div class="people-support" >
-    <div class="container transparent-mk card-width-increase">
+      <div class="people-support" >
+          <div class="transparent-mk card-width-increase">
 
-        <div class="section-title-1">
-            <h2>Our Active Services</h2>
-        </div>
+              <div class="section-title-1">
+                  <h2>Our Active Services</h2>
+              </div>
 
-        
-        <div class="people-support-items">
+              
+              <div class="people-support-items">
 
-        
-        {/* To understant the code of this carosel please vistit the below link : https://www.npmjs.com/package/react-multi-carousel*/}
-     
+              
+              {/* To understant the code of this carosel please vistit the below link : https://www.npmjs.com/package/react-multi-carousel*/}
+           
 
-        <Carousel
+                <Carousel
+                      
+                      
+            		  arrows = {false}
+            		  responsive={responsive}
+            		  ssr={true} // means to render carousel on server-side.
+            		  infinite={true}
+            		  autoPlay={this.props.deviceType !== "mobile" ? true : false}
+                      autoPlaySpeed={2500}
+                      customButtonGroup={<CustomButtonGroup />}
+                      renderButtonGroupOutside={true}
+            		  showDots={true}
+                      renderDotsOutside ={ true}
+            		  
+            		>
+            		        <div>
+                            <div class="people-support-item">
+                                <div class="people-support-item-inner">
+                                    <img src={foodforlife1} width="100%"  alt="Food Distribution"/>
+                                    <h5>Food For Life/ Annadān Sevā</h5>
+                                    <h3>Prasadam: Lord’s special treat </h3>
+                                    <p>Because by the liberal distribution of Krsna-prasadam and sankirtan, the whole world can become peaceful and prosperous.</p>
+                                    <div class="btn-row">
+                                        <a href="../template_809/#"  data-toggle="modal" data-target="#foodForLife">Explore more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <div class=" people-support-item">
+                                <div class="people-support-item-inner">
+                                    <img src={vigraha1} width="100%" alt="Deities Being Bathed"/>
+                                    <h5>Diety Worship/Vigraha Sevā</h5>
+                                    <h3>A direct loving exchange through Deity service</h3>
+                                    <p>Becasuse by your unalloyed service to the Deities, you will become more and more attracted to the spiritual world.</p>
+                                    <div class="btn-row">
+                                        <a href="../template_809/#" data-toggle="modal" data-target="#vigrahaSevā">
+                                            Explore more
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class=" people-support-item">
+                                <div class="people-support-item-inner">
+                                    <img src={cow1}width="100%"  alt="Cows Glancing"/>
+                                    <h5>Cow Care/Go Sevā</h5>
+                                    <h3>Because Krishna loves cows</h3>
+                                    <p>Cows & Krishna have always been together. Krishna serves cows in Vrndavan & so should we.... </p>
+                                    <div class="btn-row">
+                                        <a href="../template_809/#" data-toggle="modal" data-target="#goSevā">
+                                            Explore more
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="people-support-item">
+                                <div class="people-support-item-inner">
+                                    <img src={bookdis1} width="100%"  alt="Devotees Distributing Books"/>
+                                    <h5>Book Distribution/Sāstra Dān</h5>
+                                    <h3>Wisdom for the soul</h3>
+                                    <p>Because one transcendental book distributed means we go forward one step in our Krishna Consciousness... </p>
+                                    <div class="btn-row">
+                                        <a href="../template_809/#" data-toggle="modal" data-target="#bookDis">
+                                            Explore more
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            		  
+            		</Carousel>
           
-          
-		  arrows = {false}
-		  responsive={responsive}
-		  ssr={true} // means to render carousel on server-side.
-		  infinite={true}
-		  autoPlay={this.props.deviceType !== "mobile" ? true : false}
-          autoPlaySpeed={2500}
-          customButtonGroup={<CustomButtonGroup />}
-          renderButtonGroupOutside={true}
-		  showDots={true}
-          renderDotsOutside ={ true}
-		  
-		>
-		        <div>
-                <div class="people-support-item">
-                    <div class="people-support-item-inner">
-                        <img src={foodforlife1} width="100%"  alt="Food Distribution"/>
-                        <h5>Food For Life/ Annadān Sevā</h5>
-                        <h3>Prasadam: Lord’s special treat </h3>
-                        <p>Because by the liberal distribution of Krsna-prasadam and sankirtan, the whole world can become peaceful and prosperous.</p>
-                        <div class="btn-row">
-                            <a href="../template_809/#"  data-toggle="modal" data-target="#foodForLife">Explore more</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
 
-            <div>
-                <div class=" people-support-item">
-                    <div class="people-support-item-inner">
-                        <img src={vigraha1} width="100%" alt="Deities Being Bathed"/>
-                        <h5>Diety Worship/Vigraha Sevā</h5>
-                        <h3>A direct loving exchange through Deity service</h3>
-                        <p>Becasuse by your unalloyed service to the Deities, you will become more and more attracted to the spiritual world.</p>
-                        <div class="btn-row">
-                            <a href="../template_809/#" data-toggle="modal" data-target="#vigrahaSevā">
-                                Explore more
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class=" people-support-item">
-                    <div class="people-support-item-inner">
-                        <img src={cow1}width="100%"  alt="Cows Glancing"/>
-                        <h5>Cow Care/Go Sevā</h5>
-                        <h3>Because Krishna loves cows</h3>
-                        <p>Cows & Krishna have always been together. Krishna serves cows in Vrndavan & so should we.... </p>
-                        <div class="btn-row">
-                            <a href="../template_809/#" data-toggle="modal" data-target="#goSevā">
-                                Explore more
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="people-support-item">
-                    <div class="people-support-item-inner">
-                        <img src={bookdis1} width="100%"  alt="Devotees Distributing Books"/>
-                        <h5>Book Distribution/Sāstra Dān</h5>
-                        <h3>Wisdom for the soul</h3>
-                        <p>Because one transcendental book distributed means we go forward one step in our Krishna Consciousness... </p>
-                        <div class="btn-row">
-                            <a href="../template_809/#" data-toggle="modal" data-target="#bookDis">
-                                Explore more
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-		  
-		</Carousel>
-    
+              
+                  
+              </div>
 
 
-        
-            
-        </div>
+          </div>
+      </div>
 
-
-    </div>
-</div>
+</ section >
+<section class="container">
 
 
     <div class=" row">
