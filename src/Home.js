@@ -808,7 +808,12 @@ You may also sponsor one needy child a full meal of Krishna Prasdam for an entir
 </div>
 
 
+    <div class=" row">
 
+
+      <div class="d-none d-lg-block col-lg-1"></div>
+    
+    <div class="col-12 col-lg-10">
     <div class="our-value">
         <div class="container transparent-mk-our-values">
 
@@ -818,32 +823,37 @@ You may also sponsor one needy child a full meal of Krishna Prasdam for an entir
             </div>
 
 
-            <div class="our-value-items">
+            <div class="our-value-items ">
+                
 
-                <Carousel 
-                  arrows = {false}
-                  responsive={responsive2}
-                  ssr={true} // means to render carousel on server-side.
-                  infinite={true}
-                  
-                  customButtonGroup={<CustomButtonGroup />}
-                  renderButtonGroupOutside={true}
-                  showDots={true}
-                  renderDotsOutside ={ true}
-                  
-                >
+                    <Carousel 
+                      arrows = {false}
+                      responsive={responsive2}
+                      ssr={true} // means to render carousel on server-side.
+                      infinite={true}
+                      
+                      customButtonGroup={<CustomButtonGroup />}
+                      renderButtonGroupOutside={true}
+                      showDots={true}
+                      renderDotsOutside ={ true}
+                      
+                    >
 
-                  
-<Appreciation content={"The ISKCON family has emerged at the forefront of the quest to create a more peaceful, harmonious and compassionate society. ISKCON's journey has been a manifestation of 'Vasudhaiva Kutumbakam' Integration has been at the core of your philosophy. ISKCON's story has been the story of the determination and devotion of lakhs of devotees spread across the world. Inspired by the teaching of Lord Krishna, they spread His message far and wide. The efforts of the ISKCON family in sectors like education, publishing and disaster-relief are commendable."} title={"Prime Minister of India"} image={narendra} name={"Narendra Modi"}/>
-<Appreciation content={"ISKCON has over the years played an important role in popularizing the noble and eternal message of the Srimad Bhagvad Gita, and promotion spiritual harmony. if today the Bhagavad-Gita is printed of copies in scores of Indian. languages and distributed all over the world, the credit for this sacred service goes chiefly to ISKCON. I congratulate ISKCON for its efforts to highlight and propagate the timeless teachings of Lord Krishna across the World. I also pay humble tribute to the contributions of His Divine A.C. Bhaktivedanta Swami Prabhupada who Incorporated ISKCON in 1966 and whose teachings continue to resobate in the hearts of Krishna devotees all over the world even today."} title={"Former President of India"} image={pranab} name={"Pranab Mukherjee"}/>
-<Appreciation content={"We achieve much more when we collaborate. We forge alliances and partnerships to ensure a positive and long term impact on people's lives. Our supporters are a key part of the solution. We work together to accomplish our goals."} title={"Former Chief Minister of Maharastra"} image={devendra} name={"Devendra Fadnavis"}/>
+                      
+                        <Appreciation content={"The ISKCON family has emerged at the forefront of the quest to create a more peaceful, harmonious and compassionate society. ISKCON's journey has been a manifestation of 'Vasudhaiva Kutumbakam' Integration has been at the core of your philosophy. ISKCON's story has been the story of the determination and devotion of lakhs of devotees spread across the world. Inspired by the teaching of Lord Krishna, they spread His message far and wide. The efforts of the ISKCON family in sectors like education, publishing and disaster-relief are commendable."} title={"Prime Minister of India"} image={narendra} name={"Narendra Modi"}/>
+                        <Appreciation content={"ISKCON has over the years played an important role in popularizing the noble and eternal message of the Srimad Bhagvad Gita, and promotion spiritual harmony. if today the Bhagavad-Gita is printed of copies in scores of Indian. languages and distributed all over the world, the credit for this sacred service goes chiefly to ISKCON. I congratulate ISKCON for its efforts to highlight and propagate the timeless teachings of Lord Krishna across the World. I also pay humble tribute to the contributions of His Divine A.C. Bhaktivedanta Swami Prabhupada who Incorporated ISKCON in 1966 and whose teachings continue to resobate in the hearts of Krishna devotees all over the world even today."} title={"Former President of India"} image={pranab} name={"Pranab Mukherjee"}/>
+                        <Appreciation content={"We achieve much more when we collaborate. We forge alliances and partnerships to ensure a positive and long term impact on people's lives. Our supporters are a key part of the solution. We work together to accomplish our goals."} title={"Former Chief Minister of Maharastra"} image={devendra} name={"Devendra Fadnavis"}/>
 
-                </Carousel>
-            
+                    </Carousel>
             </div>
 
 
         </div>
+    </div>
+
+    </div>
+    <div class="d-none d-lg-block col-lg-1"></div>
+
     </div>
 
     <div class="empty-gap-creater">
