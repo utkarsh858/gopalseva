@@ -828,9 +828,7 @@ You may also sponsor one needy child a full meal of Krishna Prasdam for an entir
     
 
 
-
-    <section class="container people-container">
-
+<center>
       <div class="people-support" >
           <div class="transparent-mk card-width-increase">
 
@@ -934,8 +932,7 @@ You may also sponsor one needy child a full meal of Krishna Prasdam for an entir
 
           </div>
       </div>
-
-</ section >
+</center>
 <section class="container">
 
 
