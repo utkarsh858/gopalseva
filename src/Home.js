@@ -860,7 +860,7 @@ You may also sponsor one needy child a full meal of Krishna Prasdam for an entir
                       renderDotsOutside ={ true}
             		  
             		>
-            		        <div>
+            		        
                             <div class="people-support-item">
                                 <div class="people-support-item-inner">
                                     <img src={foodforlife1} width="100%" style={{borderRadius:"5px"}} alt="Food Distribution"/>
@@ -873,10 +873,10 @@ You may also sponsor one needy child a full meal of Krishna Prasdam for an entir
                                 </div>
                             </div>
 
-                        </div>
+                        
 
 
-            <div>
+            
                 <div class=" people-support-item">
                     <div class="people-support-item-inner">
                         <img src={vigraha1} width="100%" style={{borderRadius:"5px"}} alt="Krishna IMG 2"/>
@@ -890,8 +890,8 @@ You may also sponsor one needy child a full meal of Krishna Prasdam for an entir
                         </div>
                     </div>
                 </div>
-            </div>
-            <div>
+            
+            
                 <div class=" people-support-item">
                     <div class="people-support-item-inner">
                         <img src={cow1}width="100%" style={{borderRadius:"5px"}} alt="Gauranga IMG 3"/>
@@ -905,8 +905,8 @@ You may also sponsor one needy child a full meal of Krishna Prasdam for an entir
                         </div>
                     </div>
                 </div>
-            </div>
-            <div>
+            
+            
                 <div class="people-support-item">
                     <div class="people-support-item-inner">
                         <img src={bookdis1} width="100%" style={{borderRadius:"5px"}} alt="NityaNanda IMG 4"/>
@@ -920,7 +920,7 @@ You may also sponsor one needy child a full meal of Krishna Prasdam for an entir
 
                         </div>
             		  </div></div>
-                      </div>
+                      
             		</Carousel>
           
 
@@ -942,7 +942,7 @@ You may also sponsor one needy child a full meal of Krishna Prasdam for an entir
 
       <div class="d-none d-lg-block col-lg-1"></div>
     
-    <div class="col-12 col-lg-10">
+    <div class="col-12 col-lg-11">
     <div class="our-value">
         <div class="container transparent-mk-our-values">
 

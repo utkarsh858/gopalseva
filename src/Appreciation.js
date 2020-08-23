@@ -11,7 +11,7 @@ export default class Appreciation extends Component{
 		return(
 
 
-			<center class="center-appr">
+			<div class="center-appr">
 
 			<div class="qoutes">
 				<img src={qoutes} alt="" />
@@ -38,7 +38,7 @@ export default class Appreciation extends Component{
 			
 			</center>
 			</div>
-			</center>
+			</div>
 		)
 	}
 }
