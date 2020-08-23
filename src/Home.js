@@ -996,7 +996,6 @@ You may also sponsor one needy child a full meal of Krishna Prasdam for an entir
 
 
 
-            <div class="our-value-items ">
                 
 
                     <Carousel 
@@ -1018,7 +1017,7 @@ You may also sponsor one needy child a full meal of Krishna Prasdam for an entir
                         <Appreciation content={"We achieve much more when we collaborate. We forge alliances and partnerships to ensure a positive and long term impact on people's lives. Our supporters are a key part of the solution. We work together to accomplish our goals."} title={"Former Chief Minister of Maharastra."} image={devendra} name={"Devendra Fadnavis"}/>
 
                     </Carousel>
-            </div>
+            
 
 
 
