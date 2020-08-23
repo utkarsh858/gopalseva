@@ -100,20 +100,267 @@ scrollTo = (target) =>{
     if(this.state.give_flag==0)
         customDonate = (
             <React.Fragment>
-            <ul class="list-group list-group-horizontal">
+            <ul class="list-group list-group-horizontal" 
+                                        
+                                        >
+                                        <li class="list-group-item">₹ 1100</li>
+                                        <li class="list-group-item">Vigraha-Sevā Bāl-bhoga</li>
                                         <li class="list-group-item">
-                                        ₹ 5555
+                                        <div onClick={()=>{
+
+                                            this.setState({
+                                                give_once_link:"https://pmny.in/0IJnwTAZFwVh",
+                                                give_monthly_link:"",
+                                                donate_direct:"/donate",
+                                                amount:"1100",
+                                                isCustom:"false",
+                                            })
+                                        }} class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio1" name="purpose_of_donation" class="custom-control-input" value="800"/>
+                                        <label class="custom-control-label" for="customRadio1"></label>
+                                        </div>
+                                        </li>
+                                        </ul>
+
+
+                                        <ul class="list-group list-group-horizontal"
+                                        
+                                        >
+                                        <li class="list-group-item">₹ 5100</li>
+                                        <li class="list-group-item">Vigraha-Sevā Rāj-Bhoga  </li>
+                                        <li class="list-group-item">
+                                        <div onClick={()=>{
+                                                                                    this.setState({
+                                                
+                                                give_once_link:"https://pmny.in/3I4UwS3MRLBi",
+                                                give_monthly_link:"",
+                                                amount:"5100",
+                                                donate_direct:"/donate",
+                                                isCustom:"false",
+                                            })
+
+                                        }}class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio2" name="purpose_of_donation" class="custom-control-input" value="1000"/>
+                                        <label class="custom-control-label" for="customRadio2"></label>
+                                        </div>
+                                        </li>
+                                        </ul>
+
+
+
+                                        <ul class="list-group list-group-horizontal"
+                                        
+                                        >
+                                        <li class="list-group-item">₹ 3100</li>
+                                        <li class="list-group-item">Vigraha-Sevā Sandhyā-Bhoga  </li>
+                                        <li class="list-group-item">
+                                        <div onClick={()=>{
+                                            this.setState({
+                                                give_once_link:"https://pmny.in/GIoSGDnwHJF4",
+                                                give_monthly_link:"",
+                                                donate_direct:"/donate",
+                                                amount:"3100",
+                                                isCustom:"false",
+                                            })
+
+                                        }} class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio3" name="purpose_of_donation" class="custom-control-input" value="1500"/>
+                                        <label class="custom-control-label" for="customRadio3"></label>
+                                        </div>
+                                        </li>
+                                        </ul>
+
+
+
+                                        <ul class="list-group list-group-horizontal"
+                                        
+                                        >
+                                        <li class="list-group-item">₹ 6000</li>
+                                        <li class="list-group-item">Prasādam Distribution (200 Plates Khichadi) </li>
+                                        <li class="list-group-item">
+                                        <div onClick={()=>{
+                                            this.setState({
+                                                give_once_link:"https://pmny.in/BIEp1EGjfCHX",
+                                                give_monthly_link:"",
+                                                amount:"6000",
+                                                donate_direct:"/donate",
+                                                isCustom:"false",
+                                            })
+
+
+                                    }} class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio4" name="purpose_of_donation" class="custom-control-input" value="2000"/>
+                                        <label class="custom-control-label" for="customRadio4"></label>
+                                        </div>
+                                        </li>
+                                        </ul>
+
+
+
+
+                                        <ul class="list-group list-group-horizontal"
+                                        
+                                        >
+                                        <li class="list-group-item">₹ 9000</li>
+                                        <li class="list-group-item">Prasādam Distribution (300 Plates Khichadi) </li>
+                                        <li class="list-group-item">
+                                        <div onClick={()=>{
+
+                                            this.setState({
+                                                give_once_link:"https://pmny.in/PIlbZiR6zjp3",
+                                                give_monthly_link:"",
+                                                donate_direct:"/donate",
+                                                amount:"9000",
+                                                isCustom:"false",
+                                            })
+
+
+
+                                        }} class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio5" name="purpose_of_donation" class="custom-control-input" value="2500"/>
+                                        <label class="custom-control-label" for="customRadio5"></label>
+                                        </div>
+                                        </li>
+                                        </ul>
+
+
+
+
+                                        <ul class="list-group list-group-horizontal"
+                                        
+                                        >
+                                        <li class="list-group-item">₹ 6450</li>
+                                        <li class="list-group-item">Sponsor Srimad Bhāgavatam Set for a vaishnava</li>
+                                        <li class="list-group-item">
+                                        <div onClick={()=>{
+                                            this.setState({
+                                                give_once_link:"https://pmny.in/bIYpuE3jEx84",
+                                                give_monthly_link:"",
+                                                amount:"6450",
+                                                donate_direct:"/donate",
+                                                isCustom:"false",
+                                            })
+
+               
+                                        }} class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio6" name="purpose_of_donation" class="custom-control-input" value="3500"/>
+                                        <label class="custom-control-label" for="customRadio6"></label>
+                                        </div>
+                                        </li>
+                                        </ul>
+
+
+                                        <ul class="list-group list-group-horizontal">
+                                        <li class="list-group-item">
+                                        ₹ 3100
                                
                                         </li>
-                                        <li class="list-group-item">keval only once</li>
+                                        <li class="list-group-item">Ārti Paraphernalia </li>
                                         <li class="list-group-item">
                                         <div onClick={()=>{
 
                                             this.setState({
                                                 donate_direct:"/donate",
-                                                give_once_link:"5555once.com",
+                                                give_once_link:"https://pmny.in/1IJqIgXYxBRw",
                                                 give_monthly_link:"",
-                                                amount:"5555",
+                                                amount:"3100",
+                                                isCustom:"true",
+                                            })
+
+
+
+                                        }}class="custom-control custom-radio">
+                                        <input type="radio" id="custom_amount_onetime2" name="purpose_of_donation" class="custom-control-input" value="custom"/>
+                                        <label class="custom-control-label" for="custom_amount_onetime2"></label>
+                                        </div>
+                                        </li>
+                                        </ul>
+
+
+                                        <ul class="list-group list-group-horizontal"
+                                        
+                                        >
+                                        <li class="list-group-item">₹ 15,000</li>
+                                        <li class="list-group-item">Bhagavad Gitā Distribution (108)</li>
+                                        <li class="list-group-item">
+                                        <div onClick={()=>{
+
+                                            this.setState({
+                                                give_once_link:"https://pmny.in/IIWqUgfYSyts",
+                                                give_monthly_link:"",
+                                                amount:"15,000",
+                                                donate_direct:"/donate",
+                                                isCustom:"false",
+                                            })
+
+                                        }} class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio7" name="purpose_of_donation" class="custom-control-input" value="5000"/>
+                                        <label class="custom-control-label" for="customRadio7"></label>
+                                        </div>
+                                        </li>
+                                        </ul>
+
+
+
+
+                                        <ul class="list-group list-group-horizontal"
+                                        
+                                        >
+                                        <li class="list-group-item">₹ 30,000</li>
+                                        <li class="list-group-item">Prasādam Distribution (1000 Plates Khichadi)</li>
+                                        <li class="list-group-item">
+                                        <div onClick={()=>{
+
+                                            this.setState({
+                                                give_once_link:"https://pmny.in/8IAJ2vJz1zp2",
+                                                give_monthly_link:"",
+                                                donate_direct:"/donate",
+                                                amount:"30,000",
+                                                isCustom:"false",
+                                            })
+
+                                        }} class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio8" name="purpose_of_donation" class="custom-control-input" value="6500"/>
+                                        <label class="custom-control-label" for="customRadio8"></label>
+                                        </div>
+                                        </li>
+                                        </ul>
+
+
+                                        <ul class="list-group list-group-horizontal">
+                                        <li class="list-group-item">₹ 35,000</li>
+                                        <li class="list-group-item">Sponsor a cow (We don't have any cow)</li>
+                                        <li class="list-group-item">
+                                        <div onClick={()=>{
+
+                                            this.setState({
+                                                give_once_link:"https://pmny.in/nIyUTS1M1oLa",
+                                                give_monthly_link:"",
+                                                amount:"35,000",
+                                                donate_direct:"/donate",
+                                                isCustom:"false",
+                                            })
+
+                                        }} class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio9" name="purpose_of_donation" class="custom-control-input" value="6500"/>
+                                        <label class="custom-control-label" for="customRadio9"></label>
+                                        </div>
+                                        </li>
+                                        </ul>
+            <ul class="list-group list-group-horizontal">
+                                        <li class="list-group-item">
+                                        ₹ 90,000
+                               
+                                        </li>
+                                        <li class="list-group-item">Prasādam Distribution (3000 Plates Khichadi)</li>
+                                        <li class="list-group-item">
+                                        <div onClick={()=>{
+
+                                            this.setState({
+                                                donate_direct:"/donate",
+                                                give_once_link:"https://pmny.in/RIfp9EMj4ChK",
+                                                give_monthly_link:"",
+                                                amount:"90,000",
                                                 isCustom:"true",
                                             })
 
@@ -127,31 +374,6 @@ scrollTo = (target) =>{
                                         </ul>
 
 
-                                        <ul class="list-group list-group-horizontal">
-                                        <li class="list-group-item">
-                                        ₹ 9999
-                               
-                                        </li>
-                                        <li class="list-group-item">keval only once</li>
-                                        <li class="list-group-item">
-                                        <div onClick={()=>{
-
-                                            this.setState({
-                                                donate_direct:"/donate",
-                                                give_once_link:"9999once.com",
-                                                give_monthly_link:"",
-                                                amount:"9999",
-                                                isCustom:"true",
-                                            })
-
-
-
-                                        }}class="custom-control custom-radio">
-                                        <input type="radio" id="custom_amount_onetime2" name="purpose_of_donation" class="custom-control-input" value="custom"/>
-                                        <label class="custom-control-label" for="custom_amount_onetime2"></label>
-                                        </div>
-                                        </li>
-                                        </ul>
 
 
 
@@ -183,7 +405,233 @@ scrollTo = (target) =>{
                                         </React.Fragment>
                                         )
     else 
-        customDonate = (<div></div>)
+        customDonate = (
+            <React.Fragment>
+                <ul class="list-group list-group-horizontal" 
+                                        
+                                        >
+                                        <li class="list-group-item">₹ 1100 </li>
+                                        <li class="list-group-item">Vigraha-Sevā Bāl-bhoga  </li>
+                                        <li class="list-group-item">
+                                        <div onClick={()=>{
+
+                                            this.setState({
+                                                give_once_link:"https://app.lotuspay.com/merchant/plan/AL0069U6SIO9W6 ",
+                                                give_monthly_link:"",
+                                                donate_direct:"/donate",
+                                                amount:"1100",
+                                                isCustom:"false",
+                                            })
+                                        }} class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio1" name="purpose_of_donation" class="custom-control-input" value="800"/>
+                                        <label class="custom-control-label" for="customRadio1"></label>
+                                        </div>
+                                        </li>
+                                        </ul>
+
+
+                                        <ul class="list-group list-group-horizontal"
+                                        
+                                        >
+                                        <li class="list-group-item">₹ 5100</li>
+                                        <li class="list-group-item">Vigraha-Sevā Rāj-Bhoga  </li>
+                                        <li class="list-group-item">
+                                        <div onClick={()=>{
+                                                                                    this.setState({
+                                                
+                                                give_once_link:"https://app.lotuspay.com/merchant/plan/AL0018QEN28JBB",
+                                                give_monthly_link:"",
+                                                amount:"5100",
+                                                donate_direct:"/donate",
+                                                isCustom:"false",
+                                            })
+
+                                        }}class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio2" name="purpose_of_donation" class="custom-control-input" value="1000"/>
+                                        <label class="custom-control-label" for="customRadio2"></label>
+                                        </div>
+                                        </li>
+                                        </ul>
+
+
+
+                                        <ul class="list-group list-group-horizontal"
+                                        
+                                        >
+                                        <li class="list-group-item">₹ 3100</li>
+                                        <li class="list-group-item">Vigraha-Sevā Sandhyā-Bhoga</li>
+                                        <li class="list-group-item">
+                                        <div onClick={()=>{
+                                            this.setState({
+                                                give_once_link:"https://app.lotuspay.com/merchant/plan/AL0057KRPUNGWQ",
+                                                give_monthly_link:"",
+                                                donate_direct:"/donate",
+                                                amount:"3100",
+                                                isCustom:"false",
+                                            })
+
+                                        }} class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio3" name="purpose_of_donation" class="custom-control-input" value="1500"/>
+                                        <label class="custom-control-label" for="customRadio3"></label>
+                                        </div>
+                                        </li>
+                                        </ul>
+
+
+
+                                        <ul class="list-group list-group-horizontal"
+                                        
+                                        >
+                                        <li class="list-group-item">₹ 3000</li>
+                                        <li class="list-group-item">Prasādam Distribution (100 Plates Khichadi) </li>
+                                        <li class="list-group-item">
+                                        <div onClick={()=>{
+                                            this.setState({
+                                                give_once_link:"https://app.lotuspay.com/merchant/plan/AL0017AG4ZZENA",
+                                                give_monthly_link:"",
+                                                amount:"3000",
+                                                donate_direct:"/donate",
+                                                isCustom:"false",
+                                            })
+
+
+                                    }} class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio4" name="purpose_of_donation" class="custom-control-input" value="2000"/>
+                                        <label class="custom-control-label" for="customRadio4"></label>
+                                        </div>
+                                        </li>
+                                        </ul>
+
+
+
+
+                                        <ul class="list-group list-group-horizontal"
+                                        
+                                        >
+                                        <li class="list-group-item">₹ 6000</li>
+                                        <li class="list-group-item">Prasādam Distribution (200 Plates Khichadi)</li>
+                                        <li class="list-group-item">
+                                        <div onClick={()=>{
+
+                                            this.setState({
+                                                give_once_link:"https://app.lotuspay.com/merchant/plan/AL009993KARJYY",
+                                                give_monthly_link:"",
+                                                donate_direct:"/donate",
+                                                amount:"6000",
+                                                isCustom:"false",
+                                            })
+
+
+
+                                        }} class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio5" name="purpose_of_donation" class="custom-control-input" value="2500"/>
+                                        <label class="custom-control-label" for="customRadio5"></label>
+                                        </div>
+                                        </li>
+                                        </ul>
+
+
+
+
+                                        <ul class="list-group list-group-horizontal"
+                                        
+                                        >
+                                        <li class="list-group-item">₹ 3100</li>
+                                        <li class="list-group-item">Ārti Paraphernalia   </li>
+                                        <li class="list-group-item">
+                                        <div onClick={()=>{
+                                            this.setState({
+                                                give_once_link:"https://app.lotuspay.com/merchant/plan/AL0052Q6QKZISH",
+                                                give_monthly_link:"",
+                                                amount:"3500",
+                                                donate_direct:"/donate",
+                                                isCustom:"false",
+                                            })
+
+               
+                                        }} class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio6" name="purpose_of_donation" class="custom-control-input" value="3500"/>
+                                        <label class="custom-control-label" for="customRadio6"></label>
+                                        </div>
+                                        </li>
+                                        </ul>
+
+
+
+
+                                        <ul class="list-group list-group-horizontal"
+                                        
+                                        >
+                                        <li class="list-group-item">₹ 6450</li>
+                                        <li class="list-group-item">Sponsor Srimad Bhāgavatam Set for a vaishnava</li>
+                                        <li class="list-group-item">
+                                        <div onClick={()=>{
+
+                                            this.setState({
+                                                give_once_link:"https://app.lotuspay.com/merchant/plan/AL0087TJYWNBKP",
+                                                give_monthly_link:"",
+                                                amount:"6450",
+                                                donate_direct:"/donate",
+                                                isCustom:"false",
+                                            })
+
+                                        }} class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio7" name="purpose_of_donation" class="custom-control-input" value="5000"/>
+                                        <label class="custom-control-label" for="customRadio7"></label>
+                                        </div>
+                                        </li>
+                                        </ul>
+
+
+
+
+                                        <ul class="list-group list-group-horizontal"
+                                        
+                                        >
+                                        <li class="list-group-item">₹ 15,000</li>
+                                        <li class="list-group-item">Bhagavad Gitā Distribution (108 books)</li>
+                                        <li class="list-group-item">
+                                        <div onClick={()=>{
+
+                                            this.setState({
+                                                give_once_link:"https://app.lotuspay.com/merchant/plan/AL00723ZSHENXC",
+                                                give_monthly_link:"",
+                                                donate_direct:"/donate",
+                                                amount:"15,000",
+                                                isCustom:"false",
+                                            })
+
+                                        }} class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio8" name="purpose_of_donation" class="custom-control-input" value="6500"/>
+                                        <label class="custom-control-label" for="customRadio8"></label>
+                                        </div>
+                                        </li>
+                                        </ul>
+
+
+                                        <ul class="list-group list-group-horizontal">
+                                        <li class="list-group-item">₹ 9,000</li>
+                                        <li class="list-group-item">Prasādam Distribution (300 Plates Khichadi)</li>
+                                        <li class="list-group-item">
+                                        <div onClick={()=>{
+
+                                            this.setState({
+                                                give_once_link:"https://app.lotuspay.com/merchant/plan/AL0096QVXSXWGD",
+                                                give_monthly_link:"",
+                                                amount:"9,000",
+                                                donate_direct:"/donate",
+                                                isCustom:"false",
+                                            })
+
+                                        }} class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio9" name="purpose_of_donation" class="custom-control-input" value="6500"/>
+                                        <label class="custom-control-label" for="customRadio9"></label>
+                                        </div>
+                                        </li>
+                                        </ul>
+            
+            </React.Fragment>
+            )
 
   	const responsive = {
 	  superLargeDesktop: {
@@ -403,228 +851,7 @@ scrollTo = (target) =>{
                                     <div id="tab-1" class="tab-pane give_once" style={{display: "block"}}>
 
 
-                                        <ul class="list-group list-group-horizontal" 
                                         
-                                        >
-                                        <li class="list-group-item">₹ 800</li>
-                                        <li class="list-group-item">Annadan Sevā (Khichadi) for 100 People </li>
-                                        <li class="list-group-item">
-                                        <div onClick={()=>{
-
-                                            this.setState({
-                                                give_once_link:"800once.com",
-                                                give_monthly_link:"800monthly.com",
-                                                donate_direct:"/donate",
-                                                amount:"800",
-                                                isCustom:"false",
-                                            })
-                                        }} class="custom-control custom-radio">
-                                        <input type="radio" id="customRadio1" name="purpose_of_donation" class="custom-control-input" value="800"/>
-                                        <label class="custom-control-label" for="customRadio1"></label>
-                                        </div>
-                                        </li>
-                                        </ul>
-
-
-                                        <ul class="list-group list-group-horizontal"
-                                        
-                                        >
-                                        <li class="list-group-item">₹ 1000</li>
-                                        <li class="list-group-item">Annadan Sevā (Khichadi) for 300 People</li>
-                                        <li class="list-group-item">
-                                        <div onClick={()=>{
-                                                                                    this.setState({
-                                                
-                                                give_once_link:"1000once.com",
-                                                give_monthly_link:"1000monthly.com",
-                                                amount:"1000",
-                                                donate_direct:"/donate",
-                                                isCustom:"false",
-                                            })
-
-                                        }}class="custom-control custom-radio">
-                                        <input type="radio" id="customRadio2" name="purpose_of_donation" class="custom-control-input" value="1000"/>
-                                        <label class="custom-control-label" for="customRadio2"></label>
-                                        </div>
-                                        </li>
-                                        </ul>
-
-
-
-                                        <ul class="list-group list-group-horizontal"
-                                        
-                                        >
-                                        <li class="list-group-item">₹ 1500</li>
-                                        <li class="list-group-item">Brahmana Bhoja Sevā</li>
-                                        <li class="list-group-item">
-                                        <div onClick={()=>{
-                                            this.setState({
-                                                give_once_link:"1500once.com",
-                                                give_monthly_link:"1500monthly.com",
-                                                donate_direct:"/donate",
-                                                amount:"1500",
-                                                isCustom:"false",
-                                            })
-
-                                        }} class="custom-control custom-radio">
-                                        <input type="radio" id="customRadio3" name="purpose_of_donation" class="custom-control-input" value="1500"/>
-                                        <label class="custom-control-label" for="customRadio3"></label>
-                                        </div>
-                                        </li>
-                                        </ul>
-
-
-
-                                        <ul class="list-group list-group-horizontal"
-                                        
-                                        >
-                                        <li class="list-group-item">₹ 2000</li>
-                                        <li class="list-group-item">Vigraha Sevā (Rājbhoga)</li>
-                                        <li class="list-group-item">
-                                        <div onClick={()=>{
-                                            this.setState({
-                                                give_once_link:"2000once.com",
-                                                give_monthly_link:"2000monthly.com",
-                                                amount:"2000",
-                                                donate_direct:"/donate",
-                                                isCustom:"false",
-                                            })
-
-
-                                    }} class="custom-control custom-radio">
-                                        <input type="radio" id="customRadio4" name="purpose_of_donation" class="custom-control-input" value="2000"/>
-                                        <label class="custom-control-label" for="customRadio4"></label>
-                                        </div>
-                                        </li>
-                                        </ul>
-
-
-
-
-                                        <ul class="list-group list-group-horizontal"
-                                        
-                                        >
-                                        <li class="list-group-item">₹ 2500</li>
-                                        <li class="list-group-item">Vigraha Sevā (Bālbhoga)</li>
-                                        <li class="list-group-item">
-                                        <div onClick={()=>{
-
-                                            this.setState({
-                                                give_once_link:"2500once.com",
-                                                give_monthly_link:"2500monthly.com",
-                                                donate_direct:"/donate",
-                                                amount:"2500",
-                                                isCustom:"false",
-                                            })
-
-
-
-                                        }} class="custom-control custom-radio">
-                                        <input type="radio" id="customRadio5" name="purpose_of_donation" class="custom-control-input" value="2500"/>
-                                        <label class="custom-control-label" for="customRadio5"></label>
-                                        </div>
-                                        </li>
-                                        </ul>
-
-
-
-
-                                        <ul class="list-group list-group-horizontal"
-                                        
-                                        >
-                                        <li class="list-group-item">₹ 3500</li>
-                                        <li class="list-group-item">Vigraha Sevā (Srngār) </li>
-                                        <li class="list-group-item">
-                                        <div onClick={()=>{
-                                            this.setState({
-                                                give_once_link:"3500once.com",
-                                                give_monthly_link:"3500monthly.com",
-                                                amount:"3500",
-                                                donate_direct:"/donate",
-                                                isCustom:"false",
-                                            })
-
-               
-                                        }} class="custom-control custom-radio">
-                                        <input type="radio" id="customRadio6" name="purpose_of_donation" class="custom-control-input" value="3500"/>
-                                        <label class="custom-control-label" for="customRadio6"></label>
-                                        </div>
-                                        </li>
-                                        </ul>
-
-
-
-
-                                        <ul class="list-group list-group-horizontal"
-                                        
-                                        >
-                                        <li class="list-group-item">₹ 5000</li>
-                                        <li class="list-group-item">Support Bhagavad Gitā Distribution (51 books)</li>
-                                        <li class="list-group-item">
-                                        <div onClick={()=>{
-
-                                            this.setState({
-                                                give_once_link:"5000once.com",
-                                                give_monthly_link:"5000monthly.com",
-                                                amount:"5000",
-                                                donate_direct:"/donate",
-                                                isCustom:"false",
-                                            })
-
-                                        }} class="custom-control custom-radio">
-                                        <input type="radio" id="customRadio7" name="purpose_of_donation" class="custom-control-input" value="5000"/>
-                                        <label class="custom-control-label" for="customRadio7"></label>
-                                        </div>
-                                        </li>
-                                        </ul>
-
-
-
-
-                                        <ul class="list-group list-group-horizontal"
-                                        
-                                        >
-                                        <li class="list-group-item">₹ 6500</li>
-                                        <li class="list-group-item">Sponsor Srimad Bhāgavatam Set for a Vāishanava (on Ekādasi)</li>
-                                        <li class="list-group-item">
-                                        <div onClick={()=>{
-
-                                            this.setState({
-                                                give_once_link:"http://www.6500once.com",
-                                                give_monthly_link:"http://www.6500monthly.com",
-                                                donate_direct:"/donate",
-                                                amount:"6500",
-                                                isCustom:"false",
-                                            })
-
-                                        }} class="custom-control custom-radio">
-                                        <input type="radio" id="customRadio8" name="purpose_of_donation" class="custom-control-input" value="6500"/>
-                                        <label class="custom-control-label" for="customRadio8"></label>
-                                        </div>
-                                        </li>
-                                        </ul>
-
-
-                                        <ul class="list-group list-group-horizontal">
-                                        <li class="list-group-item">₹ 6500</li>
-                                        <li class="list-group-item">Support 5 sight restoring surgeries</li>
-                                        <li class="list-group-item">
-                                        <div onClick={()=>{
-
-                                            this.setState({
-                                                give_once_link:"6500once.com",
-                                                give_monthly_link:"6500monthly.com",
-                                                amount:"6500",
-                                                donate_direct:"/donate",
-                                                isCustom:"false",
-                                            })
-
-                                        }} class="custom-control custom-radio">
-                                        <input type="radio" id="customRadio9" name="purpose_of_donation" class="custom-control-input" value="6500"/>
-                                        <label class="custom-control-label" for="customRadio9"></label>
-                                        </div>
-                                        </li>
-                                        </ul>
 
 
                                         {customDonate}
