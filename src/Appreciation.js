@@ -13,12 +13,12 @@ export default class Appreciation extends Component{
 
 			<div class="center-appr">
 
-			<div class="qoutes">
-				<img src={qoutes} alt="" />
-			</div>
 
 			<div class="bubble">
 			
+			<div class="qoutes">
+				<img src={qoutes} alt="" />
+			</div>
 				{this.props.content}
 
 				<div class="appr-desc">
