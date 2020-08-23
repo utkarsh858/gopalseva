@@ -3,6 +3,14 @@ import ReactDOM from 'react-dom';
 import './css/index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import WebFont from 'webfontloader';
+
+
+WebFont.load({
+  google: {
+    families: ['Poiret One:300,400,700,900','Special Elite','Fredoka One','Alef:400,700','Lora:500','Balsamiq Sans','Bad Script','Dancing Script']
+  }
+});
 
 ReactDOM.render(
   <React.StrictMode>

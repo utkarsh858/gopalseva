@@ -26,6 +26,12 @@ body {
   padding-left: 30px;
 }*/
 
+.story-img{
+	border-radius: 5px;
+	position: absolute;
+	top: 50%;
+	transform: translate(0,-50%);
+}
 .custom-right-arrow {
   position: absolute !important;
   right: -2px;
@@ -160,6 +166,11 @@ body {
   	text-align: center;
   	padding: 20px;
   	margin-bottom: 20px;
+  	color:#767676;
+}
+
+.modal-frame h4{
+	color: black;
 }
 
 .center-text{
@@ -229,8 +240,23 @@ background-color: black !important;
     /*position:  relative;*/
     background-color: white;
     /*margin-top : 10px;*/
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     border-radius: 10px;
+    border-width:2px;
+    border-style:solid;
+    border-color: #E8E8E8;
+    width:95%;
+
+}
+
+@media screen and (max-width: 767px){
+	.people-support{
+		border-width: 0px;
+		margin-top:70px;
+	}
+	.people-support .section-title-1 h2{
+		font-size: 2em;
+	}
 }
 
 .people-support-item {
@@ -246,6 +272,7 @@ background-color: black !important;
 	padding-right: 10px;
 	padding-bottom: 40px;
 	height : 500px;
+	font-family: 'Balsamiq Sans';
 	
 }
 .people-support-item-inner {
@@ -290,10 +317,12 @@ background-color: black !important;
     margin-top:  0px;
     padding-top:  10px;
     margin-bottom: 1px;
+    color:#fb6500;
 }
 
 .people-support-item-inner p{
 	margin-bottom: 5px;
+	color:  #666666;
 }
 
 .people-support-item-inner .btn-row {
@@ -311,6 +340,7 @@ background-color: black !important;
 
 .transparent-mk-our-values{
 	background-color: #e7ebf4 !important;
+	padding: 0;
 }
 
 
@@ -438,6 +468,7 @@ box-shadow: 0 0 8px 8px white inset;
 .btn {
 	border: none;
 	padding: 7px 25px;
+	font-family: 'Alef';
 }
 .btn-primary {
 	background: #fb6500;
@@ -453,6 +484,15 @@ box-shadow: 0 0 8px 8px white inset;
 .section-title-1 {
 	text-align: center;
 	margin-bottom: 50px;
+	}
+.section-title-1 h2{
+	font-family: 'Poiret One';
+	font-weight: bolder;
+	font-size: 3em;
+	margin-top: -35px;
+	/*width:40%;*/
+	display: inline-block;
+	background: white;
 }
 .section-title-1-divider {
 	width: 100px;
@@ -487,6 +527,9 @@ box-shadow: 0 0 8px 8px white inset;
     font-size: 32px;
     font-weight: 700;
 	text-align: left;
+	color:#5c5c3d;
+	font-family: 'Poiret One';
+	font-weight: bold;
 }
 
 
@@ -498,9 +541,10 @@ box-shadow: 0 0 8px 8px white inset;
 }
 .our-achievements-inner h2 {
     font-size: 38px;
-    font-weight: bold;
+    font-weight: 900;
     margin: 0 0 30px;
     text-align: center;
+    font-family: 'Poiret One'
 }
 .our-achievement-item {
     background: #403a60;
@@ -514,12 +558,15 @@ box-shadow: 0 0 8px 8px white inset;
 .our-achievement-item h4 {
     color: #ffbb22;
 	font-size: 30px;
-	font-weight: 700;
+	font-weight: 900;
+	font-family: 'Special Elite';
 }
 
 .our-achievement-item p {
 	font-weight: 300;
 	font-size: 27px;
+	/*font-family: Lora;*/
+	font-family: 'Balsamiq Sans';
 }
 .our-achievement-item-info * {
     margin: 0;
@@ -581,21 +628,32 @@ box-shadow: 0 0 8px 8px white inset;
 
 .package-wrap .nav-pills{
 	padding-top: 0px;
-	
+	margin-bottom: 20px;
 	/*height : auto;*/
 }
 .package-wrap .nav-pills .nav-link {
 
     border-radius: 0px;
-    height:70px;
+    height:50px;
     border: 1px solid #ddd;
     color: #a7a7a7;
-    font-size: 20px;
+    /*color:#df382f;*/
+    font-size: 2vw;
     font-weight: bold;
+    /*font-family: 'Balsamiq Sans';*/
+    font-family: 'Alef';
 }
+
+@media screen and (max-width: 767px ){
+	.package-wrap .nav-pills .nav-link{
+		font-size: 1em;
+	}
+}
+
 
 .package-wrap .nav-pills .nav-link.active, .package-wrap .nav-pills .show>.nav-link {
     color: #000;
+    /*color:#df382f;*/
     border: 1px solid #ddd;
     background-color: #ffbb22;
 }
@@ -609,11 +667,15 @@ box-shadow: 0 0 8px 8px white inset;
     background: #ececee;
 	padding: 10px 0 10px 10px;
 	font-size: 18px;
+	font-family: 'Balsamiq Sans';
 }
 .package-wrap .list-group-horizontal .list-group-item:first-child {
-	max-width: 75px;
+	max-width: 90px;
 	background: #febb22;
 	border-radius: 0;
+	font-size: 1.2em;
+	font-weight: 900;
+	font-family: 'Special Elite';
 }
 .package-wrap .list-group-horizontal .list-group-item:last-child {
 	max-width: 50px;
@@ -675,6 +737,8 @@ box-shadow: 0 0 8px 8px white inset;
 
 .package-proceed {
     text-align: right;
+    /*font-family: 'Alef';*/
+    /*font-weight: bolder;*/
 }
 
 .package-proceed input {
@@ -690,7 +754,15 @@ box-shadow: 0 0 8px 8px white inset;
 	margin-bottom: 50px;
 }
 .about-sec-info h3 {
-    font-weight: bold;
+    font-weight: bolder;
+    font-size: 3em;
+
+    font-family: 'Poiret One';
+}
+.about-sec-info p{
+	font-family: 'Balsamiq Sans';
+	font-weight: 500;
+	font-size: 1.3em;
 }
 .about-sec .about-video {
     text-align:center;
@@ -712,6 +784,8 @@ a {
 	padding: 100px 0;
 	text-align: center;
 	overflow-y: auto;
+	font-family: "Balsamiq Sans";
+	font-weight: lighter;
 }
 .footer-info {
 	padding: 0 50px;
@@ -775,6 +849,7 @@ a {
 	font-weight: bold;
 	font-size: 24px;
 	margin-bottom: 20px;
+	color:#fb6500;
 }
 .modal-story-body-txt p {
 	font-size: 16px;
@@ -795,9 +870,11 @@ a {
 	position: absolute;
 	right: 40px;
 	top: 30px;
+
 }
 .story_modal .modal-body {
-	padding: 70px 50px;
+	font-family: 'Balsamiq Sans';
+	padding: 10px;
 }
 .story_modal .close {
 	font-size: 70px;
@@ -852,13 +929,16 @@ a {
 	background-color: transparent;
 }
 .donation_form_heading h3 {
-	font-size: 30px;
+	font-size: 2em;
+	font-weight: bolder;
+	font-family: 'Poiret One';
 	/*margin-bottom: 30px;*/
 	/*border-bottom: 3px solid #fcc201;*/
 	/*padding-bottom: 15px;*/
 }
 .donation_form label {
 	font-size: 17px;
+	font-family: 'Balsamiq Sans';
 }
 .donation_form .form-control {
 	height: 50px;
@@ -940,4 +1020,9 @@ font-size: 17px;
 .payment-button .pay-button.current {
     color: rgb(255, 255, 255);
     background: #FB6500;
+}
+
+.pancontrol::placeholder{
+	font-weight: bold;
+	color:#555555 !important;
 }

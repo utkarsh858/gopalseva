@@ -13,18 +13,18 @@ export default class Appreciation extends Component{
 			<div class="bubble">
 			<img scr={quote} class="quote"/>
 				{this.props.content}
+
+				<div class="appr-desc">
+			__<br/>{this.props.name}<i style={{fontSize:"0.8em"}}>{" -"+this.props.title}</i>
+
+				</div>
 			}
 
 			</div>
 			<div class="person">
 			<center>
-			<img src={this.props.image} class="appr-profile" /><br/><br/><br/>
-			<span style={{fontWeight:"bold"}} >
-			{this.props.name}
-			</span><br/>
-			<span>
-				{this.props.title}
-			</span>
+			<img src={this.props.image} class="appr-profile" /><br/><br/>
+			
 			</center>
 			</div>
 			</center>

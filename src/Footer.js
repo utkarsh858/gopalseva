@@ -30,12 +30,12 @@ render(){
                                       <div>
                                           <div >
                                               <div>
-                                                  <p style={{margin:0,fontSize:"1em"}}>For non-Indian passport holders: Due to financial rules of the government, non-Indian passport holders can donate only through the FCRA accounts. Please use the contact form below if you need any assistace in this connection.
+                                                  <p style={{margin:0,fontSize:"1.1em"}}><u style={{color:"white"}}>For non-Indian passport holders:</u> Due to financial rules of the government, non-Indian passport holders can donate only through the FCRA accounts. Please use the contact form below if you need any assistace in this connection.
 
                                                   </p>
                                                       <div class="w-separator size_small">
                                                       </div>
-                                                  <h2 style={{ textAlign: "center", fontSize:"1.5em",padding:10 }} >
+                                                  <h2 style={{ textAlign: "center", fontSize:"1.7em",padding:10 }} >
                                                       CONTACT US 
                                                   </h2>
                                               </div>
@@ -50,11 +50,22 @@ render(){
                                                       <div class="wpb_wrapper">
                                                           <div class="wpb_text_column">
                                                               <div class="wpb_wrapper">
-                                                                  <h3 style={{ fontSize: "1.2em",textAlign:"left" }}>Registered Head Office: ISKCON, Hare Krishna Land, Juhu, Mumbai.</h3>
+                                                                  <h3 style={{ fontSize: "1.2em",textAlign:"left" }}></h3>
                                                               </div>
                                                           </div>
 
                                                           <div class="w-separator size_small"></div>
+
+                                                          <div class="w-iconbox iconpos_left style_circle color_primary align_left no_text">
+                                                              <div class="w-iconbox-icon" style={{ fontSize: "1em" }}>
+                                                                  <i class="fa fa-map-marker"></i>
+                                                              </div>
+
+                                                              <div class="w-iconbox-meta">
+                                                                  <h3 class="w-iconbox-title" style={{ fontSize: "1em" }}>Nahara-Nahari Road, Line Par Bahadurgarh,
+Haryana – 124507</h3>
+                                                              </div>
+                                                          </div>
 
                                                           <div class="w-iconbox iconpos_left style_circle color_primary align_left no_text">
                                                               <div class="w-iconbox-icon" style={{ fontSize: "1em" }}>

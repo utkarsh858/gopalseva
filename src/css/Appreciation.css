@@ -12,25 +12,33 @@ width: 100%;
 }
 
 .bubble{
-	float:left;
 	position: relative;
 	/*bottom: 100px;*/
 	/*position: absolute;*/
 	/*top :0;left:0;*/
 	/*bottom: 100%;*/
 	display: inline-block;
-	width:40%;
+	width:50%;
 	/*white-space: pre-wrap;*/
 	min-height:400px;
 	word-wrap: break-word;
-	background: #00aabb;
-	padding:  10px 20px 10px 20px;
-	margin:  10px 20px 10px 20px;
+	text-align:left;
+	/*margin-left: 10px;*/
+	font-family: 'Bad Script';
+	font-size: 1.4em;
+	font-weight: bolder;
+	/*background: #00aabb;*/
+	/*padding:  10px 20px 10px 20px;*/
+	/*margin:  10px 20px 10px 20px;*/
 	/*border-radius: .4em;*/
+	/*position: absolute;*/
+	/*top: 50%;*/
+	/*transform: translate(0,-50%);*/
 }
 
 
 .person{
+	float:left;
 	/*float: left;*/
 	/*position: absolute;*/
 	/*top:0px;*/
@@ -46,6 +54,11 @@ width: 100%;
 	/*max-width: 100%;*/
 	max-width: 300px;
 	/*margin-top: 50px;*/
+}
+.appr-desc{
+	/*font-style: italic;*/
+	font-family: 'Balsamiq Sans';
+	font-weight: lighter;
 }
 
 @media screen and (max-width: 800px) {

@@ -38,7 +38,7 @@ class donation extends Component{
         var time=today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
         var date=mm + '/' + dd + '/' + yyyy;
         if(isCustom!=="true")
-        var title = (<h3>Total Donation amount: ₹ {amount}</h3>)
+        var title = (<h3>Total Donation amount:<span style={{"font-family":"Special Elite"}}> ₹ {amount}</span></h3>)
     // if(isCustom==="true") link=window.location.origin+customLink;
     return (
 
@@ -82,19 +82,8 @@ class donation extends Component{
         <div class="row">
         <div class="col-md-7" style={{"border-top":" 3px solid #fcc201",paddingTop:"30px"}}>
         <div class="row">
-        <div class="col-md-2" >
-        <div class="form-group" >
-        <label>Title <sup>*</sup></label>
-                                            <select style={{ borderWidth: 1, borderColor: "orange" }} id="TitleControl" name="Title" class="form-control">
-        <option value="Mr.">Mr.</option>
-        <option value="Mrs.">Mrs.</option>
-        <option value="Miss">Miss</option>
-        <option value="Dr.">Dr.</option>
-        <option value="Ms.">Ms.</option>
-        </select>
-        </div>
-        </div>
-        <div class="col-md-5">
+
+        <div class="col-md-7">
         <div class="form-group">
         <label>Full Name <sup>*</sup></label>
                                             <input style={{ borderWidth: 1, borderColor: "orange" }} type="text" id="FirstName_id2" name="name" class="form-control" placeholder="Name" autocomplete="on" required/>
@@ -103,7 +92,7 @@ class donation extends Component{
         <div class="col-md-5">
         <div class="form-group">
         <label>Email <sup>*</sup></label>
-                                            <input style={{ borderWidth: 1, borderColor: "orange"}} type="text" id="EmailAddress_id3" name="email" class="form-control emailcontrol" placeholder="me@gmail.com" autocomplete="off" required/>
+                                            <input style={{ borderWidth: 1, borderColor: "orange"}} type="text" id="EmailAddress_id3" name="email" class="form-control emailcontrol" placeholder="Email" autocomplete="off" required/>
         </div>
         </div>
         <div class="col-md-8">
@@ -115,7 +104,7 @@ class donation extends Component{
         <div class="col-md-4">
         <div class="form-group">
         <label>Pin/Postal Code <sup>*</sup></label>
-                                            <input type="text" style={{ borderWidth: 1, borderColor: "orange" }} id="PostalCode_id5" name="pin" class="form-control pincode" autocomplete="off" placeholder="111111" required/>
+                                            <input type="text" style={{ borderWidth: 1, borderColor: "orange" }} id="PostalCode_id5" name="pin" class="form-control pincode" autocomplete="off" placeholder="Pincode" required/>
         </div>
         </div>
         <div class="col-md-4">
@@ -130,26 +119,27 @@ class donation extends Component{
                                             <input style={{ borderWidth: 1, borderColor: "orange"}} type="text" id="State_id7" name="state" class="form-control stctrl" placeholder="State" autocomplete="off" required/>
         </div>
         </div>
+                <div class="col-md-4">
+        <div class="form-group">
+        <label>Mobile <sup>*</sup></label>
+                                            <input style={{ borderWidth: 1, borderColor: "orange" }} type="text" id="Mobile_id10" name="mobile" class="form-control mblcontrol" placeholder="Mobile" autocomplete="off" required/>
+        </div>
+        </div>
         <div class="col-md-4">
         <div class="form-group">
         
                                             <input style={{ borderWidth: 1, borderColor: "orange" }} type="hidden" value="INDIA" id="Country_id8" name="country" class="form-control cntryctrl" autocomplete="off" required/>
         </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-12">
         <div class="form-group">
-        <label for="validationCustom01">PAN <sup>#</sup></label>
-                                            <input style={{ borderWidth: 1, borderColor: "orange" }} type="text" id="PANNumber_id9" name="pan" class="form-control pancontrol" placeholder="BAJPC4350M" autocomplete="off" required/>
-                                            <small style={{color:"#fb751c"}}># To claim 80G receipt, PAN number is required.</small>
+        <label for="validationCustom01">PAN </label>
+                                            <input style={{ borderWidth: 1, borderColor: "orange" }} type="text" id="PANNumber_id9" name="pan" class="form-control pancontrol" placeholder="To claim 80G receipt, PAN number is required" autocomplete="off" required/>
+                                            
         </div>
         </div>
 
-        <div class="col-md-4">
-        <div class="form-group">
-        <label>Mobile <sup>*</sup></label>
-                                            <input style={{ borderWidth: 1, borderColor: "orange" }} type="text" id="Mobile_id10" name="mobile" class="form-control mblcontrol" placeholder="9999999999" autocomplete="off" required/>
-        </div>
-        </div>
+
 
 
 
@@ -168,7 +158,7 @@ class donation extends Component{
         <center>
                         <div class="payment-button">
         <div class="form-group">
-        <button class="btn pay-button give_once" type="submit" name="paytm" id="paytm_btn"><bold>Proceed</bold><br/></button>
+        <button class="btn pay-button give_once" type="submit" name="paytm" id="paytm_btn"><bold style={{"font-family":"Balsamiq Sans","font-size":"2em"}}>Proceed</bold><br/></button>
                             
         </div>
         </div>

@@ -21,7 +21,8 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "request": "^2.88.2",
-    "superagent": "^6.0.0"
+    "superagent": "^6.0.0",
+    "webfontloader": "^1.6.28"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -41,7 +41,7 @@ import React,{Component} from 'react';
 							    <div class="row">
 								    <div class="col-md-5">
 									    <div class="modal-story-body-img">
-									    	<img class="d-none d-md-block" width="400px" height="400px" src={this.props.imgsrc} alt="Oh! Krishna this could not be found, but is was Story desciptor."></img>
+									    	<img class="d-none d-md-block story-img" width="400px" height="400px" src={this.props.imgsrc} alt="Oh! Krishna this could not be found, but is was Story desciptor."></img>
 									    	<img class= "d-md-none"src={this.props.imgsrc} width="300px" height="300px" alt="Oh! Krishna this could not be found, but is was Story desciptor."></img>
 									    </div>
 								    </div>

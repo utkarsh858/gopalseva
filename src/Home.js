@@ -125,7 +125,7 @@ scrollTo = (target) =>{
             <React.Fragment>
             <ul class="list-group list-group-horizontal">
                                         <li class="list-group-item">
-                                        <i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>5555</span>
+                                        ₹ <span>5555</span>
                                
                                         </li>
                                         <li class="list-group-item">keval only once</li>
@@ -150,7 +150,7 @@ scrollTo = (target) =>{
 
                                         <ul class="list-group list-group-horizontal">
                                         <li class="list-group-item">
-                                        <i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>9999</span>
+                                        ₹ <span>9999</span>
                                
                                         </li>
                                         <li class="list-group-item">keval only once</li>
@@ -176,7 +176,7 @@ scrollTo = (target) =>{
 
                                         <ul class="list-group list-group-horizontal">
                                         <li class="list-group-item">
-                                        <i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>Custom</span>
+                                         <span>Custom</span>
                                
                                         </li>
                                         <li class="list-group-item">How much are you going to give today?</li>
@@ -309,7 +309,7 @@ scrollTo = (target) =>{
             */}
                 <div class="justify-content-end" >    
                     <div class="donate-btn">
-                        <button onClick={() => { this.scrollTo('form_i') }} class="btn btn-primary">
+                        <button onClick={() => { this.scrollTo('form_i') }} class="btn btn-primary" style={{"font-family":"Balsamiq Sans","font-size":"1.3em"}}>
                             Donate
                         </button>
                     </div>
@@ -325,7 +325,7 @@ scrollTo = (target) =>{
     <div class="banner-sec" >
         <div class="banner-info">
             <div class="banner-info-inner">
-                <h2>Your donation will help us reach every home and spread Krishna Consciousness</h2>
+                <h2 >Your donation will help <span style={{color:"#cc0000"}}>ISKCON Bahadurgarh</span> reach every home and spread Krishna Consciousness</h2>
             </div>
         </div>
     </div>
@@ -423,7 +423,7 @@ scrollTo = (target) =>{
                                         <ul class="list-group list-group-horizontal" 
                                         
                                         >
-                                        <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>800</span></li>
+                                        <li class="list-group-item">₹ <span>800</span></li>
                                         <li class="list-group-item">Annadan Sevā (Khichadi) for 100 People </li>
                                         <li class="list-group-item">
                                         <div onClick={()=>{
@@ -444,7 +444,7 @@ scrollTo = (target) =>{
                                         <ul class="list-group list-group-horizontal"
                                         
                                         >
-                                        <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>1000</span></li>
+                                        <li class="list-group-item">₹ <span>1000</span></li>
                                         <li class="list-group-item">Annadan Sevā (Khichadi) for 300 People</li>
                                         <li class="list-group-item">
                                         <div onClick={()=>{
@@ -466,7 +466,7 @@ scrollTo = (target) =>{
                                         <ul class="list-group list-group-horizontal"
                                         
                                         >
-                                        <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>1500</span></li>
+                                        <li class="list-group-item">₹ <span>1500</span></li>
                                         <li class="list-group-item">Brahmana Bhoja Sevā</li>
                                         <li class="list-group-item">
                                         <div onClick={()=>{
@@ -488,7 +488,7 @@ scrollTo = (target) =>{
                                         <ul class="list-group list-group-horizontal"
                                         
                                         >
-                                        <li class="list-group-item"><i class="fa fa-rupee-sign" aria-hidden="true"></i> <span>2000</span></li>
+                                        <li class="list-group-item">₹ <span>2000</span></li>
                                         <li class="list-group-item">Vigraha Sevā (Rājbhoga)</li>
                                         <li class="list-group-item">
                                         <div onClick={()=>{
@@ -512,7 +512,7 @@ scrollTo = (target) =>{
                                         <ul class="list-group list-group-horizontal"
                                         
                                         >
-                                        <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>2500</span></li>
+                                        <li class="list-group-item">₹ <span>2500</span></li>
                                         <li class="list-group-item">Vigraha Sevā (Bālbhoga)</li>
                                         <li class="list-group-item">
                                         <div onClick={()=>{
@@ -538,7 +538,7 @@ scrollTo = (target) =>{
                                         <ul class="list-group list-group-horizontal"
                                         
                                         >
-                                        <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>3500</span></li>
+                                        <li class="list-group-item">₹ <span>3500</span></li>
                                         <li class="list-group-item">Vigraha Sevā (Srngār) </li>
                                         <li class="list-group-item">
                                         <div onClick={()=>{
@@ -562,7 +562,7 @@ scrollTo = (target) =>{
                                         <ul class="list-group list-group-horizontal"
                                         
                                         >
-                                        <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>5000</span></li>
+                                        <li class="list-group-item">₹ <span>5000</span></li>
                                         <li class="list-group-item">Support Bhagavad Gitā Distribution (51 books)</li>
                                         <li class="list-group-item">
                                         <div onClick={()=>{
@@ -586,7 +586,7 @@ scrollTo = (target) =>{
                                         <ul class="list-group list-group-horizontal"
                                         
                                         >
-                                        <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>6500</span></li>
+                                        <li class="list-group-item">₹ <span>6500</span></li>
                                         <li class="list-group-item">Sponsor Srimad Bhāgavatam Set for a Vāishanava (on Ekādasi)</li>
                                         <li class="list-group-item">
                                         <div onClick={()=>{
@@ -606,7 +606,7 @@ scrollTo = (target) =>{
 
 
                                         <ul class="list-group list-group-horizontal">
-                                        <li class="list-group-item"><i class="fas fa-rupee-sign" aria-hidden="true"></i> <span>6500</span></li>
+                                        <li class="list-group-item">₹ <span>6500</span></li>
                                         <li class="list-group-item">Support 5 sight restoring surgeries</li>
                                         <li class="list-group-item">
                                         <div onClick={()=>{
@@ -665,13 +665,13 @@ scrollTo = (target) =>{
     GopalSevā is a platform to generate funds for the ongoing services at ISKCON Bahadurgarh.</p>
     </div> */}
     <div class="about-sec-info">
-    <h3 class="clear-spaces add-bottom-space">ISKCON Bahadurgarh .... at a glance</h3>
+    <h3 class="clear-spaces add-bottom-space"><span style={{color:"#cc0000"}}>ISKCON Bahadurgarh</span> <span style={{color:"#fb6500"}}>.... at a glance</span></h3>
     <p>A surge of positivity with people chanting Hare Krishna Mahamantra, singing melodious kirtans and glories of Krishna, ringing cymbals and dancing in a moment of pure joy; that is any ISKCON temple picturized through words. Visit an ISKCON Temple and you will probably realize that happiness is simply attained by something as simple as chanting the holy names of God, dancing, and feasting your way out of problems!</p>
     </div>
     <div class="about-video">
-    <center>
+    <center style={{width:"100%"}}>
     <a href="../template_809/#">
-    <iframe width="80%" height="500" src="https://www.youtube.com/embed/ZcZqFHEhnMQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    <iframe style={{borderRadius:"5px"}} width="100%" height="500" src="https://www.youtube.com/embed/ZcZqFHEhnMQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
     </a>
     </center>
     </div>
@@ -701,7 +701,7 @@ You may also sponsor one needy child a full meal of Krishna Prasdam for an entir
     
 
 
-
+<center>
 <div class="people-support" >
     <div class="container transparent-mk">
 
@@ -728,7 +728,7 @@ You may also sponsor one needy child a full meal of Krishna Prasdam for an entir
 		  ssr={true} // means to render carousel on server-side.
 		  infinite={true}
 		  autoPlay={this.props.deviceType !== "mobile" ? true : false}
-          autoPlaySpeed={2500}
+          autoPlaySpeed={2000}
           customButtonGroup={<CustomButtonGroup />}
           renderButtonGroupOutside={true}
 		  showDots={true}
@@ -741,7 +741,7 @@ You may also sponsor one needy child a full meal of Krishna Prasdam for an entir
                         <img src={foodforlife1}  width="100%" style={{borderRadius:"5px"}} alt="Hari Hari IMG 1"/>
                         <h5>Food For Life/ Annadān Sevā</h5>
                         <h3>Prasadam: Lord’s special treat </h3>
-                        <p>Because by the liberal distribution of Krsna-prasadam and sankirtan, the whole world can become peaceful and prosperous.</p>
+                        <p>Because by the liberal distribution of Krsna-prasadam and sankirtan, the whole world can become peaceful and prosperous....</p>
                         <div class="btn-row">
                             <a href="../template_809/#"  data-toggle="modal" data-target="#foodForLife">Explore more</a>
                         </div>
@@ -756,7 +756,7 @@ You may also sponsor one needy child a full meal of Krishna Prasdam for an entir
                         <img src={vigraha1} width="100%" style={{borderRadius:"5px"}} alt="Krishna IMG 2"/>
                         <h5>Diety Worship/Vigraha Sevā</h5>
                         <h3>A direct loving exchange through Deity service</h3>
-                        <p>Becasuse by your unalloyed service to the Deities, you will become more and more attracted to the spiritual world.</p>
+                        <p>Because by your unalloyed service to the Deities, you will become more and more attracted to the spiritual world....</p>
                         <div class="btn-row">
                             <a href="../template_809/#" data-toggle="modal" data-target="#vigrahaSevā">
                                 Explore more
@@ -786,7 +786,7 @@ You may also sponsor one needy child a full meal of Krishna Prasdam for an entir
                         <img src={bookdis1} width="100%" style={{borderRadius:"5px"}} alt="NityaNanda IMG 4"/>
                         <h5>Book Distribution/Sāstra Dān</h5>
                         <h3>Wisdom for the soul</h3>
-                        <p>Because one transcendental book distributed means we go forward one step in our Krishna Consciousness... </p>
+                        <p>Because one transcendental book distributed means we go forward one step in our Krishna Consciousness.... </p>
                         <div class="btn-row">
                             <a href="../template_809/#" data-toggle="modal" data-target="#bookDis">
                                 Explore more
@@ -808,13 +808,13 @@ You may also sponsor one needy child a full meal of Krishna Prasdam for an entir
     </div>
 </div>
 
-
+</center>
 
     <div class="our-value">
         <div class="container transparent-mk-our-values">
 
             <div class="section-title-1">
-                <h2 class="clear-spaces">IMPORTANT DIGNITARIES SPEAK ABOUT 'ISKCON'</h2>
+                <h2 class="clear-spaces">Important dignitaries speak about 'ISKCON'</h2>
                 <div class="section-title-1-divider"></div>
             </div>
 
@@ -836,7 +836,7 @@ You may also sponsor one needy child a full meal of Krishna Prasdam for an entir
                   
 <Appreciation content={"The ISKCON family has emerged at the forefront of the quest to create a more peaceful, harmonious and compassionate society. ISKCON's journey has been a manifestation of 'Vasudhaiva Kutumbakam' Integration has been at the core of your philosophy. ISKCON's story has been the story of the determination and devotion of lakhs of devotees spread across the world. Inspired by the teaching of Lord Krishna, they spread His message far and wide. The efforts of the ISKCON family in sectors like education, publishing and disaster-relief are commendable."} title={"Prime Minister of India"} image={narendra} name={"Narendra Modi"}/>
 <Appreciation content={"ISKCON has over the years played an important role in popularizing the noble and eternal message of the Srimad Bhagvad Gita, and promotion spiritual harmony. if today the Bhagavad-Gita is printed of copies in scores of Indian. languages and distributed all over the world, the credit for this sacred service goes chiefly to ISKCON. I congratulate ISKCON for its efforts to highlight and propagate the timeless teachings of Lord Krishna across the World. I also pay humble tribute to the contributions of His Divine A.C. Bhaktivedanta Swami Prabhupada who Incorporated ISKCON in 1966 and whose teachings continue to resobate in the hearts of Krishna devotees all over the world even today."} title={"Former President of India"} image={pranab} name={"Pranab Mukherjee"}/>
-<Appreciation content={"We achieve much more when we collaborate. We forge alliances and partnerships to ensure a positive and long term impact on people's lives. Our supporters are a key part of the solution. We work together to accomplish our goals."} title={"Former Chief Minister of Maharastra"} image={devendra} name={"Devendra Fadnavis"}/>
+<Appreciation content={"We achieve much more when we collaborate. We forge alliances and partnerships to ensure a positive and long term impact on people's lives. Our supporters are a key part of the solution. We work together to accomplish our goals."} title={"Former Chief Minister of Maharastra."} image={devendra} name={"Devendra Fadnavis"}/>
 
                 </Carousel>
             
