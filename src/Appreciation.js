@@ -18,14 +18,14 @@ export default class Appreciation extends Component{
 			</div>
 
 			<div class="bubble">
-			<img scr={quote} class="quote"/>
+			
 				{this.props.content}
 
 				<div class="appr-desc">
 			__<br/>{this.props.name}<i style={{fontSize:"0.8em"}}>{" -"+this.props.title}</i>
 
 				</div>
-			}
+			
 
 			</div>
 

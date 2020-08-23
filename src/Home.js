@@ -64,35 +64,9 @@ class Home extends Component {
       array_num : 0,
       amount:"",
       isCustom:"false",
-      give_once_links : [
-"https://www.800once.com",
-"https://www.1000once.com",
-"https://www.1500once.com",
-"https://www.2000once.com",
-"https://www.2500once.com",
-"https://www.3500once.com",
-"https://www.5000once.com",
-"https://www.6500once.com",
-"https://www.6500once.com",
-"https://www.5555once.com",
-"https://www.9999once.com",
-"https://www.payumoney.com/react/app/merchant/#/pay/merchant/E3C27F8A2FC2FCF18EC20F91BC1A6CC7?param=7115583",
-"https://www.google.com",
-"https://www.google.com",
-"https://www.google.com",
-"https://www.google.com",
-      ],
-      give_monthly_links : [
-"https://www.800monthly.com",
-"https://www.1000monthly.com",
-"https://www.1500monthly.com",
-"https://www.2000monthly.com",
-"https://www.2500monthly.com",
-"https://www.3500monthly.com",
-"https://www.5000monthly.com",
-"https://www.6500monthly.com",
-"https://www.6500monthly.com",
-      ],
+      give_once_link:"",
+      give_monthly_link:"",
+      donate_direct:"",
     }
 
   }
@@ -106,16 +80,19 @@ scrollTo = (target) =>{
 }
   proceedHandler = ()=>{
    if(this.state.give_flag==0){
-    // window.location.href=this.state.give_once_links[this.state.array_num]
-   window.localStorage.setItem('link',this.state.give_once_links[this.state.array_num])
+
+        window.localStorage.setItem('link',this.state.give_once_link)
    }else{
-    // window.location.href=this.state.give_monthly_links[this.state.array_num]
-   window.localStorage.setItem('link',this.state.give_monthly_links[this.state.array_num])
+
+
+        window.localStorage.setItem('link',this.state.give_monthly_link)
+
    } 
 
    window.localStorage.setItem('amount',this.state.amount)
    window.localStorage.setItem('isCustom',this.state.isCustom)
    // window.location.href="/donate"
+   // if(window.localStorage.getItem('link')!=="") this.setState({donate_direct:"/donate"})
   }
 
   render(){
@@ -125,7 +102,7 @@ scrollTo = (target) =>{
             <React.Fragment>
             <ul class="list-group list-group-horizontal">
                                         <li class="list-group-item">
-                                        ₹ <span>5555</span>
+                                        ₹ 5555
                                
                                         </li>
                                         <li class="list-group-item">keval only once</li>
@@ -133,7 +110,9 @@ scrollTo = (target) =>{
                                         <div onClick={()=>{
 
                                             this.setState({
-                                                array_num:9,
+                                                donate_direct:"/donate",
+                                                give_once_link:"5555once.com",
+                                                give_monthly_link:"",
                                                 amount:"5555",
                                                 isCustom:"true",
                                             })
@@ -150,7 +129,7 @@ scrollTo = (target) =>{
 
                                         <ul class="list-group list-group-horizontal">
                                         <li class="list-group-item">
-                                        ₹ <span>9999</span>
+                                        ₹ 9999
                                
                                         </li>
                                         <li class="list-group-item">keval only once</li>
@@ -158,7 +137,9 @@ scrollTo = (target) =>{
                                         <div onClick={()=>{
 
                                             this.setState({
-                                                array_num:10,
+                                                donate_direct:"/donate",
+                                                give_once_link:"9999once.com",
+                                                give_monthly_link:"",
                                                 amount:"9999",
                                                 isCustom:"true",
                                             })
@@ -176,7 +157,7 @@ scrollTo = (target) =>{
 
                                         <ul class="list-group list-group-horizontal">
                                         <li class="list-group-item">
-                                         <span>Custom</span>
+                                         Custom
                                
                                         </li>
                                         <li class="list-group-item">How much are you going to give today?</li>
@@ -184,7 +165,9 @@ scrollTo = (target) =>{
                                         <div onClick={()=>{
 
                                             this.setState({
-                                                array_num:11,
+                                                donate_direct:"/donate",
+                                                give_once_link:"custom-once.com",
+                                                give_monthly_link:"",
                                                 amount:"",
                                                 isCustom:"true",
                                             })
@@ -423,13 +406,15 @@ scrollTo = (target) =>{
                                         <ul class="list-group list-group-horizontal" 
                                         
                                         >
-                                        <li class="list-group-item">₹ <span>800</span></li>
+                                        <li class="list-group-item">₹ 800</li>
                                         <li class="list-group-item">Annadan Sevā (Khichadi) for 100 People </li>
                                         <li class="list-group-item">
                                         <div onClick={()=>{
 
                                             this.setState({
-                                                array_num:0,
+                                                give_once_link:"800once.com",
+                                                give_monthly_link:"800monthly.com",
+                                                donate_direct:"/donate",
                                                 amount:"800",
                                                 isCustom:"false",
                                             })
@@ -444,13 +429,16 @@ scrollTo = (target) =>{
                                         <ul class="list-group list-group-horizontal"
                                         
                                         >
-                                        <li class="list-group-item">₹ <span>1000</span></li>
+                                        <li class="list-group-item">₹ 1000</li>
                                         <li class="list-group-item">Annadan Sevā (Khichadi) for 300 People</li>
                                         <li class="list-group-item">
                                         <div onClick={()=>{
                                                                                     this.setState({
-                                                array_num:1,
+                                                
+                                                give_once_link:"1000once.com",
+                                                give_monthly_link:"1000monthly.com",
                                                 amount:"1000",
+                                                donate_direct:"/donate",
                                                 isCustom:"false",
                                             })
 
@@ -466,12 +454,14 @@ scrollTo = (target) =>{
                                         <ul class="list-group list-group-horizontal"
                                         
                                         >
-                                        <li class="list-group-item">₹ <span>1500</span></li>
+                                        <li class="list-group-item">₹ 1500</li>
                                         <li class="list-group-item">Brahmana Bhoja Sevā</li>
                                         <li class="list-group-item">
                                         <div onClick={()=>{
                                             this.setState({
-                                                array_num:2,
+                                                give_once_link:"1500once.com",
+                                                give_monthly_link:"1500monthly.com",
+                                                donate_direct:"/donate",
                                                 amount:"1500",
                                                 isCustom:"false",
                                             })
@@ -488,13 +478,15 @@ scrollTo = (target) =>{
                                         <ul class="list-group list-group-horizontal"
                                         
                                         >
-                                        <li class="list-group-item">₹ <span>2000</span></li>
+                                        <li class="list-group-item">₹ 2000</li>
                                         <li class="list-group-item">Vigraha Sevā (Rājbhoga)</li>
                                         <li class="list-group-item">
                                         <div onClick={()=>{
                                             this.setState({
-                                                array_num:3,
+                                                give_once_link:"2000once.com",
+                                                give_monthly_link:"2000monthly.com",
                                                 amount:"2000",
+                                                donate_direct:"/donate",
                                                 isCustom:"false",
                                             })
 
@@ -512,13 +504,15 @@ scrollTo = (target) =>{
                                         <ul class="list-group list-group-horizontal"
                                         
                                         >
-                                        <li class="list-group-item">₹ <span>2500</span></li>
+                                        <li class="list-group-item">₹ 2500</li>
                                         <li class="list-group-item">Vigraha Sevā (Bālbhoga)</li>
                                         <li class="list-group-item">
                                         <div onClick={()=>{
 
                                             this.setState({
-                                                array_num:4,
+                                                give_once_link:"2500once.com",
+                                                give_monthly_link:"2500monthly.com",
+                                                donate_direct:"/donate",
                                                 amount:"2500",
                                                 isCustom:"false",
                                             })
@@ -538,13 +532,15 @@ scrollTo = (target) =>{
                                         <ul class="list-group list-group-horizontal"
                                         
                                         >
-                                        <li class="list-group-item">₹ <span>3500</span></li>
+                                        <li class="list-group-item">₹ 3500</li>
                                         <li class="list-group-item">Vigraha Sevā (Srngār) </li>
                                         <li class="list-group-item">
                                         <div onClick={()=>{
                                             this.setState({
-                                                array_num:5,
+                                                give_once_link:"3500once.com",
+                                                give_monthly_link:"3500monthly.com",
                                                 amount:"3500",
+                                                donate_direct:"/donate",
                                                 isCustom:"false",
                                             })
 
@@ -562,14 +558,16 @@ scrollTo = (target) =>{
                                         <ul class="list-group list-group-horizontal"
                                         
                                         >
-                                        <li class="list-group-item">₹ <span>5000</span></li>
+                                        <li class="list-group-item">₹ 5000</li>
                                         <li class="list-group-item">Support Bhagavad Gitā Distribution (51 books)</li>
                                         <li class="list-group-item">
                                         <div onClick={()=>{
 
                                             this.setState({
-                                                array_num:6,
+                                                give_once_link:"5000once.com",
+                                                give_monthly_link:"5000monthly.com",
                                                 amount:"5000",
+                                                donate_direct:"/donate",
                                                 isCustom:"false",
                                             })
 
@@ -586,13 +584,15 @@ scrollTo = (target) =>{
                                         <ul class="list-group list-group-horizontal"
                                         
                                         >
-                                        <li class="list-group-item">₹ <span>6500</span></li>
+                                        <li class="list-group-item">₹ 6500</li>
                                         <li class="list-group-item">Sponsor Srimad Bhāgavatam Set for a Vāishanava (on Ekādasi)</li>
                                         <li class="list-group-item">
                                         <div onClick={()=>{
 
                                             this.setState({
-                                                array_num:7,
+                                                give_once_link:"http://www.6500once.com",
+                                                give_monthly_link:"http://www.6500monthly.com",
+                                                donate_direct:"/donate",
                                                 amount:"6500",
                                                 isCustom:"false",
                                             })
@@ -606,14 +606,16 @@ scrollTo = (target) =>{
 
 
                                         <ul class="list-group list-group-horizontal">
-                                        <li class="list-group-item">₹ <span>6500</span></li>
+                                        <li class="list-group-item">₹ 6500</li>
                                         <li class="list-group-item">Support 5 sight restoring surgeries</li>
                                         <li class="list-group-item">
                                         <div onClick={()=>{
 
                                             this.setState({
-                                                array_num:8,
+                                                give_once_link:"6500once.com",
+                                                give_monthly_link:"6500monthly.com",
                                                 amount:"6500",
+                                                donate_direct:"/donate",
                                                 isCustom:"false",
                                             })
 
@@ -632,9 +634,9 @@ scrollTo = (target) =>{
                                     </div>
 
                                     <div class="package-proceed">
-                                        <Direct to="/donate"><button 
+                                        <Direct to={this.state.donate_direct}><button 
                                         onClick={this.proceedHandler}
-                                        id="next_page" value="Proceed" class="btn btn-warning btn-lg">Proceed</button>
+                                        id="next_page" value="Proceed" class="btn btn-warning btn-lg" style={{"font-family":"Alef"}}>Proceed</button>
                                         </Direct>
                                     </div>
 
@@ -683,12 +685,146 @@ scrollTo = (target) =>{
 
 
 
-     <StoryModal id="foodForLife" scrollHandler={this.scrollTo} imgsrc={foodforlife2} content={<><h3>Food For Life/ Annadān Sevā</h3><p>Annadanam Sevā means feeding the needy. Srila Prabhupada, the Founder-Acarya of ISKCON once said” No one should go hungry within 10 miles of an ISKCON temple.” Serving a hungry stomach with two square meal is the topmost necessity for the survival.</p><p>Encompassing this vision of Srila Prabhupada, ISKCON Bahadurgarh is working strenuously towards nourishing the society by regular prasadam distribution programs.</p><p>While the challenges are enormous, they can be overcome by the collective effort of each one of us and requires your whole-hearted support.
-You may also sponsor one needy child a full meal of Krishna Prasdam for an entire year. Please come forward and donate generously.</p></>}/> 
-    <StoryModal id="vigrahaSevā" scrollHandler={this.scrollTo} imgsrc={vigraha2} content={<><h3>Sri Vigraha Sevā</h3><h4>A direct loving exchange through Deity service</h4><p>All of us are endowed with the tendencies of loving and serving. Being a social entity, we all desire that these two tendencies be reposed in a way that we derive unlimited happiness and a long-term fulfilment. Become a part of Sri Vigraha Sevā and let your loving and serving tendencies be directed in a manner that combines together to increase your devotion and also let you embark on the path of success.</p>Genuine love is symptomized by the offering of the items dear to the beloved and rendering service to him unconditionally. When such a bond of love is established, even the serving experience becomes a lifetime cherished memory. Let us allow our service enthusiasm brim out of the fountain of our heart as an expression of the gratitude towards the Lordships for all the unlimited blessings showered upon us. Let us make an offering of love through delicacies to the Lord. <p></p><p>An opportunity for you to contribute towards Aabhusan , daily worship, bhoga offerings, garland offering & various other sevās which are regularly performed to the Deities in our temple. You can choose to offer Deity sevās to Their Lordships Sri Sri Radha MadanGopal and receive their blessings.</p></>}/> 
+     <StoryModal         setGiveOnce={()=>{this.setState({give_flag:0})}} 
+        setGiveMonthly={()=>{this.setState({give_flag:1})}}
+        
+        handler={(once_link,monthly_link,amt,don_dir,cus)=>{
 
-    <StoryModal id="goSevā" scrollHandler={this.scrollTo} imgsrc={cow2} content={<><h3>Cow Care/Go Sevā</h3><h4>Because Krishna loves the cows.....</h4><p>Because Krishna loves the cows, His devotees not only protect them but also see to their comfort, a practice that has spiritual, psychological, and practical material benefits.</p><p>In our simple life, we appreciate more and more the value of the cows. Cow protection helps us think of Krishna. We can catch glimpses of His attractive and wonderful personality in many ways that would be more difficult without protected cows.</p><p>Your donation will help us to support on-going maintenance expenses such as Goshala construction, purchasing a cow, fodder, medical expenses etc. We are determined to care for the entire life of the cow. We await for your kind participation in this transcedental service by providing us with cows. If you are unable to sponsor a cow you can give small amount also....we will collect and then purchase a cow.</p></>}/> 
-    <StoryModal id="bookDis" scrollHandler={this.scrollTo} imgsrc={bookdis2} content={<><h3>Book Distribution/Sāstra Dān</h3><h4>Books are the basis.....</h4><p>Srila Prabhupada's books have changed hundreds of thousands of lives in a very positive way. At ISKCON, devotees go out in severe cold, intense heat and monsoon. just to give out the treasure-house of vedic knowledge to the suffering souls. Millions of people have been given a progressive spiritual direction in life by reading Srila Prabhupad,s books. These books are so potent that anyone who reads them is sure to become krishna Conscious, so it is a very valuable service to distribute our books.</p><p>You can sponsor the distribution of Srimad Bhagavat Gita freely to those sincere devotees who seek to advance inspiritual life but genuinely cannot afford to buy one.</p></>}/> 
+            this.setState({
+                give_once_link:once_link,
+                give_monthly_link:monthly_link,
+                amount:amt,
+                donate_direct:don_dir,
+                isCustom:cus,
+            })
+        }}
+
+        options={[{
+            amount:"323",
+            cause:"dewfdwefwef",
+            monthly_link:"dwedwdwed.wedwed.dwedw",
+            once_link:"dwedwed.kkokokoko"
+        },
+        {
+            amount:"323",
+            cause:"dewfdwefwef",
+            monthly_link:"dwedwdwed.wedwed.dwedw",
+            once_link:"dwedwed.kkokokoko"
+        },{
+            amount:"323",
+            cause:"dewfdwefwef",
+            monthly_link:"dwedwdwed.wedwed.dwedw",
+            once_link:"dwedwed.kkokokoko"
+        },
+        ]}
+
+     id="foodForLife" scrollHandler={this.scrollTo} imgsrc={foodforlife2} content={<><h3>Food For Life/ Annadān Sevā</h3><p>Annadanam Sevā means feeding the needy. Srila Prabhupada, the Founder-Acarya of ISKCON once said” No one should go hungry within 10 miles of an ISKCON temple.” Serving a hungry stomach with two square meal is the topmost necessity for the survival.</p><p>Encompassing this vision of Srila Prabhupada, ISKCON Bahadurgarh is working strenuously towards nourishing the society by regular prasadam distribution programs.</p><p>While the challenges are enormous, they can be overcome by the collective effort of each one of us and requires your whole-hearted support.
+You may also sponsor one needy child a full meal of Krishna Prasdam for an entire year. Please come forward and donate generously.</p></>}/> 
+    <StoryModal         setGiveOnce={()=>{this.setState({give_flag:0})}} 
+        setGiveMonthly={()=>{this.setState({give_flag:1})}}
+        
+        handler={(once_link,monthly_link,amt,don_dir,cus)=>{
+
+            this.setState({
+                give_once_link:once_link,
+                give_monthly_link:monthly_link,
+                amount:amt,
+                donate_direct:don_dir,
+                isCustom:cus,
+            })
+        }}
+        options={[{
+            amount:"323",
+            cause:"dewfdwefwef",
+            monthly_link:"dwedwdwed.wedwed.dwedw",
+            once_link:"dwedwed.kkokokoko"
+        },
+        {
+            amount:"323",
+            cause:"dewfdwefwef",
+            monthly_link:"dwedwdwed.wedwed.dwedw",
+            once_link:"dwedwed.kkokokoko"
+        },{
+            amount:"323",
+            cause:"dewfdwefwef",
+            monthly_link:"dwedwdwed.wedwed.dwedw",
+            once_link:"dwedwed.kkokokoko"
+        },
+        ]}
+
+    id="vigrahaSevā" scrollHandler={this.scrollTo} imgsrc={vigraha2} content={<><h3>Sri Vigraha Sevā</h3><h4>A direct loving exchange through Deity service</h4><p>All of us are endowed with the tendencies of loving and serving. Being a social entity, we all desire that these two tendencies be reposed in a way that we derive unlimited happiness and a long-term fulfilment. Become a part of Sri Vigraha Sevā and let your loving and serving tendencies be directed in a manner that combines together to increase your devotion and also let you embark on the path of success.</p>Genuine love is symptomized by the offering of the items dear to the beloved and rendering service to him unconditionally. When such a bond of love is established, even the serving experience becomes a lifetime cherished memory. Let us allow our service enthusiasm brim out of the fountain of our heart as an expression of the gratitude towards the Lordships for all the unlimited blessings showered upon us. Let us make an offering of love through delicacies to the Lord. <p></p><p>An opportunity for you to contribute towards Aabhusan , daily worship, bhoga offerings, garland offering & various other sevās which are regularly performed to the Deities in our temple. You can choose to offer Deity sevās to Their Lordships Sri Sri Radha MadanGopal and receive their blessings.</p></>}/> 
+
+    <StoryModal 
+        setGiveOnce={()=>{this.setState({give_flag:0})}} 
+        setGiveMonthly={()=>{this.setState({give_flag:1})}}
+        
+        handler={(once_link,monthly_link,amt,don_dir,cus)=>{
+
+            this.setState({
+                give_once_link:once_link,
+                give_monthly_link:monthly_link,
+                amount:amt,
+                donate_direct:don_dir,
+                isCustom:cus,
+            })
+        }}
+        options={[{
+            amount:"323",
+            cause:"dewfdwefwef",
+            monthly_link:"dwedwdwed.wedwed.dwedw",
+            once_link:"dwedwed.kkokokoko"
+        },
+        {
+            amount:"323",
+            cause:"dewfdwefwef",
+            monthly_link:"dwedwdwed.wedwed.dwedw",
+            once_link:"dwedwed.kkokokoko"
+        },{
+            amount:"323",
+            cause:"dewfdwefwef",
+            monthly_link:"dwedwdwed.wedwed.dwedw",
+            once_link:"dwedwed.kkokokoko"
+        },
+        ]}
+
+    id="goSevā" scrollHandler={this.scrollTo} imgsrc={cow2} content={<><h3>Cow Care/Go Sevā</h3><h4>Because Krishna loves the cows.....</h4><p>Because Krishna loves the cows, His devotees not only protect them but also see to their comfort, a practice that has spiritual, psychological, and practical material benefits.</p><p>In our simple life, we appreciate more and more the value of the cows. Cow protection helps us think of Krishna. We can catch glimpses of His attractive and wonderful personality in many ways that would be more difficult without protected cows.</p><p>Your donation will help us to support on-going maintenance expenses such as Goshala construction, purchasing a cow, fodder, medical expenses etc. We are determined to care for the entire life of the cow. We await for your kind participation in this transcedental service by providing us with cows. If you are unable to sponsor a cow you can give small amount also....we will collect and then purchase a cow.</p></>}/> 
+    <StoryModal 
+
+
+        setGiveOnce={()=>{this.setState({give_flag:0})}} 
+        setGiveMonthly={()=>{this.setState({give_flag:1})}}
+        
+        handler={(once_link,monthly_link,amt,don_dir,cus)=>{
+
+            this.setState({
+                give_once_link:once_link,
+                give_monthly_link:monthly_link,
+                amount:amt,
+                donate_direct:don_dir,
+                isCustom:cus,
+            })
+        }}
+        options={[{
+            amount:"323",
+            cause:"dewfdwefwef",
+            monthly_link:"dwedwdwed.wedwed.dwedw",
+            once_link:"dwedwed.kkokokoko"
+        },
+        {
+            amount:"323",
+            cause:"dewfdwefwef",
+            monthly_link:"dwedwdwed.wedwed.dwedw",
+            once_link:"dwedwed.kkokokoko"
+        },{
+            amount:"323",
+            cause:"dewfdwefwef",
+            monthly_link:"dwedwdwed.wedwed.dwedw",
+            once_link:"dwedwed.kkokokoko"
+        },
+        ]}
+    id="bookDis" scrollHandler={this.scrollTo} imgsrc={bookdis2} 
+
+    content={<><h3>Book Distribution/Sāstra Dān</h3><h4>Books are the basis.....</h4><p>Srila Prabhupada's books have changed hundreds of thousands of lives in a very positive way. At ISKCON, devotees go out in severe cold, intense heat and monsoon. just to give out the treasure-house of vedic knowledge to the suffering souls. Millions of people have been given a progressive spiritual direction in life by reading Srila Prabhupad,s books. These books are so potent that anyone who reads them is sure to become krishna Conscious, so it is a very valuable service to distribute our books.</p><p>You can sponsor the distribution of Srimad Bhagavat Gita freely to those sincere devotees who seek to advance inspiritual life but genuinely cannot afford to buy one.</p></>}/> 
     
 
 
@@ -839,7 +975,7 @@ You may also sponsor one needy child a full meal of Krishna Prasdam for an entir
                       
                         <Appreciation content={"The ISKCON family has emerged at the forefront of the quest to create a more peaceful, harmonious and compassionate society. ISKCON's journey has been a manifestation of 'Vasudhaiva Kutumbakam' Integration has been at the core of your philosophy. ISKCON's story has been the story of the determination and devotion of lakhs of devotees spread across the world. Inspired by the teaching of Lord Krishna, they spread His message far and wide. The efforts of the ISKCON family in sectors like education, publishing and disaster-relief are commendable."} title={"Prime Minister of India"} image={narendra} name={"Narendra Modi"}/>
                         <Appreciation content={"ISKCON has over the years played an important role in popularizing the noble and eternal message of the Srimad Bhagvad Gita, and promotion spiritual harmony. if today the Bhagavad-Gita is printed of copies in scores of Indian. languages and distributed all over the world, the credit for this sacred service goes chiefly to ISKCON. I congratulate ISKCON for its efforts to highlight and propagate the timeless teachings of Lord Krishna across the World. I also pay humble tribute to the contributions of His Divine A.C. Bhaktivedanta Swami Prabhupada who Incorporated ISKCON in 1966 and whose teachings continue to resobate in the hearts of Krishna devotees all over the world even today."} title={"Former President of India"} image={pranab} name={"Pranab Mukherjee"}/>
-                        <Appreciation content={"We achieve much more when we collaborate. We forge alliances and partnerships to ensure a positive and long term impact on people's lives. Our supporters are a key part of the solution. We work together to accomplish our goals."} title={"Former Chief Minister of Maharastra"} image={devendra} name={"Devendra Fadnavis"}/>
+                        <Appreciation content={"We achieve much more when we collaborate. We forge alliances and partnerships to ensure a positive and long term impact on people's lives. Our supporters are a key part of the solution. We work together to accomplish our goals."} title={"Former Chief Minister of Maharastra."} image={devendra} name={"Devendra Fadnavis"}/>
 
                     </Carousel>
             </div>

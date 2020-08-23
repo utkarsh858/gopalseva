@@ -63,8 +63,8 @@ class donation extends Component{
             </div>
         </nav>
     </div>
-        <div class="donation_form" style={{height:"100%"}}>
-        <div class="container">
+        <div class="donation_form" style={{height:"400px"}}>
+        <div class="container" >
         <div class="donation_form_heading">
         {title}
         </div>

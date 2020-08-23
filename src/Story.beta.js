@@ -71,17 +71,40 @@ import React,{Component} from 'react';
 										    	{this.props.content}
 
 
+										    	<ul class="nav nav-pills nav-justified " role="tablist">
+										    	<li class="nav-item ">
+										    	<a class="nav-link  " data-toggle="tab" 
+										    	onClick={()=>{
+										    		this.props.setGiveOnce()
+										    	}}
+										    	id="onetime">
+										    	Give Once
+										    	</a>
+										    	</li>
+										    	<li class="nav-item ">
+										    	<a class="nav-link active" data-toggle="tab"
+										    	onClick={()=>{
+										    		this.props.setGiveMonthly()
+										    	}}
+										    	id="recurring">
+										    	Give Monthly
+										    	</a>
+										    	</li>
+										    	</ul>
 
+<div class="package-wrap package-inner">
+										    	{this.state.options}
+</div>
 										    </div>
 
 										    <div class="share_story row">
 
 										    	<div class="col-12 col-md-6">
-											    	<span></span>
+											    	<span>Share this story</span>
 												    <ul>
-												    	<li><a href="#" target="_blank"></a></li>
-												    	<li><a href="#" target="_blank"></a></li>
-												    	<li><a href="#" target="_blank"></a></li>
+												    	<li><a href="#" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+												    	<li><a href="#" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+												    	<li><a href="#" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
 												    </ul>
 												</div>
 
