@@ -715,6 +715,43 @@ scrollTo = (target) =>{
           );
         };
 
+    const CustomButtonGroup2 = ({ next, previous, goToSlide, carouselState }) => {
+          const { totalItems, currentSlide } = carouselState;
+          return (
+            <div className="custom-button-group2">
+              
+
+            {/*
+
+              <button onClick={() => previous()}>Previous slide</button>
+              <button onClick={() => next()}>Next slide</button>
+
+            */}
+              <button onClick={() => previous()}><i  className="custom-left-arrow bring-to-right" />  </button>
+              <button onClick={() => next()}><i  className="custom-right-arrow" /> </button>
+
+              {/*
+              <button
+                onClick={() => goToSlide(Math.floor(Math.random() * totalItems + 1))}
+              >
+                Go to a random slide
+              </button>
+          */}
+            </div>
+          );
+        };
+
+        const CustomDot = ({ onClick, active, index, carouselState }) => {
+          const { currentSlide } = carouselState;
+          return (
+            <li style={{ background: active ? "grey" : "initial" }}>
+              <button
+                style={{ background: active ? "grey" : "initial" }}
+                onClick={() => onClick()}
+              />
+            </li>
+          );
+        };
     
 	
   return (
@@ -1065,7 +1102,7 @@ You may also sponsor one needy child a full meal of Krishna Prasdam for an entir
               </div>
 
               
-              <div class="people-support-items">
+              <div class="people-support-items ">
 
 
               
@@ -1081,10 +1118,11 @@ You may also sponsor one needy child a full meal of Krishna Prasdam for an entir
             		  infinite={true}
             		  autoPlay={this.props.deviceType !== "mobile" ? true : false}
                       autoPlaySpeed={2500}
-                      customButtonGroup={<CustomButtonGroup />}
+                      customButtonGroup={<CustomButtonGroup2 />}
                       renderButtonGroupOutside={true}
             		  showDots={true}
-                      renderDotsOutside ={ true}
+
+                      
             		  
             		>
             		        
@@ -1160,6 +1198,11 @@ You may also sponsor one needy child a full meal of Krishna Prasdam for an entir
           </div>
       </div>
 </center>
+
+
+
+
+
 <section class="container">
 
 

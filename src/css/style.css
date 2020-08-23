@@ -74,6 +74,30 @@ body {
   right: 0;
 }
 
+.custom-button-group2{
+  position: relative;
+  top: -280px ;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  right: 0;
+}
+.bring-to-right{
+	left : -5px;
+}
+.absolute-pos{
+	position: absolute;
+}
+
+.react-multi-carousel-dot-list {
+	position: relative;
+}
+
+
+
+
+
 .nav-img{
 	max-width: 250px;
 }
