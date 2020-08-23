@@ -1,15 +1,22 @@
 import React,{Component} from 'react';
 import Grid from '@material-ui/core/Grid';
 import './css/Appreciation.css'
-import temp from './img/mataji.jpg';
-import speech from "./img/speech.png"
-import quote from "./img/quote.png"
+
+import qoutes from './img/qoutes.png';
+import speech from "./img/speech.png";
 
 export default class Appreciation extends Component{
 	
 	render(){
 		return(
-			<center style={{position:"relative",marginBottom:"40px"}}>
+
+
+			<center class="center-appr">
+
+			<div class="qoutes">
+				<img src={qoutes} alt="" />
+			</div>
+
 			<div class="bubble">
 			<img scr={quote} class="quote"/>
 				{this.props.content}
@@ -21,6 +28,10 @@ export default class Appreciation extends Component{
 			}
 
 			</div>
+
+			
+
+
 			<div class="person">
 			<center>
 			<img src={this.props.image} class="appr-profile" /><br/><br/>

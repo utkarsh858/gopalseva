@@ -11,10 +11,7 @@ import React,{Component} from 'react';
 
  export default class StoryModal extends Component{
 
-	constructor(props){
-    	super(props)
-	}
-
+	
 
 	
 

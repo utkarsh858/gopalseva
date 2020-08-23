@@ -11,6 +11,21 @@ width: 100%;
 
 }
 
+.qoutes{
+	/*TODO*/
+	/*I tried to do it, but after 10 minutes still i couldnot sorry prabhuji, your servant mohit*/
+}
+.center-appr{
+	position: relative;
+	margin-bottom:40px;
+}
+
+@media screen and (min-width: 500px) {
+	.center-appr{
+		padding-left : 100px;
+	}
+	
+}
 .bubble{
 	position: relative;
 	/*bottom: 100px;*/
