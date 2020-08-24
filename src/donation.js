@@ -6,7 +6,9 @@ import prabhupada from "./img/prabhupada.png";
 // var customLink = "/custom-donate"
 import logo from './img/logo_nav.jpeg';
 import footer from './img/footer-image-fadded.jpg';
-
+import heart_static from './img/heart.png';
+import heart_anim from './img/heart_anim.gif';
+import CancelIcon from '@material-ui/icons/Cancel';
 (function () {
     'use strict';
     window.addEventListener('load', function () {
@@ -26,7 +28,18 @@ import footer from './img/footer-image-fadded.jpg';
 })();
 
 class donation extends Component{
+    constructor(props){
+        super(props);
+            this.state = {
+                anim : 0
+            
+        }
+    }
     render(){
+        var heart_text = (this.state.anim==0)?(<span class="heart-text">Proceed</span>):(<span></span>);
+        var heart;
+        if(this.state.anim==0) heart = heart_static;
+        else heart = heart_anim; 
         var link=window.localStorage.getItem('link');
         var amount=window.localStorage.getItem('amount');
         var isCustom=window.localStorage.getItem('isCustom');
@@ -59,7 +72,11 @@ class donation extends Component{
                 <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
             */}
 
+     <div class="justify-content-end" >
+     
+     <CancelIcon style={{fontSize:"5em",cursor:"pointer",color:"#fb6500"}}onClick={()=>{this.setState({anim:1});setTimeout(()=>{window.history.back()},4300)}}/>
 
+     </div>
             </div>
         </nav>
     </div>
@@ -158,10 +175,11 @@ class donation extends Component{
         <center>
                         <div class="payment-button">
         <div class="form-group">
-        <button class="btn pay-button give_once" type="submit" name="paytm" id="paytm_btn"><bold style={{"font-family":"Balsamiq Sans","font-size":"2em"}}>Proceed</bold><br/></button>
+
                             
         </div>
         </div>
+        <button class="heart-button" type="submit"><img src={heart} class="heart"/>{heart_text}</button>
         </center>
         </div>
         </div>
