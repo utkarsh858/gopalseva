@@ -702,7 +702,7 @@ scrollTo = (target) =>{
 
             */}
               <button onClick={() => previous()}><i  className="custom-left-arrow" />  </button>
-              <button onClick={() => next()}><i  className="custom-right-arrow" /> </button>
+              <button onClick={() => next()}><i  className="custom-right-arrow more-shift-right" /> </button>
 
               {/*
               <button
