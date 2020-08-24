@@ -837,14 +837,14 @@ scrollTo = (target) =>{
                             </div>
                             <div class="our-achievement-item responsive-hide">
                                 <div class="our-achievement-item-info">
-                                    <h4>5 Million</h4>
-                                    <p>Only in desktop version!!</p>
+                                    <h4>15+</h4>
+                                    <p>Dedicated servants</p>
                                 </div>
                             </div>
                             <div class="our-achievement-item responsive-hide">
                                 <div class="our-achievement-item-info">
-                                    <h4>5 Million</h4>
-                                    <p>Only in desktop version!!</p>
+                                    <h4>1 Master</h4>
+                                    <p>Sri Sri Radha-Madangopal Ji</p>
                                 </div>
                             </div>
                         </div>
