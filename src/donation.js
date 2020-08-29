@@ -8,7 +8,7 @@ import logo from './img/logo_nav.jpeg';
 import footer from './img/footer-image-fadded.jpg';
 import heart_static from './img/heart.png';
 import heart_anim from './img/heart_anim.gif';
-import CancelIcon from '@material-ui/icons/Cancel';
+import ClearIcon from '@material-ui/icons/Clear';
 (function () {
     'use strict';
     window.addEventListener('load', function () {
@@ -44,6 +44,7 @@ class donation extends Component{
         var amount=window.localStorage.getItem('amount');
         var isCustom=window.localStorage.getItem('isCustom');
         var today = new Date();
+        var timestamp = today.getTime();
         var dd = String(today.getDate()).padStart(2, '0');
         var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
         var yyyy = today.getFullYear();
@@ -74,7 +75,7 @@ class donation extends Component{
 
      <div class="justify-content-end" >
      
-     <CancelIcon style={{fontSize:"5em",cursor:"pointer",color:"#fb6500"}}onClick={()=>{this.setState({anim:1});setTimeout(()=>{window.history.back()},4300)}}/>
+     <ClearIcon style={{fontSize:"5em",cursor:"pointer",color:"#7e7e7e"}}onClick={()=>{this.setState({anim:1});setTimeout(()=>{window.history.back()},2500)}}/>
 
      </div>
             </div>
@@ -95,6 +96,7 @@ class donation extends Component{
             <input type="hidden" name="time" value={time} />
             <input type="hidden"  name="date" value={date} />
             <input type="hidden" name="link" value={link} />
+            <input type="hidden" name="timestamp" value={timestamp} />
 
         <div class="row">
         <div class="col-md-7" style={{"border-top":" 3px solid #fcc201",paddingTop:"30px"}}>
@@ -151,7 +153,7 @@ class donation extends Component{
         <div class="col-md-12">
         <div class="form-group">
         <label for="validationCustom01">PAN </label>
-                                            <input style={{ borderWidth: 1, borderColor: "orange" }} type="text" id="PANNumber_id9" name="pan" class="form-control pancontrol" placeholder="To claim 80G receipt, PAN number is required" autocomplete="off" required/>
+                                            <input style={{ borderWidth: 1, borderColor: "orange" }} type="text" id="PANNumber_id9" name="pan" class="form-control pancontrol" placeholder="To claim 80G receipt, PAN number is required" autocomplete="off" />
                                             
         </div>
         </div>
@@ -179,7 +181,14 @@ class donation extends Component{
                             
         </div>
         </div>
-        <button class="heart-button" type="submit"><img src={heart} class="heart"/>{heart_text}</button>
+        
+        <div class="payment-button">
+        <div class="form-group">
+        <button class="btn pay-button give_once" type="submit" name="paytm" id="paytm_btn"><bold style={{"font-family":"Balsamiq Sans","font-size":"2em"}}>Proceed</bold><br/></button>
+                            
+        </div>
+        </div> <span style={{position:"relative",bottom:"80px"}}>with</span>
+        <img src={heart} class="heart"/>
         </center>
         </div>
         </div>

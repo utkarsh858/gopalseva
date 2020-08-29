@@ -410,16 +410,16 @@ scrollTo = (target) =>{
                 <ul class="list-group list-group-horizontal" 
                                         
                                         >
-                                        <li class="list-group-item">₹ 1100 </li>
+                                        <li class="list-group-item">₹ 2100 </li>
                                         <li class="list-group-item">Vigraha-Sevā Bāl-bhoga  </li>
                                         <li class="list-group-item">
                                         <div onClick={()=>{
 
                                             this.setState({
-                                                give_once_link:"https://app.lotuspay.com/merchant/plan/AL0069U6SIO9W6 ",
-                                                give_monthly_link:"",
+                                                give_monthly_link:"https://app.lotuspay.com/merchant/plan/AL0069U6SIO9W6 ",
+                                                give_once_link:"",
                                                 donate_direct:"/donate",
-                                                amount:"1100",
+                                                amount:"2100",
                                                 isCustom:"false",
                                             })
                                         }} class="custom-control custom-radio">
@@ -439,8 +439,8 @@ scrollTo = (target) =>{
                                         <div onClick={()=>{
                                                                                     this.setState({
                                                 
-                                                give_once_link:"https://app.lotuspay.com/merchant/plan/AL0018QEN28JBB",
-                                                give_monthly_link:"",
+                                                give_monthly_link:"https://app.lotuspay.com/merchant/plan/AL0018QEN28JBB",
+                                                give_once_link:"",
                                                 amount:"5100",
                                                 donate_direct:"/donate",
                                                 isCustom:"false",
@@ -463,8 +463,8 @@ scrollTo = (target) =>{
                                         <li class="list-group-item">
                                         <div onClick={()=>{
                                             this.setState({
-                                                give_once_link:"https://app.lotuspay.com/merchant/plan/AL0057KRPUNGWQ",
-                                                give_monthly_link:"",
+                                                give_monthly_link:"https://app.lotuspay.com/merchant/plan/AL0057KRPUNGWQ",
+                                                give_once_link:"",
                                                 donate_direct:"/donate",
                                                 amount:"3100",
                                                 isCustom:"false",
@@ -487,8 +487,8 @@ scrollTo = (target) =>{
                                         <li class="list-group-item">
                                         <div onClick={()=>{
                                             this.setState({
-                                                give_once_link:"https://app.lotuspay.com/merchant/plan/AL0017AG4ZZENA",
-                                                give_monthly_link:"",
+                                                give_monthly_link:"https://app.lotuspay.com/merchant/plan/AL0017AG4ZZENA",
+                                                give_once_link:"",
                                                 amount:"3000",
                                                 donate_direct:"/donate",
                                                 isCustom:"false",
@@ -514,8 +514,8 @@ scrollTo = (target) =>{
                                         <div onClick={()=>{
 
                                             this.setState({
-                                                give_once_link:"https://app.lotuspay.com/merchant/plan/AL009993KARJYY",
-                                                give_monthly_link:"",
+                                                give_monthly_link:"https://app.lotuspay.com/merchant/plan/AL009993KARJYY",
+                                                give_once_link:"",
                                                 donate_direct:"/donate",
                                                 amount:"6000",
                                                 isCustom:"false",
@@ -541,8 +541,8 @@ scrollTo = (target) =>{
                                         <li class="list-group-item">
                                         <div onClick={()=>{
                                             this.setState({
-                                                give_once_link:"https://app.lotuspay.com/merchant/plan/AL0052Q6QKZISH",
-                                                give_monthly_link:"",
+                                                give_monthly_link:"https://app.lotuspay.com/merchant/plan/AL0052Q6QKZISH",
+                                                give_once_link:"",
                                                 amount:"3500",
                                                 donate_direct:"/donate",
                                                 isCustom:"false",
@@ -568,8 +568,8 @@ scrollTo = (target) =>{
                                         <div onClick={()=>{
 
                                             this.setState({
-                                                give_once_link:"https://app.lotuspay.com/merchant/plan/AL0087TJYWNBKP",
-                                                give_monthly_link:"",
+                                                give_monthly_link:"https://app.lotuspay.com/merchant/plan/AL0087TJYWNBKP",
+                                                give_once_link:"",
                                                 amount:"6450",
                                                 donate_direct:"/donate",
                                                 isCustom:"false",
@@ -594,8 +594,8 @@ scrollTo = (target) =>{
                                         <div onClick={()=>{
 
                                             this.setState({
-                                                give_once_link:"https://app.lotuspay.com/merchant/plan/AL00723ZSHENXC",
-                                                give_monthly_link:"",
+                                                give_monthly_link:"https://app.lotuspay.com/merchant/plan/AL00723ZSHENXC",
+                                                give_once_link:"",
                                                 donate_direct:"/donate",
                                                 amount:"15,000",
                                                 isCustom:"false",
@@ -616,8 +616,8 @@ scrollTo = (target) =>{
                                         <div onClick={()=>{
 
                                             this.setState({
-                                                give_once_link:"https://app.lotuspay.com/merchant/plan/AL0096QVXSXWGD",
-                                                give_monthly_link:"",
+                                                give_monthly_link:"https://app.lotuspay.com/merchant/plan/AL0096QVXSXWGD",
+                                                give_once_link:"",
                                                 amount:"9,000",
                                                 donate_direct:"/donate",
                                                 isCustom:"false",
@@ -775,12 +775,13 @@ scrollTo = (target) =>{
             {/*
                 <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
             */}
-                <div class="justify-content-end" >    
+                <div class="justify-content-end" >   
                     <div class="donate-btn">
                         <button onClick={() => { this.scrollTo('form_i') }} class="btn btn-primary" style={{"font-family":"Balsamiq Sans","font-size":"1.3em"}}>
                             Donate
                         </button>
                     </div>
+                
                 </div>
 
             </div>
@@ -791,6 +792,7 @@ scrollTo = (target) =>{
     
 
     <div class="banner-sec" >
+    <span class="prabhupada"><span class="filler-desktop">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>His Divine Grace A.C. Bhaktivedanta Swami Prabhupada<br/>Founder Āchārya: International Society for Krsna Consciousness</span>
         <div class="banner-info">
             <div class="banner-info-inner">
                 <h2 >Your donation will help <span style={{color:"#cc0000"}}>ISKCON Bahadurgarh</span> reach every home and spread Krishna Consciousness</h2>
