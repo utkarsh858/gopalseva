@@ -187,7 +187,7 @@ class donation extends Component{
         <button class="btn pay-button give_once" type="submit" name="paytm" id="paytm_btn"><bold style={{"font-family":"Balsamiq Sans","font-size":"2em"}}>Proceed</bold><br/></button>
                             
         </div>
-        </div> <span style={{position:"relative",bottom:"80px"}}>with</span>
+        </div> <span style={{position:"relative",bottom:"80px","font-weight":"bold","font-style":"italic"}}>with</span>
         <img src={heart} class="heart"/>
         </center>
         </div>

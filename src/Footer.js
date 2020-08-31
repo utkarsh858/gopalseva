@@ -8,8 +8,8 @@ export default class Footer extends Component {
 render(){
 	return(
 		  <div class="no-pointer-events">
-          <div class="footer-filler" ></div>
-          <div class="footer" >
+          <div class="footer-filler" id="footer-filler"></div>
+          <div class="footer" id="footer" name="footer">
           
             <div style={{position:"absolute",bottom:0,zIndex:-1,height:"100%",overflowY:"auto"}}>
 
@@ -143,13 +143,20 @@ Haryana – 124507</h3>
                           
 
                       </div></div></div></div></div></div></div></div></div></div>
+                      <center>
+                      <br/>
+                      <i class="fas fa-sort-up" style={{fontSize:"4em",cursor:"pointer"}} onClick={()=>{this.props.scrollHandler('cause_details')}}></i><br/>
+                        Back to Top
 
+                      </center>
                   </section>
 
 
               </div>
               
 </div>
+<div id="end-marker"></div>
+
 </div>
 	)
 }

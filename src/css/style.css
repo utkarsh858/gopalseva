@@ -44,6 +44,10 @@ body {
 	width:80px;
 	/*height:310px;*/
 	position: relative;
+	filter: hue-rotate(50deg);
+	/*filter:contrast(50%);*/
+	/*filter: saturate(10%);*/
+
 }
 .heart-text{
 	position: absolute;
@@ -633,7 +637,7 @@ box-shadow: 0 0 8px 8px white inset;
 
 .prabhupada{
 	position: absolute;
-	top:230px;
+	top:205px;
 	left:30px;
 	font-size:0.8em;
 	color:white;
@@ -874,11 +878,11 @@ box-shadow: 0 0 8px 8px white inset;
 	font-weight: 900;
 	font-family: 'Special Elite';
 }
-.package-wrap .list-group-horizontal .list-group-item:last-child {
+/*.package-wrap .list-group-horizontal .list-group-item:last-child {
 	max-width: 50px;
 	padding:10px 0 10px 0;
 	border-radius: 0;
-}
+}*/
 .package-wrap .custom-control input {
     position: relative;
 }
@@ -902,6 +906,11 @@ box-shadow: 0 0 8px 8px white inset;
 
 .package-inner .custom-control {
     padding: 0;
+    /*border:solid 2px;*/
+    /*border-radius: 50%;*/
+    /*width:30px;*/
+    /*position: absolute;*/
+    /*left:20px;*/
 }
 .package-inner .tab-content ul {
     margin: 13px 0;
