@@ -551,7 +551,7 @@ scrollTo = (target) =>{
                                             this.setState({
                                                 give_monthly_link:"https://app.lotuspay.com/merchant/plan/AL0052Q6QKZISH",
                                                 give_once_link:"",
-                                                amount:"3500",
+                                                amount:"3100",
                                                 donate_direct:"/donate",
                                                 isCustom:"false",
                                                 selected: (new Array(7)).concat("#d380d9"),
