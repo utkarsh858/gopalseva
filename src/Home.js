@@ -261,7 +261,7 @@ scrollTo = (target) =>{
                                                 give_once_link:"https://pmny.in/1IJqIgXYxBRw",
                                                 give_monthly_link:"",
                                                 amount:"3100",
-                                                isCustom:"true",
+                                                isCustom:"false",
                                                 selected: (new Array(7)).concat("#d380d9"),
                                             })
 
